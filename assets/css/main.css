@@ -1,0 +1,6 @@
+@import './fonts.css';
+
+html, body, #__nuxt {
+  height: 100%;
+  width: 100%;
+}
