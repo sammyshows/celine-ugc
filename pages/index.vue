@@ -17,7 +17,7 @@
   </div>
 
   <div class="w-full lg:h-5/4 pb-8 background-2 bg-contain">
-    <p class="pt-10 pl-6 text-xs font-lora">ABOUT ME</p>
+    <p class="pt-10 pl-6 text-tiny font-lora">ABOUT ME</p>
 
     <p class="pt-4 pl-16 text-4xl font-lora">Hi,</p>
 
@@ -43,7 +43,7 @@
   </div>
 
   <div class="w-full lg:h-full pb-12 background-4 bg-cover">
-    <p class="pt-10 pl-6 text-xs font-lora">PORTFOLIO</p>
+    <p class="pt-10 pl-6 text-tiny font-lora">PORTFOLIO</p>
 
     <h1 class="pt-4 text-4-5xl text-center font-bonaNova">VIDEOGRAPHY</h1>
 
@@ -55,7 +55,7 @@
   </div>
 
   <div class="w-full lg:h-full pb-12 background-5 bg-cover">
-    <p class="pt-10 pl-6 text-xs font-lora">PORTFOLIO</p>
+    <p class="pt-10 pl-6 text-tiny font-lora">PORTFOLIO</p>
 
     <h1 class="pt-4 text-4-5xl text-center font-bonaNova">PHOTOGRAPHY</h1>
 
@@ -70,8 +70,8 @@
     Content made with<div class="h-8 px-3 inline-flex background-paint-2 bg-cover font-corinthia text-4-5xl text-slate-700">passion</div>
   </div>
 
-  <div class="w-full lg:h-5/4 background-7 bg-cover">
-    <p class="pt-10 pl-6 text-xs font-lora">PROCESS</p>
+  <div class="w-full lg:h-5/4 pb-16 background-7 bg-cover">
+    <p class="pt-10 pl-6 text-tiny font-lora">PROCESS</p>
 
     <h1 class="pt-4 text-4-5xl text-center font-bonaNova">SERVICES</h1>
 
@@ -101,11 +101,37 @@
 
     <p class="mt-8 pr-8 text-xs text-right text-slate-700">*Rates are available upon request</p>
 
-    <p class="mt-8 text-center">But that's not all! Not seeing what you're looking for? Let's chat!</p>
+    <p class="mt-8 px-12 text-lg leading-6 text-center text-ugc-green font-lora font-semibold">But that's not all! Not seeing what you're looking for? Let's chat!</p>
   </div>
 
   <div class="w-full lg:h-full background-4 bg-cover">
+    <p class="pt-10 pl-6 text-tiny font-lora">CONTACT ME</p>
 
+    <img src="/images/celine-1.jpg" alt="Celine Selfie" class="absolute -right-16 w-60 mt-4 rounded-full">
+
+    <p class="mt-10 pl-2 text-4xl font-lora">Let's work</p>
+    <p class="mt-6 ml-12 px-3 max-w-fit background-paint-3 bg-cover z-10 font-corinthia text-7-5xl leading-16 text-slate-700">together!</p>
+  
+    <div class="flex items-center gap-2 mt-12 pl-4">
+      <img src="/icons/mail.png" alt="Mail" class="h-4 w-5">
+      <p class="text-xs underline">ugcwithceline@gmail.com</p>
+    </div>
+
+    <div class="flex items-center gap-2 mt-1 pl-4">
+      <img src="/icons/instagram.png" alt="Instagram" class="w-5">
+      <p class="text-xs">@ugcwithceline</p>
+    </div>
+
+    <form class="mt-10 pl-2 font-lora">
+      <label for="name" class="inline-block w-20">NAME</label>
+      <input type="text" id="" class="ml-2 background-paint-2">
+      <br>
+      <label for="email" class="inline-block w-20">EMAIL</label>
+      <input type="text" id="" class="ml-2 background-paint-2">
+      <br>
+      <label for="message" class="inline-block w-20 h-20 my-auto">MESSAGE</label>
+      <textarea type="text" id="" class="h-20 ml-2 background-paint-1 bg-cover"></textarea>
+    </form>
   </div>
 </template>
 
@@ -169,6 +195,11 @@
 
 .background-7 {
   background-image: url('/images/background-7.png')
+}
+
+.background-paint-1 {
+  background-image: url('/images/green-paint-1.png');
+  background-size: 100% 100%;
 }
 
 .background-paint-2 {
