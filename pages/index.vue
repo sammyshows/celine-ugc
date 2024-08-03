@@ -16,7 +16,7 @@
     <img src="/images/polaroid-collage.png" alt="Polaroids" class="absolute -bottom-16 w-full mt-4 px-3">
   </div>
 
-  <div class="w-full lg:h-5/4 background-2 bg-contain">
+  <div class="w-full lg:h-5/4 pb-8 background-2 bg-contain">
     <p class="pt-10 pl-6 text-xs font-lora">ABOUT ME</p>
 
     <p class="pt-4 pl-16 text-4xl font-lora">Hi,</p>
@@ -36,24 +36,72 @@
     <img src="/images/celine-1.jpg" alt="Celine Selfie" class="w-60 mx-auto mt-4 rounded-[6rem]">
   </div>
 
-  <div class="w-full lg:h-1/3 background-3 bg-cover">
-
+  <div class="w-full lg:h-1/3 py-14 px-2 background-3 bg-cover text-xl text-center text-slate-800 font-lora">
+    Unleash your brand's<div class="h-8 px-3 inline-flex background-paint-3 bg-cover font-corinthia text-4-5xl text-slate-700">personality</div><br>
+    <div class="h-8 inline-flex">with UGC content that</div><br>
+    showcases its unique voice.
   </div>
 
-  <div class="w-full lg:h-full background-4 bg-cover">
+  <div class="w-full lg:h-full pb-12 background-4 bg-cover">
+    <p class="pt-10 pl-6 text-xs font-lora">PORTFOLIO</p>
 
+    <h1 class="pt-4 text-4-5xl text-center font-bonaNova">VIDEOGRAPHY</h1>
+
+    <div class="w-full flex gap-6 mt-8 px-6 overflow-scroll">
+      <div v-for="i in 5" class="h-80 min-w-2/5 bg-slate-300">
+
+      </div>
+    </div>
   </div>
 
-  <div class="w-full lg:h-full background-5 bg-cover">
+  <div class="w-full lg:h-full pb-12 background-5 bg-cover">
+    <p class="pt-10 pl-6 text-xs font-lora">PORTFOLIO</p>
 
+    <h1 class="pt-4 text-4-5xl text-center font-bonaNova">PHOTOGRAPHY</h1>
+
+    <div class="w-full flex gap-6 mt-8 px-6 overflow-scroll">
+      <div v-for="i in 5" class="h-80 min-w-2/5 bg-slate-300">
+
+      </div>
+    </div>
   </div>
 
-  <div class="w-full lg:h-1/3 background-6 bg-cover">
-
+  <div class="w-full lg:h-1/3 py-14 px-2 background-6 bg-cover text-xl text-center text-slate-800 font-lora">
+    Content made with<div class="h-8 px-3 inline-flex background-paint-2 bg-cover font-corinthia text-4-5xl text-slate-700">passion</div>
   </div>
 
   <div class="w-full lg:h-5/4 background-7 bg-cover">
+    <p class="pt-10 pl-6 text-xs font-lora">PROCESS</p>
 
+    <h1 class="pt-4 text-4-5xl text-center font-bonaNova">SERVICES</h1>
+
+    <p class="pt-4 text-xs text-center font-lora">Reach your target audience with me!</p>
+
+    <div class="w-full flex flex-col gap-2 mt-8 px-2 font-lora">
+      <p v-for="service in services" class="text-center uppercase">{{ service.name }}</p>
+    </div>
+
+    <div class="w-2/3 h-0.5 mt-10 mx-auto bg-slate-800"></div>
+    
+    <h1 class="mt-10 ml-10 px-3 inline-flex background-paint-2 bg-cover font-lora font-semibold text-2xl text-slate-700">VIDEO</h1>
+
+    <div class="ml-1/6 flex flex-col mt-3 mx-auto px-2 font-lora">
+      <div v-for="videoService in videoServices" :key="videoService.name" class="flex leading-5">
+        • <p class="ml-2 text-sm">{{ videoService.name }}</p>
+      </div>
+    </div>
+
+    <h1 class="mt-10 ml-10 px-3 inline-flex background-paint-2 bg-cover font-lora font-semibold text-2xl text-slate-700">PHOTOGRAPHY</h1>
+
+    <div class="ml-1/6 flex flex-col mt-3 mx-auto px-2 font-lora">
+      <div v-for="photoService in photoServices" :key="photoService.name" class="flex leading-5">
+        • <p class="ml-2 text-sm">{{ photoService.name }}</p>
+      </div>
+    </div>
+
+    <p class="mt-8 pr-8 text-xs text-right text-slate-700">*Rates are available upon request</p>
+
+    <p class="mt-8 text-center">But that's not all! Not seeing what you're looking for? Let's chat!</p>
   </div>
 
   <div class="w-full lg:h-full background-4 bg-cover">
@@ -63,6 +111,35 @@
 
 <script setup>
   const showAssetsModal = ref(false)
+
+  const services = [
+    { name: 'Unboxing' },
+    { name: 'Product Showcasing' },
+    { name: 'Lifestyle Photography' },
+    { name: 'Product Demo' },
+    { name: 'Reviews & Testimonials' },
+    { name: 'Product Photography' },
+    { name: 'Voiceover' },
+    { name: 'How To Use Tutorials' }
+  ]
+
+  const videoServices = [
+    { name: '15-60 Seconds' },
+    { name: 'Vertical 9:16 Format' },
+    { name: 'Brand & Concept Research' },
+    { name: 'Script Writing & Approval' },
+    { name: 'Video Editing, 1 revision' },
+    { name: 'Raw Footage (add-on)' },
+    { name: 'Usage Rights for Ads (add-on)' }
+  ]
+
+  const photoServices = [
+    { name: '1:1 | 4:5 | 9:16 Format' },
+    { name: 'Product Modelling/Selfie with Product' },
+    { name: 'Brand & Concept Research' },
+    { name: 'Photo Editing' },
+    { name: 'Raw Photos (add-on)' }
+  ]
 </script>
 
 <style>
@@ -92,5 +169,34 @@
 
 .background-7 {
   background-image: url('/images/background-7.png')
+}
+
+.background-paint-2 {
+  background-image: url('/images/green-paint-2.png');
+  background-size: 100% 100%;
+}
+
+.background-paint-3::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('/images/green-paint-3.png');
+  background-size: 100% 105%;
+  background-repeat: no-repeat;
+  z-index: -1; /* Place it behind the text */
+  transform: rotate(-3deg); /* Adjust the angle as needed */
+  transform-origin: center;
+}
+
+.background-paint-3 {
+  position: relative;
+}
+
+li::marker {
+  margin-right:1px;
 }
 </style>
