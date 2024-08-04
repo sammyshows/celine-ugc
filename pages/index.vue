@@ -19,7 +19,7 @@
       </div>
     </div>
 
-    <img src="/images/polaroid-collage.png" alt="Polaroids" class="absolute -bottom-16 lg:left-1/2 w-full lg:w-auto lg:h-full mt-4 px-3">
+    <img src="/images/polaroid-collage.png" loading="lazy" alt="Polaroids" class="absolute -bottom-16 lg:left-1/2 w-full lg:w-auto lg:h-full mt-4 px-3">
   </div>
 
   <div class="w-full pb-8 lg:pb-20 background-2 bg-contain">
@@ -46,7 +46,7 @@
         </p>
       </div>
       
-      <img src="/images/celine-2.jpg" alt="Celine Selfie" class="w-60 lg:w-2/5 mx-auto mt-4 rounded-[6rem] lg:rounded-[12rem] object-cover">
+      <img src="/images/celine-2.jpg" loading="lazy" alt="Celine Selfie" class="w-60 lg:w-2/5 mx-auto mt-4 rounded-[6rem] lg:rounded-[12rem] object-cover">
     </div>
   </div>
 
@@ -153,7 +153,7 @@
         </div>
       </div>
 
-      <img src="/images/celine-1.jpg" alt="Celine Selfie" class="absolute lg:static -right-16 w-60 lg:w-auto lg:h-full top-20 rounded-full">
+      <img src="/images/celine-1.jpg" loading="lazy" alt="Celine Selfie" class="absolute lg:static -right-16 w-60 lg:w-auto lg:h-full top-20 rounded-full">
     </div>
 
     <div class="lg:w-1/2 lg:max-w-[48rem] mt-20 lg:mx-auto pl-4 pb-10 font-lora">
