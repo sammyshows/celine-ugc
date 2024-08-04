@@ -12,7 +12,9 @@
       <p class="mt-10 lg:mt-6 text-sm lg:text-2xl text-center font-lora">UGC CREATOR</p>
   
       <div class="flex justify-center gap-1 lg:gap-4 mt-4">
-        <img src="/icons/instagram.png" alt="Instagram" class="size-4 lg:size-12">
+        <a href="https://www.instagram.com/ugc.withcelinee/" target="_blank">
+          <img src="/icons/instagram.png" alt="Instagram" class="size-4 lg:size-12">
+        </a>
         <img src="/icons/mail.png" alt="Instagram" class="size-4 lg:w-14 lg:h-12">
       </div>
     </div>
@@ -25,11 +27,11 @@
 
     <div class="w-full lg:w-3/4 xl:w-2/3 lg:flex lg:flex-row-reverse lg:mx-auto lg:mt-10 lg:px-0 lg:gap-[5%]">
       <div class="lg:flex lg:flex-col">
-        <p class="pt-4 pl-16 text-4xl lg:text-6xl font-lora">Hi,</p>
+        <p class="lg:mt-10 pt-4 pl-16 text-4xl lg:text-6xl font-lora">Hi,</p>
         
-        <p class="text-7-5xl lg:text-10xl leading-30 text-center font-corinthia italic">I'm Celine</p>
+        <p class="lg:mt-8 text-7-5xl lg:text-10xl leading-30 text-center font-corinthia italic">I'm Celine</p>
         
-        <p class="hidden sm:block text-xl text-center font-lora tracking-wider">HOW TO'S · TRENDS · UNBOXING & MORE</p>
+        <p class="hidden lg:block lg:mt-4 text-xl text-center font-lora tracking-wider">HOW TO'S · TRENDS · UNBOXING & MORE</p>
 
         <p class="lg:mt-10 px-10 text-xs lg:text-xl text-center font-lora">
           I’m a content creator based in Melbourne, Australia, bilingual in <b>English</b> and <b>French</b>.
@@ -44,7 +46,7 @@
         </p>
       </div>
       
-      <img src="/images/celine-1.jpg" alt="Celine Selfie" class="w-60 lg:w-2/5 mx-auto mt-4 rounded-[6rem] lg:rounded-[12rem] object-cover">
+      <img src="/images/celine-2.jpg" alt="Celine Selfie" class="w-60 lg:w-2/5 mx-auto mt-4 rounded-[6rem] lg:rounded-[12rem] object-cover">
     </div>
   </div>
 
@@ -139,12 +141,14 @@
         <div class="lg:w-2/3">
           <div class="flex items-center gap-2 mt-12 lg:mt-24 pl-4">
             <img src="/icons/instagram.png" alt="Instagram" class="w-5 lg:w-10">
-            <p class="lg:ml-3 text-xs lg:text-2xl">@ugcwithceline</p>
+            <a href="https://www.instagram.com/ugc.withcelinee/" target="_blank">
+              <p class="lg:ml-3 text-xs lg:text-2xl">@ugc.withcelinee</p>
+            </a>
           </div>
           
           <div class="flex items-center gap-2 mt-1 lg:mt-4 pl-4">
             <img src="/icons/mail.png" alt="Mail" class="h-4 w-5 lg:w-10 lg:h-8">
-            <p class="lg:ml-3 text-xs lg:text-2xl">ugcwithceline@gmail.com</p>
+            <p class="lg:ml-3 text-xs lg:text-2xl">ugcwithcelinee@gmail.com</p>
           </div>
         </div>
       </div>
