@@ -78,6 +78,11 @@ export default {
         '5-5xl': '3.5rem',
         '6-5xl': '4.5rem',
         '7-5xl': '5.5rem',
+        '8-5xl': '6.5rem',
+        '9-5xl': '8.5rem',
+        '10xl': '9rem',
+        '11xl': '10rem',
+        '12xl': '11rem',
         'tiny': '0.6rem',
         'teeny': '0.5rem',
         'atomic': '0.4rem'
@@ -99,7 +104,8 @@ export default {
         '21': '5.25rem',
         '22': '5.5rem',
         '23': '5.75rem',
-        '24': '6rem'
+        '24': '6rem',
+        '30': '7.5rem',
       },
 
       colors: {
