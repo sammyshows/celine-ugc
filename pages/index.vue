@@ -50,12 +50,12 @@
     </div>
   </div>
 
-  <div class="w-full lg:h-1/3 py-14 lg:py-10 px-2 background-3 bg-cover text-xl lg:text-5-5xl lg:leading-18 text-center text-slate-800 font-lora">
-    Unleash your brand's<div
+  <div class="w-full lg:h-2/5 flex flex-col justify-center items-center py-14 lg:py-10 px-2 background-3 bg-cover text-xl lg:text-5-5xl lg:leading-18 text-center text-slate-800 font-lora">
+    <div>Unleash your brand's<div
       class="h-8 lg:h-20 px-3 lg:px-6 inline-flex background-paint-3 bg-cover font-corinthia text-4-5xl lg:text-8-5xl text-slate-800">personality
-    </div><br>
-    <div class="h-8 lg:h-20 inline-flex">with UGC content that</div><br>
-    showcases its unique voice.
+    </div></div>
+    <p><div class="h-8 lg:h-20 inline-flex">with UGC content that</div></p>
+    <p>showcases its unique voice.</p>
   </div>
 
   <div class="w-full lg:h-full pb-12 background-4 bg-cover">
@@ -129,7 +129,7 @@
       But that's not all! Not seeing what you're looking for? Let's chat!</p>
   </div>
 
-  <div class="relative w-full lg:h-full background-4 bg-cover">
+  <div class="relative w-full background-4 bg-cover">
     <p class="pt-10 pl-6 lg:pl-20 text-tiny lg:text-xl font-lora">CONTACT ME</p>
 
     <div class="lg:flex lg:h-[30rem]">
