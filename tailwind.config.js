@@ -103,7 +103,8 @@ export default {
       },
 
       colors: {
-        'ugc-green': '#2D3B26'
+        'ugc-dark-green': '#2D3B26',
+        'ugc-light-green': '#8DAE7C',
       }
     }
   },

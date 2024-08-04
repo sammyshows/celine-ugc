@@ -1,3 +1,5 @@
 <template>
-  <NuxtPage />
+  <div class="w-full relative overflow-hidden">
+    <NuxtPage />
+  </div>
 </template>
