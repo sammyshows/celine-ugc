@@ -133,8 +133,8 @@
   <div class="relative w-full lg:h-1/3 lg:flex lg:justify-center lg:items-center py-14 lg:py-10 px-2 bg-slate-100 bg-cover text-xl lg:text-7xl lg:leading-18 text-center text-slate-800 font-lora">
     Content made with <div class="h-8 lg:h-20 px-3 lg:px-6 inline-flex background-paint-2 bg-cover font-corinthia text-4-5xl lg:text-10xl text-slate-800">passion.</div>
     
-    <img src="/icons/star.png" alt="Star" class="absolute right-4 lg:right-24 bottom-4 lg:top-16 h-12 lg:h-24">
-    <img src="/icons/star.png" alt="Star" class="absolute -left-6 lg:left-24 bottom-14 lg:bottom-12 h-16 lg:h-32">
+    <img src="/icons/star.png" alt="Star" class="absolute -left-4 lg:left-24 bottom-20 lg:bottom-12 h-12 lg:h-32">
+    <img src="/icons/star.png" alt="Star" class="absolute right-4 lg:right-24 bottom-4 lg:top-16 h-8 lg:h-24">
   </div>
 
   <div id="services" class="relative w-full pb-16 bg-cover">
@@ -180,9 +180,9 @@
       But that's not all! Not seeing what you're looking for? Let's chat!
     </p>
 
-    <img src="/icons/star.png" alt="Star" class="absolute right-4 lg:right-32 bottom-4 lg:top-16 h-12 lg:h-28">
-    <img src="/icons/star.png" alt="Star" class="absolute -left-6 lg:left-24 bottom-14 lg:top-60 h-16 lg:h-24">
-    <img src="/icons/star.png" alt="Star" class="absolute right-4 lg:right-16 bottom-4 lg:bottom-40 h-12 lg:h-16">
+    <img src="/icons/star.png" alt="Star" class="absolute -left-6 lg:left-24 top-40 lg:top-60 h-16 lg:h-24">
+    <img src="/icons/star.png" alt="Star" class="absolute right-6 lg:right-32 bottom-[32rem] lg:top-16 h-8 lg:h-28">
+    <img src="/icons/star.png" alt="Star" class="absolute right-20 lg:right-16 bottom-4 lg:bottom-40 h-8 lg:h-16">
   </div>
 
   <div id="contact" class="relative w-full bg-slate-100 bg-cover">
@@ -221,22 +221,21 @@
       </div>
       <div class="flex mt-2">
         <label for="message" class="flex w-20 lg:w-32 h-20 items-center my-auto lg:text-2xl">MESSAGE</label>
-        <textarea v-model="message" type="text" class="w-64 lg:grow h-20 lg:h-36 ml-4 px-6 lg:px-12 py-3 lg:py-6 background-paint-1 bg-transparent bg-cover text-xs lg:text-lg rounded-lg outline-slate-700 overflow-scroll">
-        </textarea>
+        <textarea v-model="message" type="text" class="w-64 lg:grow h-20 lg:h-36 ml-4 px-6 lg:px-12 py-3 lg:py-6 background-paint-1 bg-transparent bg-cover text-xs lg:text-lg rounded-lg outline-slate-700 overflow-scroll"></textarea>
       </div>
 
       <div class="w-full flex">
-        <button @click="submit" :disabled="sendingEmail" class="w-36 lg:w-40 mt-6 mx-auto py-1 lg:py-2 lg:text-xl text-center text-white font-lora bg-ugc-light-green rounded-lg outline-slate-700 duration-300 disabled:animate-pulse">
+        <button @click="submit()" :disabled="sendingEmail" class="w-36 lg:w-40 mt-6 mx-auto py-1 lg:py-2 lg:text-xl text-center text-white font-lora bg-ugc-light-green rounded-lg outline-slate-700 duration-300 disabled:animate-pulse">
           {{ sendingEmail ? 'SUBMITTING...' : 'SUBMIT' }}
         </button>
       </div>
 
-      <p :class="[ showEmailResultMessage ? 'opacity-100' : 'opacity-0' ]" class="pt-6 text-xl text-center text-ugc-dark-green">{{ emailResultMessage }}</p>
+      <p :class="[ showEmailResultMessage ? 'opacity-100' : 'opacity-0' ]" class="pt-6 text-sm lg:text-xl text-center text-ugc-dark-green">{{ emailResultMessage }}</p>
     </div>
 
-    <img src="/icons/star.png" alt="Star" class="absolute -left-6 lg:left-16 bottom-14 lg:top-60 h-16 lg:h-24">
-    <img src="/icons/star.png" alt="Star" class="absolute -left-6 lg:left-32 bottom-14 lg:bottom-48 h-16 lg:h-16">
-    <img src="/icons/star.png" alt="Star" class="absolute right-4 lg:right-16 bottom-4 lg:bottom-96 h-12 lg:h-16">
+    <img src="/icons/star.png" alt="Star" class="absolute left-60 lg:left-16 top-4 lg:top-60 h-12 lg:h-24">
+    <img src="/icons/star.png" alt="Star" class="absolute left-6 lg:left-32 bottom-20 lg:bottom-48 h-16 lg:h-16">
+    <img src="/icons/star.png" alt="Star" class="hidden lg:block absolute right-32 lg:right-16 lg:bottom-96 h-12 lg:h-16">
   </div>
 </template>
 
@@ -245,19 +244,19 @@ const name = ref('')
 const email = ref('')
 const message = ref('')
 const emailResultMessage = ref('-')
-const showEmailResultMessage = ref(true)
+const showEmailResultMessage = ref(false)
 const sendingEmail = ref(false)
 
 const scrollTo = (elementId) => {
   document.querySelector(elementId).scrollIntoView({ behavior: 'smooth' })
 }
 
-const submit = () => {
+const submit = async () => {
   sendingEmail.value = true
 
   try {
     console.log(name.value, email.value, message.value)
-    sendEmail({
+    await sendEmail({
       name: name.value,
       email: email.value,
       message: message.value
