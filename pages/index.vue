@@ -14,7 +14,7 @@
       </div>
     </div>
 
-    <img src="/images/polaroid-collage.png" loading="lazy" alt="Polaroids" class="absolute -bottom-16 lg:left-1/2 w-full lg:w-auto lg:h-full mt-4 px-3">
+    <img src="/images/polaroid-collage.webp" loading="lazy" alt="Polaroids" class="absolute -bottom-16 lg:left-1/2 w-full lg:w-auto lg:h-full mt-4 px-3">
   </div>
 
   <div class="w-full pb-8 lg:pb-20 background-2 bg-contain">
@@ -72,7 +72,7 @@
 
     <div class="w-full lg:h-full flex lg:justify-center gap-6 lg:gap-12 mt-8 lg:mt-16 px-6 lg:px-20 overflow-scroll">
       <div v-for="image in ugcImages" :key="image" class="h-80 lg:h-2/3 min-w-[40%] lg:min-w-[28rem] lg:w-1/5 bg-slate-300">
-      <img :src="`/ugc/images/${image}`" :alt="image.split('.')[0]" class="h-full w-full object-cover">
+      <img :src="`/ugc/images/${image}`" loading="lazy" :alt="image.split('.')[0]" class="h-full w-full object-cover">
     </div>
     </div>
   </div>
@@ -148,7 +148,7 @@
         </div>
       </div>
 
-      <img src="/images/celine-1.jpg" loading="lazy" alt="Celine Selfie" class="absolute lg:static -right-16 w-60 lg:w-auto lg:h-full top-20 rounded-full">
+      <img src="/images/celine-1.webp" loading="lazy" alt="Celine Selfie" class="absolute lg:static -right-16 w-60 lg:w-auto lg:h-full top-20 rounded-full">
     </div>
 
     <div class="lg:w-1/2 lg:max-w-[48rem] mt-20 lg:mx-auto pl-4 pb-10 font-lora">
@@ -237,31 +237,31 @@ const ugcImages = [
 }
 
 .background-1 {
-  background-image: url('/images/background-1.png')
+  background-image: url('/images/background-1.webp')
 }
 
 .background-2 {
-  background-image: url('/images/background-2.png')
+  background-image: url('/images/background-2.webp')
 }
 
 .background-3 {
-  background-image: url('/images/background-3.png')
+  background-image: url('/images/background-3.webp')
 }
 
 .background-4 {
-  background-image: url('/images/background-4.png')
+  background-image: url('/images/background-4.webp')
 }
 
 .background-5 {
-  background-image: url('/images/background-5.png')
+  background-image: url('/images/background-5.webp')
 }
 
 .background-6 {
-  background-image: url('/images/background-6.png')
+  background-image: url('/images/background-6.webp')
 }
 
 .background-7 {
-  background-image: url('/images/background-7.png')
+  background-image: url('/images/background-7.webp')
 }
 
 .background-paint-1 {
