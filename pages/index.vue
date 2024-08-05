@@ -1,9 +1,4 @@
 <template>
-  <div @click="showAssetsModal = true"
-    class="fixed bottom-8 right-8 size-10 flex justify-center items-center rounded-full bg-slate-300 text-2xl text-slate-500 cursor-pointer">
-    ?</div>
-  <Assets v-if="showAssetsModal" :showAssetsModal @closeAssetsModal="showAssetsModal = false" />
-
   <div class="relative w-full h-2/3 lg:h-4/5 min-h-[34rem] flex flex-col pt-20 sm:pt-0 background-1 bg-cover text-ugc-dark-green">
     <div class="lg:w-1/2 lg:my-auto">
       <h1 class="text-6-5xl lg:text-12xl leading-13 lg:leading-30 text-center font-bonaNova">CELINE</h1>
@@ -76,9 +71,9 @@
     <h1 class="pt-4 lg:pt-10 text-4-5xl lg:text-7xl text-center font-bonaNova tracking-wider">PHOTOGRAPHY</h1>
 
     <div class="w-full lg:h-full flex lg:justify-center gap-6 lg:gap-12 mt-8 lg:mt-16 px-6 lg:px-20 overflow-scroll">
-      <div v-for="i in 4" class="h-80 lg:h-2/3 min-w-[40%] lg:min-w-[20%] lg:w-1/5 bg-slate-300">
-
-      </div>
+      <div v-for="image in ugcImages" :key="image" class="h-80 lg:h-2/3 min-w-[40%] lg:min-w-[28rem] lg:w-1/5 bg-slate-300">
+      <img :src="`/ugc/images/${image}`" :alt="image.split('.')[0]" class="h-full w-full object-cover">
+    </div>
     </div>
   </div>
 
@@ -182,8 +177,6 @@ Hi Celine, I'm interested in working with you on a project.
 </template>
 
 <script setup>
-const showAssetsModal = ref(false)
-
 const services = [
   { name: 'Unboxing' },
   { name: 'Product Showcasing' },
@@ -211,6 +204,29 @@ const photoServices = [
   { name: 'Brand & Concept Research' },
   { name: 'Photo Editing' },
   { name: 'Raw Photos (add-on)' }
+]
+
+const ugcImages = [
+  'Botanycl.webp',
+  'Bulk.webp',
+  'Cerave.webp',
+  'Clinique.webp',
+  'Cream.webp',
+  'Crisps.webp',
+  'Drink 2.webp',
+  'Drink Pic.webp',
+  'Elvive.webp',
+  'Face cream.webp',
+  'Furla.webp',
+  'Lip balm.webp',
+  'Lip gloss.webp',
+  'Lipstick.webp',
+  'Mascara.webp',
+  'Nail polish.webp',
+  'SPF.webp',
+  'The ordinary .webp',
+  'Workout.webp',
+  'Zen.webp'
 ]
 </script>
 
