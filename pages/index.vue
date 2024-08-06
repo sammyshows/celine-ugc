@@ -138,9 +138,7 @@
   </div>
 
   <div id="services" class="relative w-full pb-16 bg-cover">
-    <p class="pt-10 pl-6 lg:pl-20 text-tiny lg:text-xl font-lora">PROCESS</p>
-
-    <h1 class="pt-4 lg:pt-10 text-4-5xl lg:text-7xl text-center font-bonaNova tracking-wider">SERVICES</h1>
+    <h1 class="pt-12 lg:pt-20 text-4-5xl lg:text-7xl text-center font-bonaNova tracking-wider">SERVICES</h1>
 
     <p class="pt-4 text-xs lg:text-lg text-center font-lora">Reach your target audience with me!</p>
 
