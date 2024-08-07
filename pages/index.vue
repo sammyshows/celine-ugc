@@ -188,28 +188,67 @@
     <div class="lg:w-1/2 lg:max-w-[48rem] mt-20 lg:mx-auto pl-4 pb-10 font-lora">
       <div class="lg:flex">
         <label for="name" class="inline-block w-20 lg:w-32 lg:text-2xl">NAME</label>
-        <input type="text" id=""
-          class="w-56 lg:grow h-8 lg:h-12 ml-4 px-6 lg:px-12 background-paint-2 lighten-background text-sm lg:text-2xl">
+        <input v-model="name" type="text" class="w-56 lg:grow h-8 lg:h-12 ml-4 px-6 lg:px-12 background-paint-2 bg-transparent text-sm lg:text-2xl outline-slate-700">
       </div>
       <div class="mt-2 lg:flex">
         <label for="email" class="inline-block w-20 lg:w-32 lg:text-2xl">EMAIL</label>
-        <input type="text" id=""
-          class="w-64 lg:grow h-8 lg:h-12 ml-4 px-6 lg:px-12 background-paint-2 lighten-background text-sm lg:text-2xl">
+        <input v-model="email" type="text" class="w-64 lg:grow h-8 lg:h-12 ml-4 px-6 lg:px-12 background-paint-2 bg-transparent text-sm lg:text-2xl outline-slate-700">
       </div>
       <div class="flex mt-2">
         <label for="message" class="flex w-20 lg:w-32 h-20 items-center my-auto lg:text-2xl">MESSAGE</label>
-        <textarea type="text" id=""
-          class="w-64 lg:grow h-20 lg:h-36 ml-4 px-6 lg:px-12 py-3 lg:py-6 background-paint-1 lighten-background bg-cover text-xs lg:text-lg overflow-scroll">
+        <textarea v-model="message" type="text" class="w-64 lg:grow h-20 lg:h-36 ml-4 px-6 lg:px-12 py-3 lg:py-6 background-paint-1 bg-transparent bg-cover text-xs lg:text-lg outline-slate-700 overflow-scroll">
         </textarea>
       </div>
 
-      <div class="w-fit mt-6 mx-auto px-6 lg:px-12 py-1 lg:py-2 lg:text-xl text-center text-white font-lora bg-ugc-light-green rounded-lg cursor-pointer">SUBMIT
+      <div class="w-full flex">
+        <button @click="submit" :disabled="sendingEmail" class="w-36 lg:w-40 mt-6 mx-auto py-1 lg:py-2 lg:text-xl text-center text-white font-lora bg-ugc-light-green rounded-lg outline-slate-700 duration-300 disabled:animate-pulse">
+          {{ sendingEmail ? 'SUBMITTING...' : 'SUBMIT' }}
+        </button>
       </div>
+
+      <p :class="[ showEmailResultMessage ? 'opacity-100' : 'opacity-0' ]" class="pt-6 text-xl text-center text-ugc-dark-green">{{ emailResultMessage }}</p>
     </div>
   </div>
 </template>
 
 <script setup>
+const name = ref('')
+const email = ref('')
+const message = ref('')
+const emailResultMessage = ref('-')
+const showEmailResultMessage = ref(true)
+const sendingEmail = ref(false)
+
+const submit = () => {
+  sendingEmail.value = true
+
+  try {
+    console.log(name.value, email.value, message.value)
+    sendEmail({
+      name: name.value,
+      email: email.value,
+      message: message.value
+    }).then(() => {
+      name.value = ''
+      email.value = ''
+      message.value = ''
+  
+      emailResultMessage.value = 'Thanks for contacting me! Your enquiry has been sent.'
+      showEmailResultMessage.value = true
+    }).catch(() => {
+      emailResultMessage.value = 'There was an error sending your enquiry. Please try again in a moment.'
+      showEmailResultMessage.value = true
+    })
+  
+  
+    setTimeout(() => showEmailResultMessage.value = false, 3000)
+  } catch (error) {
+    console.error(error)
+  }
+
+  sendingEmail.value = false
+}
+
 const services = [
   { name: 'Unboxing' },
   { name: 'Product Showcasing' },
@@ -280,7 +319,6 @@ const ugcVideos = [
 onMounted(() => {
   const elementIds = ['video-row-1', 'video-row-2', 'video-row-3', 'image-row-1', 'image-row-2', 'image-row-3', 'image-row-4']
   document.addEventListener('DOMContentLoaded', setInitialScrollPosition(elementIds))
-
 })
 </script>
 
@@ -294,12 +332,6 @@ onMounted(() => {
 .hide-scrollbar {
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;  /* Firefox */
-}
-
-
-.lighten-background {
-  background-color: rgba(255, 255, 255, 0.3);
-  background-blend-mode: lighten;
 }
 
 .background-1 {
