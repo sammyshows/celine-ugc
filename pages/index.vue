@@ -58,9 +58,25 @@
 
     <h1 class="pt-4 lg:pt-10 text-4-5xl lg:text-7xl text-center font-bonaNova tracking-wider">VIDEOGRAPHY</h1>
 
-    <div class="w-full flex lg:flex-wrap lg:justify-center gap-6 lg:gap-12 mt-8 lg:mt-16 px-6 lg:px-20 overflow-scroll">
-      <div v-for="video in ugcVideos" class="h-80 lg:h-2/3 min-w-[40%] lg:min-w-[20%] lg:w-1/5 bg-slate-300">
-        <video controls :poster="'/ugc/videos/' + video.poster" preload="none">
+    <div id="video-row-1" class="w-full flex lg:flex-wrap lg:justify-center gap-8 lg:gap-12 mt-8 lg:mt-16 px-6 lg:px-20 overflow-scroll hide-scrollbar">
+      <div v-for="video in ugcVideos.slice(0, 4)" class="lg:h-auto min-w-[60%] lg:min-w-[20%] lg:w-1/5 bg-slate-300 rounded-3xl">
+        <video controls :poster="'/ugc/videos/' + video.poster" preload="metadata" class="rounded-3xl shadow-xl">
+          <source :src="'/ugc/videos/' + video.source" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </div>
+    <div id="video-row-2" class="w-full flex lg:flex-wrap lg:justify-center gap-8 lg:gap-12 mt-12 lg:mt-16 px-6 lg:px-20 overflow-scroll hide-scrollbar">
+      <div v-for="video in ugcVideos.slice(4, 8)" class="lg:h-auto min-w-[60%] lg:min-w-[20%] lg:w-1/5 bg-slate-300 rounded-3xl">
+        <video controls :poster="'/ugc/videos/' + video.poster" preload="metadata" class="rounded-3xl shadow-xl">
+          <source :src="'/ugc/videos/' + video.source" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </div>
+    <div id="video-row-3" class="w-full flex lg:flex-wrap lg:justify-center gap-8 lg:gap-12 mt-12 lg:mt-16 px-6 lg:px-20 overflow-scroll hide-scrollbar">
+      <div v-for="video in ugcVideos.slice(8, 12)" class="lg:h-auto min-w-[60%] lg:min-w-[20%] lg:w-1/5 bg-slate-300 rounded-3xl">
+        <video controls :poster="'/ugc/videos/' + video.poster" preload="metadata" class="rounded-3xl shadow-xl">
           <source :src="'/ugc/videos/' + video.source" type="video/mp4">
           Your browser does not support the video tag.
         </video>
@@ -73,9 +89,24 @@
 
     <h1 class="pt-4 lg:pt-10 text-4-5xl lg:text-7xl text-center font-bonaNova tracking-wider">PHOTOGRAPHY</h1>
 
-    <div class="w-full flex flex-wrap lg:justify-center gap-6 lg:gap-12 mt-8 lg:mt-16 px-6 lg:px-20 overflow-scroll">
-      <div v-for="image in ugcImages" :key="image" class="h-80 lg:h-80 min-w-[40%] lg:min-w-[20rem] lg:w-1/5 bg-slate-300">
-        <img :src="`/ugc/images/${image}`" loading="lazy" :alt="image.split('.')[0]" class="h-full w-full object-cover shadow">
+    <div id="image-row-1" class="w-full flex lg:flex-wrap lg:justify-center gap-8 lg:gap-12 mt-8 lg:mt-16 px-6 lg:px-20 overflow-scroll hide-scrollbar">
+      <div v-for="image in ugcImages.slice(0, Math.ceil(ugcImages.length / 4))" :key="image" class="h-80 lg:h-80 min-w-[60%] lg:min-w-[20rem] lg:w-1/5 bg-slate-300 rounded-3xl">
+        <img :src="`/ugc/images/${image}`" loading="lazy" :alt="image.split('.')[0]" class="h-full w-full object-cover rounded-3xl shadow">
+      </div>
+    </div>
+    <div id="image-row-2" class="w-full flex lg:flex-wrap lg:justify-center gap-8 lg:gap-12 mt-12 lg:mt-16 px-6 lg:px-20 overflow-scroll hide-scrollbar">
+      <div v-for="image in ugcImages.slice(Math.ceil(ugcImages.length / 4), Math.ceil(2 * ugcImages.length / 4))" :key="image" class="h-80 lg:h-80 min-w-[60%] lg:min-w-[20rem] lg:w-1/5 bg-slate-300 rounded-3xl">
+        <img :src="`/ugc/images/${image}`" loading="lazy" :alt="image.split('.')[0]" class="h-full w-full object-cover rounded-3xl shadow">
+      </div>
+    </div>
+    <div id="image-row-3" class="w-full flex lg:flex-wrap lg:justify-center gap-8 lg:gap-12 mt-12 lg:mt-16 px-6 lg:px-20 overflow-scroll hide-scrollbar">
+      <div v-for="image in ugcImages.slice(Math.ceil(2 * ugcImages.length / 4), Math.ceil(3 * ugcImages.length / 4))" :key="image" class="h-80 lg:h-80 min-w-[60%] lg:min-w-[20rem] lg:w-1/5 bg-slate-300 rounded-3xl">
+        <img :src="`/ugc/images/${image}`" loading="lazy" :alt="image.split('.')[0]" class="h-full w-full object-cover rounded-3xl shadow">
+      </div>
+    </div>
+    <div id="image-row-4" class="w-full flex lg:flex-wrap lg:justify-center gap-8 lg:gap-12 mt-12 lg:mt-16 px-6 lg:px-20 overflow-scroll hide-scrollbar">
+      <div v-for="image in ugcImages.slice(Math.ceil(3 * ugcImages.length / 4))" :key="image" class="h-80 lg:h-80 min-w-[60%] lg:min-w-[20rem] lg:w-1/5 bg-slate-300 rounded-3xl">
+        <img :src="`/ugc/images/${image}`" loading="lazy" :alt="image.split('.')[0]" class="h-full w-full object-cover rounded-3xl shadow">
       </div>
     </div>
   </div>
@@ -245,9 +276,27 @@ const ugcVideos = [
   { source: 'video-11.mp4', poster: 'video-11-poster.webp' },
   { source: 'video-12.mp4', poster: 'video-12-poster.webp' }
 ]
+
+onMounted(() => {
+  const elementIds = ['video-row-1', 'video-row-2', 'video-row-3', 'image-row-1', 'image-row-2', 'image-row-3', 'image-row-4']
+  document.addEventListener('DOMContentLoaded', setInitialScrollPosition(elementIds))
+
+})
 </script>
 
-<style>
+<style scoped>
+/* Hide scrollbars on Webkit browsers (Chrome, Safari) */
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbars on IE, Edge */
+.hide-scrollbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+
 .lighten-background {
   background-color: rgba(255, 255, 255, 0.3);
   background-blend-mode: lighten;
