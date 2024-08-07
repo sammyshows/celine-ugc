@@ -1,7 +1,7 @@
 import emailjs from '@emailjs/browser';
 
 emailjs.init({
-  publicKey: 'rmfLmrdrE7v7wxbbk',
+  publicKey: 'QqO8LzD_qqjDyhPTr',
   // Do not allow headless browsers
   blockHeadless: true,
   limitRate: {
@@ -11,5 +11,5 @@ emailjs.init({
 });
 
 export const sendEmail = (templateParams: { name: string, email: string, message: string}) => {
-  return emailjs.send('service_j9po874', 'template_7i710hb', templateParams)
+  return emailjs.send('service_ugc.withceline', 'template_7on2ogc', templateParams)
 }

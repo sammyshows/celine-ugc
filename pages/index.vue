@@ -79,24 +79,24 @@
 
     <div id="video-row-1" class="w-full flex lg:justify-center gap-8 lg:gap-12 mt-8 lg:mt-16 px-6 lg:px-20 overflow-scroll hide-scrollbar">
       <div v-for="video in ugcVideos.slice(0, 4)" class="lg:h-auto min-w-[60%] lg:min-w-[20%] lg:w-1/5 bg-slate-300 rounded-3xl">
-        <video controls playsinline class="rounded-3xl shadow-xl">
-          <source src="/ugc/videos/video-2.mp4" type="video/mp4">
+        <video controls playsinline :poster="'/ugc/videos/' + video.poster" preload="metadata" class="rounded-3xl shadow-xl">
+          <source :src="'/ugc/videos/' + video.source" type="video/mp4">
           Your browser does not support the video tag.
         </video>
       </div>
     </div>
     <div id="video-row-2" class="w-full flex lg:justify-center gap-8 lg:gap-12 mt-12 lg:mt-16 px-6 lg:px-20 overflow-scroll hide-scrollbar">
       <div v-for="video in ugcVideos.slice(4, 8)" class="lg:h-auto min-w-[60%] lg:min-w-[20%] lg:w-1/5 bg-slate-300 rounded-3xl">
-        <video controls playsinline class="rounded-3xl shadow-xl">
-          <source src="/ugc/videos/video-2.mp4" type="video/mp4">
+        <video controls playsinline :poster="'/ugc/videos/' + video.poster" preload="metadata" class="rounded-3xl shadow-xl">
+          <source :src="'/ugc/videos/' + video.source" type="video/mp4">
           Your browser does not support the video tag.
         </video>
       </div>
     </div>
     <div id="video-row-3" class="w-full flex lg:justify-center gap-8 lg:gap-12 mt-12 lg:mt-16 px-6 lg:px-20 overflow-scroll hide-scrollbar">
       <div v-for="video in ugcVideos.slice(8, 12)" class="lg:h-auto min-w-[60%] lg:min-w-[20%] lg:w-1/5 bg-slate-300 rounded-3xl">
-        <video controls playsinline class="rounded-3xl shadow-xl">
-          <source src="/ugc/videos/video-2.mp4" type="video/mp4">
+        <video controls playsinline :poster="'/ugc/videos/' + video.poster" preload="metadata" class="rounded-3xl shadow-xl">
+          <source :src="'/ugc/videos/' + video.source" type="video/mp4">
           Your browser does not support the video tag.
         </video>
       </div>
@@ -209,13 +209,16 @@
     </div>
 
     <div class="lg:w-1/2 lg:max-w-[48rem] mt-20 lg:mx-auto pl-4 pb-10 font-lora">
+      <!-- Honeypot -->
+      <input v-model="honeypot" type="email" class="hidden">
+
       <div class="lg:flex">
         <label for="name" class="inline-block w-20 lg:w-32 lg:text-2xl">NAME</label>
         <input v-model="name" type="text" class="w-56 lg:grow h-8 lg:h-12 ml-4 px-6 lg:px-12 background-paint-2 bg-transparent text-sm lg:text-2xl rounded-lg outline-slate-700">
       </div>
       <div class="mt-2 lg:flex">
         <label for="email" class="inline-block w-20 lg:w-32 lg:text-2xl">EMAIL</label>
-        <input v-model="email" type="text" class="w-64 lg:grow h-8 lg:h-12 ml-4 px-6 lg:px-12 background-paint-2 bg-transparent text-sm lg:text-2xl rounded-lg outline-slate-700">
+        <input v-model="email" type="email" class="w-64 lg:grow h-8 lg:h-12 ml-4 px-6 lg:px-12 background-paint-2 bg-transparent text-sm lg:text-2xl rounded-lg outline-slate-700">
       </div>
       <div class="flex mt-2">
         <label for="message" class="flex w-20 lg:w-32 h-20 items-center my-auto lg:text-2xl">MESSAGE</label>
@@ -241,6 +244,7 @@
 const name = ref('')
 const email = ref('')
 const message = ref('')
+const honeypot = ref('')
 const emailResultMessage = ref('-')
 const showEmailResultMessage = ref(false)
 const sendingEmail = ref(false)
@@ -250,14 +254,17 @@ const scrollTo = (elementId) => {
 }
 
 const submit = async () => {
+  // if (honeypot.value)
+  //   return
+
   sendingEmail.value = true
 
   try {
     console.log(name.value, email.value, message.value)
     await sendEmail({
-      name: name.value,
-      email: email.value,
-      message: message.value
+      name: honeypot.value ? 'BOT - ' + name.value : name.value,
+      email: honeypot.value ? 'BOT - ' + email.value : email.value,
+      message: honeypot.value ? 'BOT - ' + message.value : message.value
     }).then(() => {
       name.value = ''
       email.value = ''
