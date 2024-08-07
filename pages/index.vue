@@ -7,7 +7,7 @@
       <p class="mt-10 lg:mt-6 text-sm lg:text-2xl text-center font-lora">UGC CREATOR</p>
   
       <div class="flex justify-center gap-1 lg:gap-4 mt-4">
-        <a href="https://www.instagram.com/ugc.withcelinee/" target="_blank">
+        <a href="https://www.instagram.com/ugc.withceline/" target="_blank">
           <img src="/icons/instagram.png" alt="Instagram" class="size-4 lg:size-12">
         </a>
         <img src="/icons/mail.png" alt="Instagram" class="size-4 lg:w-14 lg:h-12">
@@ -53,27 +53,30 @@
     <p>showcases its unique voice.</p>
   </div>
 
-  <div class="w-full lg:h-full pb-12 background-4 bg-cover">
+  <div class="w-full pb-12 background-4 bg-cover">
     <p class="pt-10 pl-6 lg:pl-20 text-tiny lg:text-xl font-lora">PORTFOLIO</p>
 
     <h1 class="pt-4 lg:pt-10 text-4-5xl lg:text-7xl text-center font-bonaNova tracking-wider">VIDEOGRAPHY</h1>
 
-    <div class="w-full lg:h-full flex lg:justify-center gap-6 lg:gap-12 mt-8 lg:mt-16 px-6 lg:px-20 overflow-scroll">
-      <div v-for="i in 4" class="h-80 lg:h-2/3 min-w-[40%] lg:min-w-[20%] lg:w-1/5 bg-slate-300">
-
+    <div class="w-full flex lg:flex-wrap lg:justify-center gap-6 lg:gap-12 mt-8 lg:mt-16 px-6 lg:px-20 overflow-scroll">
+      <div v-for="video in ugcVideos" class="h-80 lg:h-2/3 min-w-[40%] lg:min-w-[20%] lg:w-1/5 bg-slate-300">
+        <video controls :poster="'/ugc/videos/' + video.poster" preload="none">
+          <source :src="'/ugc/videos/' + video.source" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
       </div>
     </div>
   </div>
 
-  <div class="w-full lg:h-full pb-12 background-5 bg-cover">
+  <div class="w-full pb-12 background-5 bg-cover">
     <p class="pt-10 pl-6 lg:pl-20 text-tiny lg:text-xl font-lora">PORTFOLIO</p>
 
     <h1 class="pt-4 lg:pt-10 text-4-5xl lg:text-7xl text-center font-bonaNova tracking-wider">PHOTOGRAPHY</h1>
 
-    <div class="w-full lg:h-full flex lg:justify-center gap-6 lg:gap-12 mt-8 lg:mt-16 px-6 lg:px-20 overflow-scroll">
-      <div v-for="image in ugcImages" :key="image" class="h-80 lg:h-2/3 min-w-[40%] lg:min-w-[28rem] lg:w-1/5 bg-slate-300">
-      <img :src="`/ugc/images/${image}`" loading="lazy" :alt="image.split('.')[0]" class="h-full w-full object-cover">
-    </div>
+    <div class="w-full flex flex-wrap lg:justify-center gap-6 lg:gap-12 mt-8 lg:mt-16 px-6 lg:px-20 overflow-scroll">
+      <div v-for="image in ugcImages" :key="image" class="h-80 lg:h-80 min-w-[40%] lg:min-w-[20rem] lg:w-1/5 bg-slate-300">
+        <img :src="`/ugc/images/${image}`" loading="lazy" :alt="image.split('.')[0]" class="h-full w-full object-cover shadow">
+      </div>
     </div>
   </div>
 
@@ -136,8 +139,8 @@
         <div class="lg:w-2/3">
           <div class="flex items-center gap-2 mt-12 lg:mt-24 pl-4">
             <img src="/icons/instagram.png" alt="Instagram" class="w-5 lg:w-10">
-            <a href="https://www.instagram.com/ugc.withcelinee/" target="_blank">
-              <p class="lg:ml-3 text-xs lg:text-2xl">@ugc.withcelinee</p>
+            <a href="https://www.instagram.com/ugc.withceline/" target="_blank">
+              <p class="lg:ml-3 text-xs lg:text-2xl">@ugc.withceline</p>
             </a>
           </div>
           
@@ -154,19 +157,18 @@
     <div class="lg:w-1/2 lg:max-w-[48rem] mt-20 lg:mx-auto pl-4 pb-10 font-lora">
       <div class="lg:flex">
         <label for="name" class="inline-block w-20 lg:w-32 lg:text-2xl">NAME</label>
-        <input type="text" value="Sam McCarthy" id=""
+        <input type="text" id=""
           class="w-56 lg:grow h-8 lg:h-12 ml-4 px-6 lg:px-12 background-paint-2 lighten-background text-sm lg:text-2xl">
       </div>
       <div class="mt-2 lg:flex">
         <label for="email" class="inline-block w-20 lg:w-32 lg:text-2xl">EMAIL</label>
-        <input type="text" value="samrmccarthy6@gmail.com" id=""
+        <input type="text" id=""
           class="w-64 lg:grow h-8 lg:h-12 ml-4 px-6 lg:px-12 background-paint-2 lighten-background text-sm lg:text-2xl">
       </div>
       <div class="flex mt-2">
         <label for="message" class="flex w-20 lg:w-32 h-20 items-center my-auto lg:text-2xl">MESSAGE</label>
         <textarea type="text" id=""
           class="w-64 lg:grow h-20 lg:h-36 ml-4 px-6 lg:px-12 py-3 lg:py-6 background-paint-1 lighten-background bg-cover text-xs lg:text-lg overflow-scroll">
-Hi Celine, I'm interested in working with you on a project.
         </textarea>
       </div>
 
@@ -207,26 +209,41 @@ const photoServices = [
 ]
 
 const ugcImages = [
-  'Botanycl.webp',
-  'Bulk.webp',
-  'Cerave.webp',
   'Clinique.webp',
-  'Cream.webp',
-  'Crisps.webp',
-  'Drink 2.webp',
+  'Botanycl.webp',
   'Drink Pic.webp',
-  'Elvive.webp',
-  'Face cream.webp',
-  'Furla.webp',
-  'Lip balm.webp',
-  'Lip gloss.webp',
-  'Lipstick.webp',
+  'Bulk.webp',
   'Mascara.webp',
-  'Nail polish.webp',
+  'Face cream.webp',
   'SPF.webp',
   'The ordinary .webp',
+  'Crisps.webp',
   'Workout.webp',
-  'Zen.webp'
+  'Nail polish.webp',
+  'Elvive.webp',
+  'Lip gloss.webp',
+  'Cerave.webp',
+  'Lipstick.webp',
+  'Drink 2.webp',
+  // 'Cream.webp',
+  // 'Furla.webp',
+  // 'Lip balm.webp',
+  // 'Zen.webp'
+]
+
+const ugcVideos = [
+  { source: 'video-1.mp4', poster: 'video-1-poster.webp' },
+  { source: 'video-2.mp4', poster: 'video-2-poster.webp' },
+  { source: 'video-3.mp4', poster: 'video-3-poster.webp' },
+  { source: 'video-4.mp4', poster: 'video-4-poster.webp' },
+  { source: 'video-5.mp4', poster: 'video-5-poster.webp' },
+  { source: 'video-6.mp4', poster: 'video-6-poster.webp' },
+  { source: 'video-7.mp4', poster: 'video-7-poster.webp' },
+  { source: 'video-8.mp4', poster: 'video-8-poster.webp' },
+  { source: 'video-9.mp4', poster: 'video-9-poster.webp' },
+  { source: 'video-10.mp4', poster: 'video-10-poster.webp' },
+  { source: 'video-11.mp4', poster: 'video-11-poster.webp' },
+  { source: 'video-12.mp4', poster: 'video-12-poster.webp' }
 ]
 </script>
 
