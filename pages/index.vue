@@ -1,10 +1,20 @@
 <template>
-  <div class="relative w-full h-2/3 lg:h-4/5 min-h-[34rem] flex flex-col pt-20 sm:pt-0 background-1 bg-cover text-ugc-dark-green">
+  <div class="relative w-full h-2/3 lg:h-4/5 min-h-[34rem] flex flex-col pt-20 sm:pt-0 bg-cover text-ugc-dark-green">
+    <div class="hidden lg:flex absolute top-12 left-0 lg:w-1/2 justify-center gap-10 text-lg">
+      <button @click="scrollTo('#about')" class="text-ugc-dark-green">ABOUT</button>
+      <button @click="scrollTo('#portfolio')" class="text-ugc-dark-green">PORTFOLIO</button>
+      <button @click="scrollTo('#services')" class="text-ugc-dark-green">SERVICES</button>
+      <button @click="scrollTo('#contact')" class="text-ugc-dark-green">CONTACT</button>
+    </div>
+
     <div class="lg:w-1/2 lg:my-auto">
-      <h1 class="text-6-5xl lg:text-12xl leading-13 lg:leading-30 text-center font-bonaNova">CELINE</h1>
-      <h1 class="text-6xl lg:text-11xl leading-11 lg:leading-30 text-center font-bonaNova">MALFAIT</h1>
+      <div class="relative w-fit mx-auto">
+        <h1 class="text-6-5xl lg:text-12xl leading-13 lg:leading-30 text-center font-bonaNova">CELINE</h1>
+        <h1 class="text-6xl lg:text-11xl leading-11 lg:leading-30 text-center font-bonaNova">MALFAIT</h1>
+        <img src="/icons/star.png" alt="Star" class="absolute -right-6 lg:-right-12 -bottom-10 lg:-bottom-16 h-16 lg:h-28">
+      </div>
   
-      <p class="mt-10 lg:mt-6 text-sm lg:text-2xl text-center font-lora">UGC CREATOR</p>
+      <p class="mt-8 lg:mt-6 text-sm lg:text-2xl text-center font-lora">UGC CREATOR</p>
   
       <div class="flex justify-center gap-1 lg:gap-4 mt-4">
         <a href="https://www.instagram.com/ugc.withceline/" target="_blank">
@@ -12,12 +22,14 @@
         </a>
         <img src="/icons/mail.png" alt="Instagram" class="size-4 lg:w-14 lg:h-12">
       </div>
+
+      <img src="/icons/star.png" alt="Star" class="absolute left-4 lg:left-36 top-56 lg:top-[36rem] h-20 lg:h-32">
     </div>
 
-    <img src="/images/polaroid-collage.webp" loading="lazy" alt="Polaroids" class="absolute -bottom-16 lg:left-1/2 w-full lg:w-auto lg:h-full mt-4 px-3">
+    <img src="/images/polaroid-collage.webp" loading="lazy" alt="Polaroids" class="absolute -bottom-16 lg:left-1/2 w-full lg:w-auto lg:h-full mt-4 px-3 z-10">
   </div>
 
-  <div class="w-full pb-8 lg:pb-20 background-2 bg-contain">
+  <div id="about" class="relative w-full pb-8 lg:pb-20 bg-slate-100 bg-contain">
     <p class="pt-10 pl-6 lg:pl-20 text-tiny lg:text-xl font-lora">ABOUT ME</p>
 
     <div class="w-full lg:w-3/4 xl:w-2/3 lg:flex lg:flex-row-reverse lg:mx-auto lg:mt-10 lg:px-0 lg:gap-[5%]">
@@ -43,17 +55,24 @@
       
       <img src="/images/celine-2.jpg" loading="lazy" alt="Celine Selfie" class="w-60 lg:w-2/5 mx-auto mt-4 rounded-[6rem] lg:rounded-[12rem] object-cover">
     </div>
+
+    <img src="/icons/star.png" alt="Star" class="absolute right-4 lg:right-24 -top-4 lg:top-16 h-8 lg:h-24">
+    <img src="/icons/star.png" alt="Star" class="lg:hidden absolute right-8 lg:right-40 top-12 lg:top-32 h-8 lg:h-24">
+    <img src="/icons/star.png" alt="Star" class="absolute left-4 lg:left-40 bottom-8 lg:bottom-8 h-16 lg:h-24">
   </div>
 
-  <div class="w-full lg:h-2/5 flex flex-col justify-center items-center py-14 lg:py-10 px-2 background-3 bg-cover text-xl lg:text-5-5xl lg:leading-18 text-center text-slate-800 font-lora">
+  <div class="relative w-full lg:h-2/5 flex flex-col justify-center items-center py-14 lg:py-10 px-2 bg-cover text-xl lg:text-5-5xl lg:leading-18 text-center text-ugc-green-dark font-lora">
     <div>Unleash your brand's<div
       class="h-8 lg:h-20 px-3 lg:px-6 inline-flex background-paint-3 bg-cover font-corinthia text-4-5xl lg:text-8-5xl text-slate-800">personality
     </div></div>
     <p><div class="h-8 lg:h-20 inline-flex">with UGC content that</div></p>
     <p>showcases its unique voice.</p>
+
+    <img src="/icons/star.png" alt="Star" class="absolute right-4 lg:right-24 bottom-4 lg:top-16 h-12 lg:h-24">
+    <img src="/icons/star.png" alt="Star" class="absolute -left-6 lg:left-24 bottom-14 lg:bottom-12 h-16 lg:h-32">
   </div>
 
-  <div class="w-full pb-12 background-4 bg-cover">
+  <div id="portfolio" class="w-full pb-12 bg-slate-100 bg-cover">
     <p class="pt-10 pl-6 lg:pl-20 text-tiny lg:text-xl font-lora">PORTFOLIO</p>
 
     <h1 class="pt-4 lg:pt-10 text-4-5xl lg:text-7xl text-center font-bonaNova tracking-wider">VIDEOGRAPHY</h1>
@@ -84,38 +103,41 @@
     </div>
   </div>
 
-  <div class="w-full pb-12 background-5 bg-cover">
+  <div class="w-full pb-12 bg-cover">
     <p class="pt-10 pl-6 lg:pl-20 text-tiny lg:text-xl font-lora">PORTFOLIO</p>
 
     <h1 class="pt-4 lg:pt-10 text-4-5xl lg:text-7xl text-center font-bonaNova tracking-wider">PHOTOGRAPHY</h1>
 
     <div id="image-row-1" class="w-full flex lg:justify-center gap-8 lg:gap-12 mt-8 lg:mt-16 px-6 lg:px-20 overflow-scroll hide-scrollbar">
-      <div v-for="image in ugcImages.slice(0, 4)" :key="image" class="h-80 lg:h-80 min-w-[60%] lg:min-w-[20%] lg:w-1/5 bg-slate-300 rounded-3xl">
+      <div v-for="image in ugcImages.slice(0, 4)" :key="image" class="h-80 lg:h-96 min-w-[60%] lg:min-w-[20%] lg:w-1/5 bg-slate-300 rounded-3xl">
         <img :src="`/ugc/images/${image}`" loading="lazy" :alt="image.split('.')[0]" class="h-full w-full object-cover rounded-3xl shadow">
       </div>
     </div>
     <div id="image-row-2" class="w-full flex lg:justify-center gap-8 lg:gap-12 mt-12 lg:mt-16 px-6 lg:px-20 overflow-scroll hide-scrollbar">
-      <div v-for="image in ugcImages.slice(4,8)" :key="image" class="h-80 lg:h-80 min-w-[60%] lg:min-w-[20%] lg:w-1/5 bg-slate-300 rounded-3xl">
+      <div v-for="image in ugcImages.slice(4,8)" :key="image" class="h-80 lg:h-96 min-w-[60%] lg:min-w-[20%] lg:w-1/5 bg-slate-300 rounded-3xl">
         <img :src="`/ugc/images/${image}`" loading="lazy" :alt="image.split('.')[0]" class="h-full w-full object-cover rounded-3xl shadow">
       </div>
     </div>
     <div id="image-row-3" class="w-full flex lg:justify-center gap-8 lg:gap-12 mt-12 lg:mt-16 px-6 lg:px-20 overflow-scroll hide-scrollbar">
-      <div v-for="image in ugcImages.slice(8,12)" :key="image" class="h-80 lg:h-80 min-w-[60%] lg:min-w-[20%] lg:w-1/5 bg-slate-300 rounded-3xl">
+      <div v-for="image in ugcImages.slice(8,12)" :key="image" class="h-80 lg:h-96 min-w-[60%] lg:min-w-[20%] lg:w-1/5 bg-slate-300 rounded-3xl">
         <img :src="`/ugc/images/${image}`" loading="lazy" :alt="image.split('.')[0]" class="h-full w-full object-cover rounded-3xl shadow">
       </div>
     </div>
     <div id="image-row-4" class="w-full flex lg:justify-center gap-8 lg:gap-12 mt-12 lg:mt-16 px-6 lg:px-20 overflow-scroll hide-scrollbar">
-      <div v-for="image in ugcImages.slice(12,16)" :key="image" class="h-80 lg:h-80 min-w-[60%] lg:min-w-[20%] lg:w-1/5 bg-slate-300 rounded-3xl">
+      <div v-for="image in ugcImages.slice(12,16)" :key="image" class="h-80 lg:h-96 min-w-[60%] lg:min-w-[20%] lg:w-1/5 bg-slate-300 rounded-3xl">
         <img :src="`/ugc/images/${image}`" loading="lazy" :alt="image.split('.')[0]" class="h-full w-full object-cover rounded-3xl shadow">
       </div>
     </div>
   </div>
 
-  <div class="w-full lg:h-1/3 lg:flex lg:justify-center lg:items-center py-14 lg:py-10 px-2 background-6 bg-cover text-xl lg:text-7xl lg:leading-18 text-center text-slate-800 font-lora">
+  <div class="relative w-full lg:h-1/3 lg:flex lg:justify-center lg:items-center py-14 lg:py-10 px-2 bg-slate-100 bg-cover text-xl lg:text-7xl lg:leading-18 text-center text-slate-800 font-lora">
     Content made with <div class="h-8 lg:h-20 px-3 lg:px-6 inline-flex background-paint-2 bg-cover font-corinthia text-4-5xl lg:text-10xl text-slate-800">passion.</div>
+    
+    <img src="/icons/star.png" alt="Star" class="absolute right-4 lg:right-24 bottom-4 lg:top-16 h-12 lg:h-24">
+    <img src="/icons/star.png" alt="Star" class="absolute -left-6 lg:left-24 bottom-14 lg:bottom-12 h-16 lg:h-32">
   </div>
 
-  <div class="w-full pb-16 background-7 bg-cover">
+  <div id="services" class="relative w-full pb-16 bg-cover">
     <p class="pt-10 pl-6 lg:pl-20 text-tiny lg:text-xl font-lora">PROCESS</p>
 
     <h1 class="pt-4 lg:pt-10 text-4-5xl lg:text-7xl text-center font-bonaNova tracking-wider">SERVICES</h1>
@@ -155,10 +177,15 @@
     </div>
       
     <p class="mt-8 lg:mt-16 px-12 text-lg lg:text-2xl leading-6 text-center text-ugc-dark-green font-lora font-semibold">
-      But that's not all! Not seeing what you're looking for? Let's chat!</p>
+      But that's not all! Not seeing what you're looking for? Let's chat!
+    </p>
+
+    <img src="/icons/star.png" alt="Star" class="absolute right-4 lg:right-32 bottom-4 lg:top-16 h-12 lg:h-28">
+    <img src="/icons/star.png" alt="Star" class="absolute -left-6 lg:left-24 bottom-14 lg:top-60 h-16 lg:h-24">
+    <img src="/icons/star.png" alt="Star" class="absolute right-4 lg:right-16 bottom-4 lg:bottom-40 h-12 lg:h-16">
   </div>
 
-  <div class="relative w-full background-4 bg-cover">
+  <div id="contact" class="relative w-full bg-slate-100 bg-cover">
     <p class="pt-10 pl-6 lg:pl-20 text-tiny lg:text-xl font-lora">CONTACT ME</p>
 
     <div class="lg:flex lg:h-[30rem]">
@@ -168,12 +195,10 @@
           together!</p>
           
         <div class="lg:w-2/3">
-          <div class="flex items-center gap-2 mt-12 lg:mt-24 pl-4">
+          <a href="https://www.instagram.com/ugc.withceline/" target="_blank" class="flex items-center gap-2 mt-12 lg:mt-24 pl-4">
             <img src="/icons/instagram.png" alt="Instagram" class="w-5 lg:w-10">
-            <a href="https://www.instagram.com/ugc.withceline/" target="_blank">
-              <p class="lg:ml-3 text-xs lg:text-2xl">@ugc.withceline</p>
-            </a>
-          </div>
+            <p class="lg:ml-3 text-xs lg:text-2xl">@ugc.withceline</p>
+          </a>
           
           <div class="flex items-center gap-2 mt-1 lg:mt-4 pl-4">
             <img src="/icons/mail.png" alt="Mail" class="h-4 w-5 lg:w-10 lg:h-8">
@@ -188,15 +213,15 @@
     <div class="lg:w-1/2 lg:max-w-[48rem] mt-20 lg:mx-auto pl-4 pb-10 font-lora">
       <div class="lg:flex">
         <label for="name" class="inline-block w-20 lg:w-32 lg:text-2xl">NAME</label>
-        <input v-model="name" type="text" class="w-56 lg:grow h-8 lg:h-12 ml-4 px-6 lg:px-12 background-paint-2 bg-transparent text-sm lg:text-2xl outline-slate-700">
+        <input v-model="name" type="text" class="w-56 lg:grow h-8 lg:h-12 ml-4 px-6 lg:px-12 background-paint-2 bg-transparent text-sm lg:text-2xl rounded-lg outline-slate-700">
       </div>
       <div class="mt-2 lg:flex">
         <label for="email" class="inline-block w-20 lg:w-32 lg:text-2xl">EMAIL</label>
-        <input v-model="email" type="text" class="w-64 lg:grow h-8 lg:h-12 ml-4 px-6 lg:px-12 background-paint-2 bg-transparent text-sm lg:text-2xl outline-slate-700">
+        <input v-model="email" type="text" class="w-64 lg:grow h-8 lg:h-12 ml-4 px-6 lg:px-12 background-paint-2 bg-transparent text-sm lg:text-2xl rounded-lg outline-slate-700">
       </div>
       <div class="flex mt-2">
         <label for="message" class="flex w-20 lg:w-32 h-20 items-center my-auto lg:text-2xl">MESSAGE</label>
-        <textarea v-model="message" type="text" class="w-64 lg:grow h-20 lg:h-36 ml-4 px-6 lg:px-12 py-3 lg:py-6 background-paint-1 bg-transparent bg-cover text-xs lg:text-lg outline-slate-700 overflow-scroll">
+        <textarea v-model="message" type="text" class="w-64 lg:grow h-20 lg:h-36 ml-4 px-6 lg:px-12 py-3 lg:py-6 background-paint-1 bg-transparent bg-cover text-xs lg:text-lg rounded-lg outline-slate-700 overflow-scroll">
         </textarea>
       </div>
 
@@ -208,6 +233,10 @@
 
       <p :class="[ showEmailResultMessage ? 'opacity-100' : 'opacity-0' ]" class="pt-6 text-xl text-center text-ugc-dark-green">{{ emailResultMessage }}</p>
     </div>
+
+    <img src="/icons/star.png" alt="Star" class="absolute -left-6 lg:left-16 bottom-14 lg:top-60 h-16 lg:h-24">
+    <img src="/icons/star.png" alt="Star" class="absolute -left-6 lg:left-32 bottom-14 lg:bottom-48 h-16 lg:h-16">
+    <img src="/icons/star.png" alt="Star" class="absolute right-4 lg:right-16 bottom-4 lg:bottom-96 h-12 lg:h-16">
   </div>
 </template>
 
@@ -218,6 +247,10 @@ const message = ref('')
 const emailResultMessage = ref('-')
 const showEmailResultMessage = ref(true)
 const sendingEmail = ref(false)
+
+const scrollTo = (elementId) => {
+  document.querySelector(elementId).scrollIntoView({ behavior: 'smooth' })
+}
 
 const submit = () => {
   sendingEmail.value = true
