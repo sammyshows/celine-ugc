@@ -80,7 +80,7 @@
     <div id="video-row-1" class="w-full flex lg:justify-center gap-8 lg:gap-12 mt-8 lg:mt-16 px-6 lg:px-20 overflow-scroll hide-scrollbar">
       <div v-for="video in ugcVideos.slice(0, 4)" class="lg:h-auto min-w-[60%] lg:min-w-[20%] lg:w-1/5 bg-slate-300 rounded-3xl">
         <video controls playsinline class="rounded-3xl shadow-xl">
-          <source :src="'/ugc/videos/' + video.source" type="video/mp4">
+          <source src="/ugc/videos/video-2.mp4" type="video/mp4">
           Your browser does not support the video tag.
         </video>
       </div>
@@ -88,7 +88,7 @@
     <div id="video-row-2" class="w-full flex lg:justify-center gap-8 lg:gap-12 mt-12 lg:mt-16 px-6 lg:px-20 overflow-scroll hide-scrollbar">
       <div v-for="video in ugcVideos.slice(4, 8)" class="lg:h-auto min-w-[60%] lg:min-w-[20%] lg:w-1/5 bg-slate-300 rounded-3xl">
         <video controls playsinline class="rounded-3xl shadow-xl">
-          <source :src="'/ugc/videos/' + video.source" type="video/mp4">
+          <source src="/ugc/videos/video-2.mp4" type="video/mp4">
           Your browser does not support the video tag.
         </video>
       </div>
@@ -96,7 +96,7 @@
     <div id="video-row-3" class="w-full flex lg:justify-center gap-8 lg:gap-12 mt-12 lg:mt-16 px-6 lg:px-20 overflow-scroll hide-scrollbar">
       <div v-for="video in ugcVideos.slice(8, 12)" class="lg:h-auto min-w-[60%] lg:min-w-[20%] lg:w-1/5 bg-slate-300 rounded-3xl">
         <video controls playsinline class="rounded-3xl shadow-xl">
-          <source :src="'/ugc/videos/' + video.source" type="video/mp4">
+          <source src="/ugc/videos/video-2.mp4" type="video/mp4">
           Your browser does not support the video tag.
         </video>
       </div>
