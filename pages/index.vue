@@ -29,7 +29,7 @@
     <img src="/images/polaroid-collage.webp" loading="lazy" alt="Polaroids" class="absolute -bottom-16 lg:left-1/2 w-full lg:w-auto lg:h-full mt-4 px-3 z-10">
   </div>
 
-  <div id="about" class="relative w-full pb-8 lg:pb-20 bg-slate-100 bg-contain">
+  <div id="about" class="relative w-full pb-8 lg:pb-20 bg-ugc-light-green-opaque bg-contain">
     <p class="pt-10 pl-6 lg:pl-20 text-tiny lg:text-xl font-lora">ABOUT ME</p>
 
     <div class="w-full lg:w-3/4 xl:w-2/3 lg:flex lg:flex-row-reverse lg:mx-auto lg:mt-10 lg:px-0 lg:gap-[5%]">
@@ -72,7 +72,7 @@
     <img src="/icons/star.png" alt="Star" class="absolute -left-6 lg:left-24 bottom-14 lg:bottom-12 h-16 lg:h-32">
   </div>
 
-  <div id="portfolio" class="w-full pb-12 bg-slate-100 bg-cover">
+  <div id="portfolio" class="w-full pb-12 bg-ugc-light-green-opaque bg-cover">
     <p class="pt-10 pl-6 lg:pl-20 text-tiny lg:text-xl font-lora">PORTFOLIO</p>
 
     <h1 class="pt-4 lg:pt-10 text-4-5xl lg:text-7xl text-center font-bonaNova tracking-wider">VIDEOGRAPHY</h1>
@@ -130,7 +130,7 @@
     </div>
   </div>
 
-  <div class="relative w-full lg:h-1/3 lg:flex lg:justify-center lg:items-center py-14 lg:py-10 px-2 bg-slate-100 bg-cover text-xl lg:text-7xl lg:leading-18 text-center text-slate-800 font-lora">
+  <div class="relative w-full lg:h-1/3 lg:flex lg:justify-center lg:items-center py-14 lg:py-10 px-2 bg-ugc-light-green-opaque bg-cover text-xl lg:text-7xl lg:leading-18 text-center text-slate-800 font-lora">
     Content made with <div class="h-8 lg:h-20 px-3 lg:px-6 inline-flex background-paint-2 bg-cover font-corinthia text-4-5xl lg:text-10xl text-slate-800">passion.</div>
     
     <img src="/icons/star.png" alt="Star" class="absolute -left-4 lg:left-24 bottom-20 lg:bottom-12 h-12 lg:h-32">
@@ -183,7 +183,7 @@
     <img src="/icons/star.png" alt="Star" class="absolute right-20 lg:right-16 bottom-4 lg:bottom-40 h-8 lg:h-16">
   </div>
 
-  <div id="contact" class="relative w-full bg-slate-100 bg-cover">
+  <div id="contact" class="relative w-full bg-ugc-light-green-opaque bg-cover">
     <p class="pt-10 pl-6 lg:pl-20 text-tiny lg:text-xl font-lora">CONTACT ME</p>
 
     <div class="lg:flex lg:h-[30rem]">

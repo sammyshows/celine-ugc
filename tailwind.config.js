@@ -88,6 +88,7 @@ export default {
       colors: {
         'ugc-dark-green': '#2D3B26',
         'ugc-light-green': '#8DAE7C',
+        'ugc-light-green-opaque': 'rgba(141, 174, 124, 0.10)',
       }
     }
   },
