@@ -1,5 +1,5 @@
 <template>
-  <div class="relative w-full h-2/3 lg:h-4/5 min-h-[34rem] flex flex-col pt-20 sm:pt-0 bg-cover text-ugc-dark-green">
+  <div class="relative w-full h-2/3 lg:h-4/5 min-h-[34rem] flex flex-col pt-20 sm:pt-0 bg-cover text-ugc-dark-green">    
     <div class="hidden lg:flex absolute top-12 left-0 lg:w-1/2 justify-center gap-10 text-lg">
       <button @click="scrollTo('#about')" class="text-ugc-dark-green">ABOUT</button>
       <button @click="scrollTo('#portfolio')" class="text-ugc-dark-green">PORTFOLIO</button>
@@ -110,22 +110,22 @@
 
     <div id="image-row-1" class="w-full flex lg:justify-center gap-8 lg:gap-12 mt-8 lg:mt-16 px-6 lg:px-20 overflow-scroll hide-scrollbar">
       <div v-for="image in ugcImages.slice(0, 4)" :key="image" class="h-80 lg:h-96 min-w-[60%] lg:min-w-[20%] lg:w-1/5 bg-slate-300 rounded-3xl">
-        <img :src="`/ugc/images/${image}`" loading="lazy" :alt="image.split('.')[0]" class="h-full w-full object-cover rounded-3xl shadow">
+        <img :src="`/ugc/images/${image}`" :alt="image.split('.')[0]" class="h-full w-full object-cover rounded-3xl shadow">
       </div>
     </div>
     <div id="image-row-2" class="w-full flex lg:justify-center gap-8 lg:gap-12 mt-12 lg:mt-16 px-6 lg:px-20 overflow-scroll hide-scrollbar">
       <div v-for="image in ugcImages.slice(4,8)" :key="image" class="h-80 lg:h-96 min-w-[60%] lg:min-w-[20%] lg:w-1/5 bg-slate-300 rounded-3xl">
-        <img :src="`/ugc/images/${image}`" loading="lazy" :alt="image.split('.')[0]" class="h-full w-full object-cover rounded-3xl shadow">
+        <img :src="`/ugc/images/${image}`" :alt="image.split('.')[0]" class="h-full w-full object-cover rounded-3xl shadow">
       </div>
     </div>
     <div id="image-row-3" class="w-full flex lg:justify-center gap-8 lg:gap-12 mt-12 lg:mt-16 px-6 lg:px-20 overflow-scroll hide-scrollbar">
       <div v-for="image in ugcImages.slice(8,12)" :key="image" class="h-80 lg:h-96 min-w-[60%] lg:min-w-[20%] lg:w-1/5 bg-slate-300 rounded-3xl">
-        <img :src="`/ugc/images/${image}`" loading="lazy" :alt="image.split('.')[0]" class="h-full w-full object-cover rounded-3xl shadow">
+        <img :src="`/ugc/images/${image}`" :alt="image.split('.')[0]" class="h-full w-full object-cover rounded-3xl shadow">
       </div>
     </div>
     <div id="image-row-4" class="w-full flex lg:justify-center gap-8 lg:gap-12 mt-12 lg:mt-16 px-6 lg:px-20 overflow-scroll hide-scrollbar">
       <div v-for="image in ugcImages.slice(12,16)" :key="image" class="h-80 lg:h-96 min-w-[60%] lg:min-w-[20%] lg:w-1/5 bg-slate-300 rounded-3xl">
-        <img :src="`/ugc/images/${image}`" loading="lazy" :alt="image.split('.')[0]" class="h-full w-full object-cover rounded-3xl shadow">
+        <img :src="`/ugc/images/${image}`" :alt="image.split('.')[0]" class="h-full w-full object-cover rounded-3xl shadow">
       </div>
     </div>
   </div>
