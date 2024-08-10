@@ -21,7 +21,7 @@
           <img src="/icons/instagram.png" alt="Instagram" class="size-4 lg:size-12">
         </a>
         <a href="https://www.tiktok.com/@ugc.withcelinee" target="_blank">
-          <img src="/icons/tiktok.svg" alt="TikTok" class="size-4 lg:size-12">
+          <img src="/icons/tiktok.png" alt="TikTok" class="size-4 lg:size-12">
         </a>
         <img src="/icons/mail.png" alt="Instagram" class="size-4 lg:w-14 lg:h-12">
       </div>
@@ -202,7 +202,7 @@
           </a>
 
           <a href="https://www.tiktok.com/@ugc.withcelinee" target="_blank" class="flex items-center gap-2 mt-1 lg:mt-4 pl-4">
-            <img src="/icons/tiktok.svg" alt="TikTok" class="w-5 lg:w-10">
+            <img src="/icons/tiktok.png" alt="TikTok" class="w-5 lg:w-10">
             <p class="lg:ml-3 text-xs lg:text-2xl">@ugc.withcelinee</p>
           </a>
           
