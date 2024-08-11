@@ -11,8 +11,7 @@ export default {
       fontFamily: {
         bonaNova: ['BonaNova', 'serif'],
         corinthia: ['Corinthia', 'cursive'],
-        lora: ['Lora', 'serif'],
-        poppins: ['Poppins', 'sans-serif']
+        lora: ['Lora', 'serif']
       },
 
       screens: {
