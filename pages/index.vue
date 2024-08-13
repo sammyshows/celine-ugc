@@ -1,6 +1,6 @@
 <template>
   <div class="relative w-full h-2/3 lg:h-4/5 min-h-[34rem] flex flex-col pt-20 sm:pt-0 bg-cover text-ugc-dark-green">    
-    <div class="hidden lg:flex absolute top-12 left-0 lg:w-1/2 justify-center gap-10 text-lg">
+    <div class="hidden lg:flex absolute top-12 left-0 lg:w-1/2 justify-center gap-10 text-lg font-lora">
       <button @click="scrollTo('#about')" class="text-ugc-dark-green">ABOUT</button>
       <button @click="scrollTo('#portfolio')" class="text-ugc-dark-green">PORTFOLIO</button>
       <button @click="scrollTo('#services')" class="text-ugc-dark-green">SERVICES</button>
@@ -192,10 +192,10 @@
     <div class="lg:flex lg:h-[30rem]">
       <div class="lg:w-3/5 lg:flex lg:flex-col lg:items-end lg:pr-10">
         <p class="mt-10 lg:mr-40 pl-2 text-4xl lg:text-7-5xl font-lora">Let's work</p>
-        <p class="mt-6 lg:mt-16 ml-12 px-3 max-w-fit background-paint-3 bg-cover z-10 font-corinthia text-7-5xl lg:text-11xl leading-16 text-slate-700">
+        <p class="mt-6 lg:mt-16 ml-12 px-3 max-w-fit background-paint-3 bg-cover z-10 font-corinthia text-7-5xl lg:text-11xl leading-16 text-slate-800">
           together!</p>
           
-        <div class="lg:w-2/3">
+        <div class="lg:w-2/3 font-lora">
           <a href="https://www.instagram.com/ugc.withceline/" target="_blank" class="flex items-center gap-2 mt-12 lg:mt-24 pl-4">
             <img src="/icons/instagram.png" alt="Instagram" class="w-5 lg:w-10">
             <p class="lg:ml-3 text-xs lg:text-2xl">@ugc.withceline</p>
