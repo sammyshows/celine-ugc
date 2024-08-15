@@ -14,27 +14,12 @@ export default {
         lora: ['Lora', 'serif']
       },
 
-      screens: {
-        'xs': {'min': '320px', 'max': '639px'},
-      },
-
       width: {
         '1/10': '10%',
       },
 
       margin: {
         '1/10': '10%'
-      },
-
-      borderRadius: {
-        '5xl': '2rem',
-        '12pc': '12%',
-        '16pc': '16%',
-      },
-
-      transitionDuration: {
-        '2500': '2500ms',
-        '4000': '4000ms',
       },
 
       spacing: {
