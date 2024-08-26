@@ -234,7 +234,7 @@
       </div>
 
       <div class="w-full flex">
-        <button @click="submit()" :disabled="sendingEmail" class="w-36 lg:w-40 mt-6 mx-auto py-1 lg:py-2 lg:text-xl text-center text-white font-lora bg-ugc-light-green rounded-lg outline-slate-700 duration-300 disabled:animate-pulse">
+        <button @click="submit()" :disabled="sendingEmail || !allInputsHaveValues" :class="{ 'animate-pulse': sendingEmail }" class="w-36 lg:w-40 mt-6 mx-auto py-1 lg:py-2 lg:text-xl text-center text-white font-lora bg-ugc-light-green rounded-lg outline-slate-700 duration-300 disabled:bg-slate-400/70">
           {{ sendingEmail ? 'SUBMITTING...' : 'SUBMIT' }}
         </button>
       </div>
@@ -257,6 +257,8 @@ const emailResultMessage = ref('-')
 const showEmailResultMessage = ref(false)
 const sendingEmail = ref(false)
 
+const allInputsHaveValues = computed(() => name.value && email.value && email.value.includes('@') && message.value)
+
 const scrollTo = (elementId) => {
   document.querySelector(elementId).scrollIntoView({ behavior: 'smooth' })
 }
@@ -268,7 +270,6 @@ const submit = async () => {
   sendingEmail.value = true
 
   try {
-    console.log(name.value, email.value, message.value)
     await sendEmail({
       name: honeypot.value ? 'BOT - ' + name.value : name.value,
       email: honeypot.value ? 'BOT - ' + email.value : email.value,
@@ -277,15 +278,13 @@ const submit = async () => {
       name.value = ''
       email.value = ''
       message.value = ''
-  
+
       emailResultMessage.value = 'Thanks for contacting me! Your enquiry has been sent.'
-      showEmailResultMessage.value = true
     }).catch(() => {
       emailResultMessage.value = 'There was an error sending your enquiry. Please try again in a moment.'
-      showEmailResultMessage.value = true
     })
-  
-  
+
+    showEmailResultMessage.value = true
     setTimeout(() => showEmailResultMessage.value = false, 3000)
   } catch (error) {
     console.error(error)
