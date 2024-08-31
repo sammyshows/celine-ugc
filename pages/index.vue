@@ -20,10 +20,10 @@
         <a href="https://www.instagram.com/ugc.withceline/" target="_blank">
           <img src="/icons/instagram.png" alt="Instagram" class="size-4 lg:size-12">
         </a>
-        <a href="https://www.tiktok.com/@ugc.withcelinee" target="_blank">
+        <a href="https://www.tiktok.com/@ugc.withceline" target="_blank">
           <img src="/icons/tiktok.png" alt="TikTok" class="size-4 lg:size-12">
         </a>
-        <img src="/icons/mail.png" alt="Instagram" class="size-4 lg:w-14 lg:h-12">
+        <img src="/icons/mail.png" alt="Email" class="size-4 lg:w-14 lg:h-12">
       </div>
 
       <img src="/icons/star.png" alt="Star" class="absolute left-4 lg:left-36 top-56 lg:top-[36rem] h-20 lg:h-32">
@@ -201,9 +201,9 @@
             <p class="lg:ml-3 text-xs lg:text-2xl">@ugc.withceline</p>
           </a>
 
-          <a href="https://www.tiktok.com/@ugc.withcelinee" target="_blank" class="flex items-center gap-2 mt-1 lg:mt-4 pl-4">
+          <a href="https://www.tiktok.com/@ugc.withceline" target="_blank" class="flex items-center gap-2 mt-1 lg:mt-4 pl-4">
             <img src="/icons/tiktok.png" alt="TikTok" class="w-5 lg:w-10">
-            <p class="lg:ml-3 text-xs lg:text-2xl">@ugc.withcelinee</p>
+            <p class="lg:ml-3 text-xs lg:text-2xl">@ugc.withceline</p>
           </a>
           
           <div class="flex items-center gap-2 mt-1 lg:mt-4 pl-4">
