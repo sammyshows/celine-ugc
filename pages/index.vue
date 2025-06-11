@@ -1,22 +1,23 @@
 <template>
   <div class="relative w-full h-2/3 lg:h-4/5 min-h-[34rem] flex flex-col pt-20 sm:pt-0 bg-cover text-ugc-dark-green">    
-    <div class="hidden lg:flex absolute top-12 left-0 lg:w-1/2 justify-center gap-10 text-lg font-lora">
-      <button @click="scrollTo('#about')" class="text-ugc-dark-green">ABOUT</button>
-      <button @click="scrollTo('#portfolio')" class="text-ugc-dark-green">PORTFOLIO</button>
-      <button @click="scrollTo('#services')" class="text-ugc-dark-green">SERVICES</button>
-      <button @click="scrollTo('#contact')" class="text-ugc-dark-green">CONTACT</button>
+    <div class="hidden lg:flex lg:justify-center absolute top-12 left-0 lg:w-full gap-10 text-lg text-[#3B3B58] font-light font-montserrat">
+      <button @click="scrollTo('#about')">ABOUT</button>
+      <button @click="scrollTo('#portfolio')">PORTFOLIO</button>
+      <button @click="scrollTo('#services')">SERVICES</button>
+      <button @click="scrollTo('#contact')">CONTACT</button>
     </div>
 
-    <div class="lg:w-1/2 lg:my-auto">
-      <div class="relative w-fit mx-auto">
-        <h1 class="text-6-5xl lg:text-12xl leading-13 lg:leading-30 text-center font-bonaNova">CELINE</h1>
-        <h1 class="text-6xl lg:text-11xl leading-11 lg:leading-30 text-center font-bonaNova">MALFAIT</h1>
-        <img src="/icons/star.png" alt="Star" class="absolute -right-6 lg:-right-12 -bottom-10 lg:-bottom-16 h-16 lg:h-28">
+    <div class="lg:h-full flex items-center justify-center my-auto relative">
+      <div class="relative h-fit mx-auto">
+        <h1 class="absolute -top-[70%] left-1/2 -translate-x-1/2 text-6-5xl lg:text-[17rem] leading-13 lg:leading-[11rem] text-center text-[#FF6B6B] font-playball">Celine</h1>
+        <p class="relative mt-8 lg:mt-10 text-sm lg:text-[13rem] lg:leading-[9rem] tracking-[3rem] text-[#8D99AE] text-center font-anton z-10">UGC CREATOR</p>
+        <!-- <img src="/icons/star.png" alt="Star" class="absolute -right-6 lg:-right-12 -bottom-10 lg:-bottom-16 h-16 lg:h-28"> -->
       </div>
+
+      <img src="/images/celine-3.png" alt="Celine" class="absolute lg:bottom-0 left-1/2 -translate-x-1/2 w-1/2 lg:w-[27%] z-20">
   
-      <p class="mt-8 lg:mt-6 text-sm lg:text-2xl text-center font-lora">UGC CREATOR</p>
   
-      <div class="flex justify-center gap-1 lg:gap-4 mt-4">
+      <!-- <div class="flex justify-center gap-1 lg:gap-4 mt-4">
         <a href="https://www.instagram.com/ugc.withceline/" target="_blank">
           <img src="/icons/instagram.png" alt="Instagram" class="size-4 lg:size-12">
         </a>
@@ -24,18 +25,18 @@
           <img src="/icons/tiktok.png" alt="TikTok" class="size-4 lg:size-12">
         </a>
         <img src="/icons/mail.png" alt="Email" class="size-4 lg:w-14 lg:h-12">
-      </div>
+      </div> -->
 
-      <img src="/icons/star.png" alt="Star" class="absolute left-4 lg:left-36 top-56 lg:top-[36rem] h-20 lg:h-32">
+      <!-- <img src="/icons/star.png" alt="Star" class="absolute left-4 lg:left-36 top-56 lg:top-[36rem] h-20 lg:h-32"> -->
     </div>
 
-    <img src="/images/polaroid-collage.webp" loading="lazy" alt="Polaroids" class="absolute -bottom-16 lg:left-1/2 w-full lg:w-auto lg:h-full mt-4 px-3 z-10">
+    <!-- <img src="/images/polaroid-collage.webp" loading="lazy" alt="Polaroids" class="absolute -bottom-16 lg:left-1/2 w-full lg:w-auto lg:h-full mt-4 px-3 z-10"> -->
   </div>
 
-  <div id="about" class="relative w-full pb-8 lg:pb-20 bg-ugc-light-green-opaque bg-contain">
-    <p class="pt-10 pl-6 lg:pl-20 text-tiny lg:text-xl font-lora">ABOUT ME</p>
+  <div id="about" class="relative w-full pb-8 lg:pb-20 bg-[#FF6B6B] bg-contain text-white">
+    <!-- <p class="pt-10 pl-6 lg:pl-20 text-tiny lg:text-xl font-lora">ABOUT ME</p> -->
 
-    <div class="w-full lg:w-3/4 xl:w-2/3 lg:flex lg:flex-row-reverse lg:mx-auto lg:mt-10 lg:px-0 lg:gap-[5%]">
+    <div class="w-full lg:w-3/4 xl:w-2/3 lg:flex lg:flex-row-reverse lg:mx-auto pt-6 lg:pt-16 lg:px-0 lg:gap-[5%]">
       <div class="lg:flex lg:flex-col">
         <p class="lg:mt-10 pt-4 pl-16 text-4xl lg:text-6xl font-lora">Hi,</p>
         
@@ -56,7 +57,7 @@
         </p>
       </div>
       
-      <img src="/images/celine-2.jpg" loading="lazy" alt="Celine Selfie" class="w-60 lg:w-2/5 mx-auto mt-4 rounded-[6rem] lg:rounded-[12rem] object-cover">
+      <img src="/images/celine-2.jpg" loading="lazy" alt="Celine Selfie" class="w-60 lg:w-2/5 mx-auto mt-4 rounded-[6rem] lg:rounded-[6rem] object-cover border-8 border-[#fff]">
     </div>
 
     <img src="/icons/star.png" alt="Star" class="absolute right-4 lg:right-24 -top-4 lg:top-16 h-8 lg:h-24">
@@ -64,44 +65,77 @@
     <img src="/icons/star.png" alt="Star" class="absolute left-4 lg:left-40 bottom-8 lg:bottom-8 h-16 lg:h-24">
   </div>
 
-  <div class="relative w-full lg:h-2/5 flex flex-col justify-center items-center py-14 lg:py-10 px-2 bg-cover text-xl lg:text-5-5xl lg:leading-18 text-center text-ugc-green-dark font-lora">
+  <div class="relative w-full lg:h-2/5 flex flex-col justify-center items-center py-14 lg:py-10 px-2 bg-cover text-xl lg:text-5-5xl lg:leading-18 text-center text-[#3B3B58] font-lora">
     <div>Unleash your brand's<div
       class="h-8 lg:h-20 px-3 lg:px-6 inline-flex background-paint-3 bg-cover font-corinthia text-4-5xl lg:text-8-5xl text-slate-800">personality
     </div></div>
     <p><div class="h-8 lg:h-20 inline-flex">with UGC content that</div></p>
-    <p>showcases its unique voice.</p>
+    <p class="underline underline-offset-8 decoration-[#FF6B6B]">showcases its unique voice.</p>
 
     <img src="/icons/star.png" alt="Star" class="absolute right-4 lg:right-24 bottom-4 lg:top-16 h-12 lg:h-24">
     <img src="/icons/star.png" alt="Star" class="absolute -left-6 lg:left-24 bottom-14 lg:bottom-12 h-16 lg:h-32">
   </div>
 
-  <div id="portfolio" class="w-full pb-12 bg-ugc-light-green-opaque bg-cover">
-    <p class="pt-10 pl-6 lg:pl-20 text-tiny lg:text-xl font-lora">PORTFOLIO</p>
+  <div id="portfolio" class="w-full py-12 bg-cover">
+    <!-- <div class="absolute top-0 left-0 w-[97%] h-64 rounded-xl bg-[#F5F5F5]"></div> -->
+    <!-- <p class="pt-10 pl-6 lg:pl-20 text-tiny lg:text-xl font-lora">PORTFOLIO</p> -->
 
-    <h1 class="pt-4 lg:pt-10 text-4-5xl lg:text-7xl text-center font-bonaNova tracking-wider">VIDEOGRAPHY</h1>
+    <!-- <h1 class="pt-12 lg:pt-20 text-4-5xl lg:text-7xl text-center text-white font-montserrat tracking-wider">VIDEOGRAPHY</h1> -->
 
-    <div id="video-row-1" class="w-full flex lg:justify-center gap-8 lg:gap-12 mt-8 lg:mt-16 px-6 lg:px-20 overflow-scroll hide-scrollbar">
-      <div v-for="video in ugcVideos.slice(0, 4)" class="lg:h-auto min-w-[60%] lg:min-w-[20%] lg:w-1/5 bg-slate-300 rounded-3xl">
-        <video controls playsinline :poster="'/ugc/videos/' + video.poster" preload="metadata" class="rounded-3xl shadow-xl">
-          <source :src="'/ugc/videos/' + video.source" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
+    <div class="flex pr-20 pb-16">
+      <div id="video-row-1" class="w-full flex lg:justify-center gap-8 lg:gap-12 px-6 lg:px-10 overflow-scroll hide-scrollbar z-10">
+        <div v-for="video in ugcVideos.slice(0, 4)" class="lg:h-auto min-w-[60%] lg:min-w-[20%] w-[19rem] bg-slate-300 rounded-3xl">
+          <video controls playsinline :poster="'/ugc/videos/' + video.poster" preload="metadata" class="rounded-3xl shadow-xl">
+            <source :src="'/ugc/videos/' + video.source" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </div>
+
+      <div class="text-vertical text-8-5xl lg:text-9xl text-center font-montserrat font-thin tracking-widest text-[#3B3B58] mr-20">
+        BEAUTY
+      </div>
+      <!-- <div class="flex flex-col justify-center text-6xl lg:text-7-5xl text-center font-montserrat font-light tracking-wider text-[#3B3B58] mr-10 z-10">
+        <span class="mr-24 leading-[0.9]">B</span>
+        <span class="mr-12 leading-[0.9]">E</span>
+        <span class="ml-0 leading-[0.9]">A</span>
+        <span class="ml-12 leading-[0.9]">U</span>
+        <span class="ml-24 leading-[0.9]">T</span>
+        <span class="ml-36 leading-[0.9]">Y</span>
+      </div> -->
+    </div>
+
+    <div class="flex items-center pl-20 pb-16 relative">
+      <div class="absolute top-0 left-0 w-[97%] h-[37%] rounded-r-xl bg-[#FF6B6B]/70"></div>
+
+      <div class="text-8-5xl lg:text-9xl text-center font-montserrat font-thin tracking-widest text-[#3B3B58] z-10">
+        HEALTH
+      </div>
+
+      <div id="video-row-2" class="w-full flex lg:justify-center gap-8 lg:gap-12 lg:py-16 lg:mr-20 overflow-scroll hide-scrollbar z-10">
+        <div v-for="video in ugcVideos.slice(4, 7)" class="lg:h-auto min-w-[60%] lg:min-w-[20%] w-[19rem] bg-slate-300 rounded-3xl">
+          <video controls playsinline :poster="'/ugc/videos/' + video.poster" preload="metadata" class="rounded-3xl shadow-xl">
+            <source :src="'/ugc/videos/' + video.source" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
       </div>
     </div>
-    <div id="video-row-2" class="w-full flex lg:justify-center gap-8 lg:gap-12 mt-12 lg:mt-16 px-6 lg:px-20 overflow-scroll hide-scrollbar">
-      <div v-for="video in ugcVideos.slice(4, 8)" class="lg:h-auto min-w-[60%] lg:min-w-[20%] lg:w-1/5 bg-slate-300 rounded-3xl">
-        <video controls playsinline :poster="'/ugc/videos/' + video.poster" preload="metadata" class="rounded-3xl shadow-xl">
-          <source :src="'/ugc/videos/' + video.source" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
+
+    <div class="flex items-center pr-20 pb-16 relative">
+      <div class="absolute top-0 right-0 w-[97%] h-64 rounded-l-xl bg-[#FF6B6B]/70"></div>
+
+      <div id="video-row-3" class="w-full flex lg:justify-center gap-8 lg:gap-12 lg:py-16 lg:pl-20 overflow-scroll hide-scrollbar z-10">
+        <div v-for="video in ugcVideos.slice(8, 11)" class="lg:h-auto min-w-[60%] lg:min-w-[20%] w-[19rem] bg-slate-300 rounded-3xl">
+          <video controls playsinline :poster="'/ugc/videos/' + video.poster" preload="metadata" class="rounded-3xl shadow-xl">
+            <source :src="'/ugc/videos/' + video.source" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
       </div>
-    </div>
-    <div id="video-row-3" class="w-full flex lg:justify-center gap-8 lg:gap-12 mt-12 lg:mt-16 px-6 lg:px-20 overflow-scroll hide-scrollbar">
-      <div v-for="video in ugcVideos.slice(8, 12)" class="lg:h-auto min-w-[60%] lg:min-w-[20%] lg:w-1/5 bg-slate-300 rounded-3xl">
-        <video controls playsinline :poster="'/ugc/videos/' + video.poster" preload="metadata" class="rounded-3xl shadow-xl">
-          <source :src="'/ugc/videos/' + video.source" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
+
+      <div class="ml-10 text-8-5xl lg:text-8xl text-center font-montserrat font-thin tracking-widest text-[#3B3B58] z-10">
+        EXPERIENCES
       </div>
     </div>
   </div>
@@ -376,6 +410,11 @@ onMounted(() => {
 .hide-scrollbar {
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;  /* Firefox */
+}
+
+.text-vertical {
+  writing-mode: vertical-rl;
+  transform: rotate(0deg);
 }
 
 .background-1 {

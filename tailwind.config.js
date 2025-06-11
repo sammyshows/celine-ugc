@@ -9,9 +9,12 @@ export default {
   theme: {
     extend: {
       fontFamily: {
+        mulish: ['Mulish', 'sans-serif'],
         bonaNova: ['BonaNova', 'serif'],
         corinthia: ['Corinthia', 'cursive'],
-        lora: ['Lora', 'serif']
+        lora: ['Lora', 'serif'],
+        anton: ['Anton', 'sans-serif'],
+        playball: ['Playball', 'cursive']
       },
 
       width: {
@@ -44,6 +47,7 @@ export default {
         '10xl': '9rem',
         '11xl': '10rem',
         '12xl': '11rem',
+        '13xl': '12rem',
         'tiny': '0.6rem',
         'teeny': '0.5rem',
         'atomic': '0.4rem'
