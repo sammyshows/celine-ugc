@@ -45,7 +45,7 @@
     <p class="text-center text-sm xl:text-lg font-italiana">+ MANY MORE</p>
   </div>
 
-  <div class="relative w-full xl:h-2/5 flex flex-col justify-center items-center py-14 xl:py-10 px-2 bg-cover text-xl xl:text-5-5xl xl:leading-18 text-center text-[#3B3B58] font-lora">
+  <!-- <div class="relative w-full xl:h-2/5 flex flex-col justify-center items-center py-14 xl:py-10 px-2 bg-cover text-xl xl:text-5-5xl xl:leading-18 text-center text-[#3B3B58] font-lora">
     <div>Unleash your brand's<div
       class="h-8 xl:h-20 px-3 xl:px-6 inline-flex background-paint-3 bg-cover font-corinthia text-4-5xl xl:text-8-5xl text-slate-800">personality
     </div></div>
@@ -54,45 +54,41 @@
 
     <img src="/icons/star.png" alt="Star" class="absolute right-4 xl:right-24 bottom-4 xl:top-16 h-12 xl:h-24">
     <img src="/icons/star.png" alt="Star" class="absolute -left-6 xl:left-24 bottom-14 xl:bottom-12 h-16 xl:h-32">
-  </div>
+  </div> -->
 
-  <div id="portfolio" class="w-full py-12 bg-cover">
-    <!-- <div class="absolute top-0 left-0 w-[97%] h-64 rounded-xl bg-[#F5F5F5]"></div> -->
-    <!-- <p class="pt-10 pl-6 xl:pl-20 text-tiny xl:text-xl font-lora">PORTFOLIO</p> -->
+  <div id="portfolio" class="w-full bg-cover">
+    <!-- <h1 class="pt-4 xl:pt-20 pb-8 text-4xl xl:text-7xl text-center font-italiana tracking-wider">RECENT WORK</h1> -->
 
-    <!-- <h1 class="pt-12 xl:pt-20 text-4-5xl xl:text-7xl text-center text-white font-montserrat tracking-wider">VIDEOGRAPHY</h1> -->
+    <div class="xl:hidden py-5 text-4xl xl:text-7xl text-center font-italiana tracking-wider">BEAUTY</div>
 
-    <div class="flex pr-20 pb-16">
+    <div class="flex xl:pr-20 pb-4 xl:pb-16">
       <div id="video-row-1" class="w-full flex xl:justify-center gap-8 xl:gap-12 px-6 xl:px-10 overflow-scroll hide-scrollbar z-10">
-        <div v-for="video in ugcVideos.slice(0, 4)" class="xl:h-auto min-w-[60%] xl:min-w-[20%] w-[19rem] bg-slate-300 rounded-3xl">
+        <div v-for="video in ugcVideos.slice(0, 4)" class="relative xl:h-auto min-w-[60%] xl:min-w-[20%] w-[19rem] p-3 bg-slate-300 rounded-3xl">
+          <!-- <img src="/images/phone-frame.png" alt="Phone Frame" class="absolute top-0 left-0 w-full h-full"> -->
+          <!-- <div class="relative p-3 bg-cover w-full h-full" style="background-image: url('/images/phone-frame.png')"> -->
           <video controls playsinline :poster="'/ugc/videos/' + video.poster" preload="metadata" class="rounded-3xl shadow-xl">
             <source :src="'/ugc/videos/' + video.source" type="video/mp4">
             Your browser does not support the video tag.
           </video>
+          <!-- </div> -->
         </div>
       </div>
 
-      <div class="text-vertical text-8-5xl xl:text-9xl text-center font-montserrat font-thin tracking-widest text-[#3B3B58] mr-20">
+      <div class="hidden xl:block text-vertical text-8-5xl xl:text-9xl text-center font-montserrat font-thin tracking-widest text-[#3B3B58] mr-20">
         BEAUTY
       </div>
-      <!-- <div class="flex flex-col justify-center text-6xl xl:text-7-5xl text-center font-montserrat font-light tracking-wider text-[#3B3B58] mr-10 z-10">
-        <span class="mr-24 leading-[0.9]">B</span>
-        <span class="mr-12 leading-[0.9]">E</span>
-        <span class="ml-0 leading-[0.9]">A</span>
-        <span class="ml-12 leading-[0.9]">U</span>
-        <span class="ml-24 leading-[0.9]">T</span>
-        <span class="ml-36 leading-[0.9]">Y</span>
-      </div> -->
     </div>
 
-    <div class="flex items-center pl-20 pb-16 relative">
+    <div class="xl:hidden py-5 text-4xl xl:text-7xl text-center font-italiana tracking-wider">HEALTH</div>
+
+    <div class="flex items-center xl:pl-20 pb-4 xl:pb-16 relative">
       <div class="absolute top-0 left-0 w-[97%] h-[37%] rounded-r-xl bg-[#FF6B6B]/70"></div>
 
-      <div class="text-8-5xl xl:text-9xl text-center font-montserrat font-thin tracking-widest text-[#3B3B58] z-10">
+      <div class="hidden xl:block text-vertical text-8-5xl xl:text-9xl text-center font-montserrat font-thin tracking-widest text-[#3B3B58] z-10">
         HEALTH
       </div>
 
-      <div id="video-row-2" class="w-full flex xl:justify-center gap-8 xl:gap-12 xl:py-16 xl:mr-20 overflow-scroll hide-scrollbar z-10">
+      <div id="video-row-2" class="w-full flex xl:justify-center gap-8 xl:gap-12 px-6 xl:py-16 xl:mr-20 overflow-scroll hide-scrollbar z-10">
         <div v-for="video in ugcVideos.slice(4, 7)" class="xl:h-auto min-w-[60%] xl:min-w-[20%] w-[19rem] bg-slate-300 rounded-3xl">
           <video controls playsinline :poster="'/ugc/videos/' + video.poster" preload="metadata" class="rounded-3xl shadow-xl">
             <source :src="'/ugc/videos/' + video.source" type="video/mp4">
@@ -102,10 +98,12 @@
       </div>
     </div>
 
-    <div class="flex items-center pr-20 pb-16 relative">
+    <div class="xl:hidden py-5 text-4xl xl:text-7xl text-center font-italiana tracking-wider">EXPERIENCES</div>
+
+    <div class="flex items-center xl:pr-20 pb-12 xl:pb-16 relative">
       <div class="absolute top-0 right-0 w-[97%] h-64 rounded-l-xl bg-[#FF6B6B]/70"></div>
 
-      <div id="video-row-3" class="w-full flex xl:justify-center gap-8 xl:gap-12 xl:py-16 xl:pl-20 overflow-scroll hide-scrollbar z-10">
+      <div id="video-row-3" class="w-full flex xl:justify-center gap-8 xl:gap-12 px-6 xl:py-16 xl:pl-20 overflow-scroll hide-scrollbar z-10">
         <div v-for="video in ugcVideos.slice(8, 11)" class="xl:h-auto min-w-[60%] xl:min-w-[20%] w-[19rem] bg-slate-300 rounded-3xl">
           <video controls playsinline :poster="'/ugc/videos/' + video.poster" preload="metadata" class="rounded-3xl shadow-xl">
             <source :src="'/ugc/videos/' + video.source" type="video/mp4">
@@ -114,16 +112,14 @@
         </div>
       </div>
 
-      <div class="ml-10 text-8-5xl xl:text-8xl text-center font-montserrat font-thin tracking-widest text-[#3B3B58] z-10">
+      <div class="hidden xl:block ml-10 text-8-5xl xl:text-8xl text-center font-montserrat font-thin tracking-widest text-[#3B3B58] z-10">
         EXPERIENCES
       </div>
     </div>
   </div>
 
-  <div class="w-full pb-12 bg-cover">
-    <p class="pt-10 pl-6 xl:pl-20 text-tiny xl:text-xl font-lora">PORTFOLIO</p>
-
-    <h1 class="pt-4 xl:pt-10 text-4-5xl xl:text-7xl text-center font-bonaNova tracking-wider">PHOTOGRAPHY</h1>
+  <div class="w-full bg-cover">
+    <h1 class="pt-4 xl:pt-10 text-4-5xl xl:text-7xl text-center font-italiana tracking-wider">PHOTOGRAPHY</h1>
 
     <div id="image-row-1" class="w-full flex xl:justify-center gap-8 xl:gap-12 mt-8 xl:mt-16 px-6 xl:px-20 overflow-scroll hide-scrollbar">
       <div v-for="image in ugcImages.slice(0, 4)" :key="image" class="h-80 xl:h-96 min-w-[60%] xl:min-w-[20%] xl:w-1/5 bg-slate-300 rounded-3xl">
