@@ -45,37 +45,6 @@
     <p class="text-center text-sm xl:text-lg font-italiana">+ MANY MORE</p>
   </div>
 
-  <!-- <div id="about" class="relative w-full pb-8 xl:pb-20 bg-[#FF6B6B] bg-contain text-white">
-
-    <div class="w-full xl:w-3/4 xl:w-2/3 xl:flex xl:flex-row-reverse xl:mx-auto pt-6 xl:pt-16 xl:px-0 xl:gap-[5%]">
-      <div class="xl:flex xl:flex-col">
-        <p class="xl:mt-10 pt-4 pl-16 text-4xl xl:text-6xl font-lora">Hi,</p>
-        
-        <p class="xl:mt-8 text-7-5xl xl:text-10xl leading-30 text-center font-corinthia italic">I'm Celine</p>
-        
-        <p class="hidden xl:block xl:mt-4 text-xl text-center font-lora tracking-wider">HOW TO'S · TRENDS · UNBOXING & MORE</p>
-
-        <p class="xl:mt-10 px-10 text-xs xl:text-xl text-center font-lora">
-          I’m a content creator based in Melbourne, Australia, bilingual in <b>English</b> and <b>French</b>.
-          <br><br>
-          With a background in <b>marketing</b> and <b>brand management</b>, I have a knack for storytelling through my
-          <b>photography</b> and <b>videography</b>. I love creating <b>awesome stories</b> that connect with people.
-          <br><br>
-          I bring brands to life with <b>authentic</b>, <b>bubbly content</b> that doesn’t feel like ads!
-          <br><br>
-          My mission is to capture <b>compelling photo and video content</b> aimed at boosting engagement, building
-          community, and driving conversions.
-        </p>
-      </div>
-      
-      <img src="/images/celine-2.jpg" loading="lazy" alt="Celine Selfie" class="w-60 xl:w-2/5 mx-auto mt-4 rounded-[6rem] xl:rounded-[6rem] object-cover border-8 border-[#fff]">
-    </div>
-
-    <img src="/icons/star.png" alt="Star" class="absolute right-4 xl:right-24 -top-4 xl:top-16 h-8 xl:h-24">
-    <img src="/icons/star.png" alt="Star" class="xl:hidden absolute right-8 xl:right-40 top-12 xl:top-32 h-8 xl:h-24">
-    <img src="/icons/star.png" alt="Star" class="absolute left-4 xl:left-40 bottom-8 xl:bottom-8 h-16 xl:h-24">
-  </div> -->
-
   <div class="relative w-full xl:h-2/5 flex flex-col justify-center items-center py-14 xl:py-10 px-2 bg-cover text-xl xl:text-5-5xl xl:leading-18 text-center text-[#3B3B58] font-lora">
     <div>Unleash your brand's<div
       class="h-8 xl:h-20 px-3 xl:px-6 inline-flex background-paint-3 bg-cover font-corinthia text-4-5xl xl:text-8-5xl text-slate-800">personality
