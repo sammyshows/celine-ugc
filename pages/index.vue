@@ -33,12 +33,23 @@
     <!-- <img src="/images/polaroid-collage.webp" loading="lazy" alt="Polaroids" class="absolute -bottom-16 lg:left-1/2 w-full lg:w-auto lg:h-full mt-4 px-3 z-10"> -->
   </div>
 
-  <div id="about" class="relative w-full pb-8 lg:pb-20 bg-[#FF6B6B] bg-contain text-white">
-    <!-- <p class="pt-10 pl-6 lg:pl-20 text-tiny lg:text-xl font-lora">ABOUT ME</p> -->
+  <div id="brands" class="py-10 w-full bg-[#FFF]">
+    <h1 class="text-3xl xl:text-6xl font-italiana text-center">TRUSTED BY..</h1>
 
-    <div class="w-full lg:w-3/4 xl:w-2/3 lg:flex lg:flex-row-reverse lg:mx-auto pt-6 lg:pt-16 lg:px-0 lg:gap-[5%]">
-      <div class="lg:flex lg:flex-col">
-        <p class="lg:mt-10 pt-4 pl-16 text-4xl lg:text-6xl font-lora">Hi,</p>
+    <div class="flex flex-wrap justify-center items-center gap-4 sm:gap-6 lg:gap-8 py-6 px-4 sm:px-8 lg:px-12">
+      <div v-for="logo in brandLogos" :key="logo" class="flex-shrink-0 w-16 sm:w-20 md:w-24 lg:w-28 xl:w-32 h-16 sm:h-20 md:h-24 lg:h-28 xl:h-32">
+        <img :src="`/brands/${logo}`" :alt="logo.split('.')[0]" class="w-full h-full object-contain rounded-full transition-all duration-300">
+      </div>
+    </div>
+
+    <p class="text-center text-sm xl:text-lg font-italiana">+ MANY MORE</p>
+  </div>
+
+  <!-- <div id="about" class="relative w-full pb-8 xl:pb-20 bg-[#FF6B6B] bg-contain text-white">
+
+    <div class="w-full xl:w-3/4 xl:w-2/3 xl:flex xl:flex-row-reverse xl:mx-auto pt-6 xl:pt-16 xl:px-0 xl:gap-[5%]">
+      <div class="xl:flex xl:flex-col">
+        <p class="xl:mt-10 pt-4 pl-16 text-4xl xl:text-6xl font-lora">Hi,</p>
         
         <p class="lg:mt-8 text-7-5xl lg:text-10xl leading-30 text-center font-corinthia italic">I'm Celine</p>
         
