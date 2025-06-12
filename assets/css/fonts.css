@@ -214,3 +214,11 @@
   font-style: normal;
   src: url('/assets/fonts/Playball-Regular.ttf') format('truetype');
 }
+
+/* Italiana-Regular.ttf */
+@font-face {
+  font-family: 'Italiana';
+  font-weight: normal;
+  font-style: normal;
+  src: url('/assets/fonts/Italiana-Regular.ttf') format('truetype');
+}

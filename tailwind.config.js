@@ -14,7 +14,8 @@ export default {
         corinthia: ['Corinthia', 'cursive'],
         lora: ['Lora', 'serif'],
         anton: ['Anton', 'sans-serif'],
-        playball: ['Playball', 'cursive']
+        playball: ['Playball', 'cursive'],
+        italiana: ['Italiana', 'serif']
       },
 
       width: {
