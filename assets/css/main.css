@@ -3,5 +3,5 @@
 html, body, #__nuxt {
   height: 100%;
   width: 100%;
-  background-color: #F4F1DE;
+  background-color: rgb(238, 238, 238);
 }

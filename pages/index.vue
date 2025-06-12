@@ -1,36 +1,36 @@
 <template>
-  <div class="relative w-full h-2/3 lg:h-4/5 min-h-[34rem] flex flex-col pt-20 sm:pt-0 bg-cover text-ugc-dark-green">    
-    <div class="hidden lg:flex lg:justify-center absolute top-12 left-0 lg:w-full gap-10 text-lg text-[#3B3B58] font-light font-montserrat">
+  <div class="relative w-full h-2/3 xl:h-4/5 min-h-[34rem] flex flex-col sm:pt-0 bg-cover text-ugc-dark-green">    
+    <div class="hidden xl:flex xl:justify-center absolute top-6 left-0 xl:w-full gap-10 text-lg text-[#3B3B58] font-light font-montserrat">
       <button @click="scrollTo('#about')">ABOUT</button>
       <button @click="scrollTo('#portfolio')">PORTFOLIO</button>
       <button @click="scrollTo('#services')">SERVICES</button>
       <button @click="scrollTo('#contact')">CONTACT</button>
     </div>
 
-    <div class="lg:h-full flex items-center justify-center my-auto relative">
-      <div class="relative h-fit mx-auto">
-        <h1 class="absolute -top-[70%] left-1/2 -translate-x-1/2 text-6-5xl lg:text-[17rem] leading-13 lg:leading-[11rem] text-center text-[#FF6B6B] font-playball">Celine</h1>
-        <p class="relative mt-8 lg:mt-10 text-sm lg:text-[13rem] lg:leading-[9rem] tracking-[3rem] text-[#8D99AE] text-center font-anton z-10">UGC CREATOR</p>
-        <!-- <img src="/icons/star.png" alt="Star" class="absolute -right-6 lg:-right-12 -bottom-10 lg:-bottom-16 h-16 lg:h-28"> -->
+    <div class="h-full flex items-center justify-center my-auto relative">
+      <div class="relative w-full h-full">
+        <h1 class="absolute top-[3rem] sm:top-[1.5rem] lg:top-[2.5rem] xl:top-[19%] left-1/2 -translate-x-1/2 text-10xl sm:text-[10rem] lg:text-[11rem] xl:text-[14rem] leading-[9rem] sm:leading-[12rem] xl:leading-[11rem] text-center text-[#000] font-playball">Celine</h1>
+        <p class="pl-4 absolute w-full top-[11rem] sm:top-[12rem] lg:top-[14rem] xl:top-[35%] xl:mt-10 text-6xl sm:text-[4.7rem] lg:text-[8rem] xl:text-[11rem] leading-[4.5rem] sm:leading-[6rem] xl:leading-[10rem] tracking-[1rem] sm:tracking-[1.5rem] xl:tracking-[2.4rem] text-[#FFF] text-center font-anton z-10">UGC CREATOR</p>
+        <!-- <img src="/icons/star.png" alt="Star" class="absolute -right-6 xl:-right-12 -bottom-10 xl:-bottom-16 h-16 xl:h-28"> -->
       </div>
 
-      <img src="/images/celine-3.png" alt="Celine" class="absolute lg:bottom-0 left-1/2 -translate-x-1/2 w-1/2 lg:w-[27%] z-20">
+      <img src="/images/celine-3.png" alt="Celine" class="absolute bottom-0 left-1/2 -translate-x-1/2 h-1/2 sm:h-[55%] lg:h-5/12 xl:h-[60%] z-20">
   
   
-      <!-- <div class="flex justify-center gap-1 lg:gap-4 mt-4">
+      <!-- <div class="flex justify-center gap-1 xl:gap-4 mt-4">
         <a href="https://www.instagram.com/ugc.withceline/" target="_blank">
-          <img src="/icons/instagram.png" alt="Instagram" class="size-4 lg:size-12">
+          <img src="/icons/instagram.png" alt="Instagram" class="size-4 xl:size-12">
         </a>
         <a href="https://www.tiktok.com/@ugc.withceline" target="_blank">
-          <img src="/icons/tiktok.png" alt="TikTok" class="size-4 lg:size-12">
+          <img src="/icons/tiktok.png" alt="TikTok" class="size-4 xl:size-12">
         </a>
-        <img src="/icons/mail.png" alt="Email" class="size-4 lg:w-14 lg:h-12">
+        <img src="/icons/mail.png" alt="Email" class="size-4 xl:w-14 xl:h-12">
       </div> -->
 
-      <!-- <img src="/icons/star.png" alt="Star" class="absolute left-4 lg:left-36 top-56 lg:top-[36rem] h-20 lg:h-32"> -->
+      <!-- <img src="/icons/star.png" alt="Star" class="absolute left-4 xl:left-36 top-56 xl:top-[36rem] h-20 xl:h-32"> -->
     </div>
 
-    <!-- <img src="/images/polaroid-collage.webp" loading="lazy" alt="Polaroids" class="absolute -bottom-16 lg:left-1/2 w-full lg:w-auto lg:h-full mt-4 px-3 z-10"> -->
+    <!-- <img src="/images/polaroid-collage.webp" loading="lazy" alt="Polaroids" class="absolute -bottom-16 xl:left-1/2 w-full xl:w-auto xl:h-full mt-4 px-3 z-10"> -->
   </div>
 
   <div id="brands" class="py-10 w-full bg-[#FFF]">
@@ -51,11 +51,11 @@
       <div class="xl:flex xl:flex-col">
         <p class="xl:mt-10 pt-4 pl-16 text-4xl xl:text-6xl font-lora">Hi,</p>
         
-        <p class="lg:mt-8 text-7-5xl lg:text-10xl leading-30 text-center font-corinthia italic">I'm Celine</p>
+        <p class="xl:mt-8 text-7-5xl xl:text-10xl leading-30 text-center font-corinthia italic">I'm Celine</p>
         
-        <p class="hidden lg:block lg:mt-4 text-xl text-center font-lora tracking-wider">HOW TO'S · TRENDS · UNBOXING & MORE</p>
+        <p class="hidden xl:block xl:mt-4 text-xl text-center font-lora tracking-wider">HOW TO'S · TRENDS · UNBOXING & MORE</p>
 
-        <p class="lg:mt-10 px-10 text-xs lg:text-xl text-center font-lora">
+        <p class="xl:mt-10 px-10 text-xs xl:text-xl text-center font-lora">
           I’m a content creator based in Melbourne, Australia, bilingual in <b>English</b> and <b>French</b>.
           <br><br>
           With a background in <b>marketing</b> and <b>brand management</b>, I have a knack for storytelling through my
@@ -68,34 +68,34 @@
         </p>
       </div>
       
-      <img src="/images/celine-2.jpg" loading="lazy" alt="Celine Selfie" class="w-60 lg:w-2/5 mx-auto mt-4 rounded-[6rem] lg:rounded-[6rem] object-cover border-8 border-[#fff]">
+      <img src="/images/celine-2.jpg" loading="lazy" alt="Celine Selfie" class="w-60 xl:w-2/5 mx-auto mt-4 rounded-[6rem] xl:rounded-[6rem] object-cover border-8 border-[#fff]">
     </div>
 
-    <img src="/icons/star.png" alt="Star" class="absolute right-4 lg:right-24 -top-4 lg:top-16 h-8 lg:h-24">
-    <img src="/icons/star.png" alt="Star" class="lg:hidden absolute right-8 lg:right-40 top-12 lg:top-32 h-8 lg:h-24">
-    <img src="/icons/star.png" alt="Star" class="absolute left-4 lg:left-40 bottom-8 lg:bottom-8 h-16 lg:h-24">
-  </div>
+    <img src="/icons/star.png" alt="Star" class="absolute right-4 xl:right-24 -top-4 xl:top-16 h-8 xl:h-24">
+    <img src="/icons/star.png" alt="Star" class="xl:hidden absolute right-8 xl:right-40 top-12 xl:top-32 h-8 xl:h-24">
+    <img src="/icons/star.png" alt="Star" class="absolute left-4 xl:left-40 bottom-8 xl:bottom-8 h-16 xl:h-24">
+  </div> -->
 
-  <div class="relative w-full lg:h-2/5 flex flex-col justify-center items-center py-14 lg:py-10 px-2 bg-cover text-xl lg:text-5-5xl lg:leading-18 text-center text-[#3B3B58] font-lora">
+  <div class="relative w-full xl:h-2/5 flex flex-col justify-center items-center py-14 xl:py-10 px-2 bg-cover text-xl xl:text-5-5xl xl:leading-18 text-center text-[#3B3B58] font-lora">
     <div>Unleash your brand's<div
-      class="h-8 lg:h-20 px-3 lg:px-6 inline-flex background-paint-3 bg-cover font-corinthia text-4-5xl lg:text-8-5xl text-slate-800">personality
+      class="h-8 xl:h-20 px-3 xl:px-6 inline-flex background-paint-3 bg-cover font-corinthia text-4-5xl xl:text-8-5xl text-slate-800">personality
     </div></div>
-    <p><div class="h-8 lg:h-20 inline-flex">with UGC content that</div></p>
+    <p><div class="h-8 xl:h-20 inline-flex">with UGC content that</div></p>
     <p class="underline underline-offset-8 decoration-[#FF6B6B]">showcases its unique voice.</p>
 
-    <img src="/icons/star.png" alt="Star" class="absolute right-4 lg:right-24 bottom-4 lg:top-16 h-12 lg:h-24">
-    <img src="/icons/star.png" alt="Star" class="absolute -left-6 lg:left-24 bottom-14 lg:bottom-12 h-16 lg:h-32">
+    <img src="/icons/star.png" alt="Star" class="absolute right-4 xl:right-24 bottom-4 xl:top-16 h-12 xl:h-24">
+    <img src="/icons/star.png" alt="Star" class="absolute -left-6 xl:left-24 bottom-14 xl:bottom-12 h-16 xl:h-32">
   </div>
 
   <div id="portfolio" class="w-full py-12 bg-cover">
     <!-- <div class="absolute top-0 left-0 w-[97%] h-64 rounded-xl bg-[#F5F5F5]"></div> -->
-    <!-- <p class="pt-10 pl-6 lg:pl-20 text-tiny lg:text-xl font-lora">PORTFOLIO</p> -->
+    <!-- <p class="pt-10 pl-6 xl:pl-20 text-tiny xl:text-xl font-lora">PORTFOLIO</p> -->
 
-    <!-- <h1 class="pt-12 lg:pt-20 text-4-5xl lg:text-7xl text-center text-white font-montserrat tracking-wider">VIDEOGRAPHY</h1> -->
+    <!-- <h1 class="pt-12 xl:pt-20 text-4-5xl xl:text-7xl text-center text-white font-montserrat tracking-wider">VIDEOGRAPHY</h1> -->
 
     <div class="flex pr-20 pb-16">
-      <div id="video-row-1" class="w-full flex lg:justify-center gap-8 lg:gap-12 px-6 lg:px-10 overflow-scroll hide-scrollbar z-10">
-        <div v-for="video in ugcVideos.slice(0, 4)" class="lg:h-auto min-w-[60%] lg:min-w-[20%] w-[19rem] bg-slate-300 rounded-3xl">
+      <div id="video-row-1" class="w-full flex xl:justify-center gap-8 xl:gap-12 px-6 xl:px-10 overflow-scroll hide-scrollbar z-10">
+        <div v-for="video in ugcVideos.slice(0, 4)" class="xl:h-auto min-w-[60%] xl:min-w-[20%] w-[19rem] bg-slate-300 rounded-3xl">
           <video controls playsinline :poster="'/ugc/videos/' + video.poster" preload="metadata" class="rounded-3xl shadow-xl">
             <source :src="'/ugc/videos/' + video.source" type="video/mp4">
             Your browser does not support the video tag.
@@ -103,10 +103,10 @@
         </div>
       </div>
 
-      <div class="text-vertical text-8-5xl lg:text-9xl text-center font-montserrat font-thin tracking-widest text-[#3B3B58] mr-20">
+      <div class="text-vertical text-8-5xl xl:text-9xl text-center font-montserrat font-thin tracking-widest text-[#3B3B58] mr-20">
         BEAUTY
       </div>
-      <!-- <div class="flex flex-col justify-center text-6xl lg:text-7-5xl text-center font-montserrat font-light tracking-wider text-[#3B3B58] mr-10 z-10">
+      <!-- <div class="flex flex-col justify-center text-6xl xl:text-7-5xl text-center font-montserrat font-light tracking-wider text-[#3B3B58] mr-10 z-10">
         <span class="mr-24 leading-[0.9]">B</span>
         <span class="mr-12 leading-[0.9]">E</span>
         <span class="ml-0 leading-[0.9]">A</span>
@@ -119,12 +119,12 @@
     <div class="flex items-center pl-20 pb-16 relative">
       <div class="absolute top-0 left-0 w-[97%] h-[37%] rounded-r-xl bg-[#FF6B6B]/70"></div>
 
-      <div class="text-8-5xl lg:text-9xl text-center font-montserrat font-thin tracking-widest text-[#3B3B58] z-10">
+      <div class="text-8-5xl xl:text-9xl text-center font-montserrat font-thin tracking-widest text-[#3B3B58] z-10">
         HEALTH
       </div>
 
-      <div id="video-row-2" class="w-full flex lg:justify-center gap-8 lg:gap-12 lg:py-16 lg:mr-20 overflow-scroll hide-scrollbar z-10">
-        <div v-for="video in ugcVideos.slice(4, 7)" class="lg:h-auto min-w-[60%] lg:min-w-[20%] w-[19rem] bg-slate-300 rounded-3xl">
+      <div id="video-row-2" class="w-full flex xl:justify-center gap-8 xl:gap-12 xl:py-16 xl:mr-20 overflow-scroll hide-scrollbar z-10">
+        <div v-for="video in ugcVideos.slice(4, 7)" class="xl:h-auto min-w-[60%] xl:min-w-[20%] w-[19rem] bg-slate-300 rounded-3xl">
           <video controls playsinline :poster="'/ugc/videos/' + video.poster" preload="metadata" class="rounded-3xl shadow-xl">
             <source :src="'/ugc/videos/' + video.source" type="video/mp4">
             Your browser does not support the video tag.
@@ -136,8 +136,8 @@
     <div class="flex items-center pr-20 pb-16 relative">
       <div class="absolute top-0 right-0 w-[97%] h-64 rounded-l-xl bg-[#FF6B6B]/70"></div>
 
-      <div id="video-row-3" class="w-full flex lg:justify-center gap-8 lg:gap-12 lg:py-16 lg:pl-20 overflow-scroll hide-scrollbar z-10">
-        <div v-for="video in ugcVideos.slice(8, 11)" class="lg:h-auto min-w-[60%] lg:min-w-[20%] w-[19rem] bg-slate-300 rounded-3xl">
+      <div id="video-row-3" class="w-full flex xl:justify-center gap-8 xl:gap-12 xl:py-16 xl:pl-20 overflow-scroll hide-scrollbar z-10">
+        <div v-for="video in ugcVideos.slice(8, 11)" class="xl:h-auto min-w-[60%] xl:min-w-[20%] w-[19rem] bg-slate-300 rounded-3xl">
           <video controls playsinline :poster="'/ugc/videos/' + video.poster" preload="metadata" class="rounded-3xl shadow-xl">
             <source :src="'/ugc/videos/' + video.source" type="video/mp4">
             Your browser does not support the video tag.
@@ -145,151 +145,151 @@
         </div>
       </div>
 
-      <div class="ml-10 text-8-5xl lg:text-8xl text-center font-montserrat font-thin tracking-widest text-[#3B3B58] z-10">
+      <div class="ml-10 text-8-5xl xl:text-8xl text-center font-montserrat font-thin tracking-widest text-[#3B3B58] z-10">
         EXPERIENCES
       </div>
     </div>
   </div>
 
   <div class="w-full pb-12 bg-cover">
-    <p class="pt-10 pl-6 lg:pl-20 text-tiny lg:text-xl font-lora">PORTFOLIO</p>
+    <p class="pt-10 pl-6 xl:pl-20 text-tiny xl:text-xl font-lora">PORTFOLIO</p>
 
-    <h1 class="pt-4 lg:pt-10 text-4-5xl lg:text-7xl text-center font-bonaNova tracking-wider">PHOTOGRAPHY</h1>
+    <h1 class="pt-4 xl:pt-10 text-4-5xl xl:text-7xl text-center font-bonaNova tracking-wider">PHOTOGRAPHY</h1>
 
-    <div id="image-row-1" class="w-full flex lg:justify-center gap-8 lg:gap-12 mt-8 lg:mt-16 px-6 lg:px-20 overflow-scroll hide-scrollbar">
-      <div v-for="image in ugcImages.slice(0, 4)" :key="image" class="h-80 lg:h-96 min-w-[60%] lg:min-w-[20%] lg:w-1/5 bg-slate-300 rounded-3xl">
+    <div id="image-row-1" class="w-full flex xl:justify-center gap-8 xl:gap-12 mt-8 xl:mt-16 px-6 xl:px-20 overflow-scroll hide-scrollbar">
+      <div v-for="image in ugcImages.slice(0, 4)" :key="image" class="h-80 xl:h-96 min-w-[60%] xl:min-w-[20%] xl:w-1/5 bg-slate-300 rounded-3xl">
         <img :src="`/ugc/images/${image}`" :alt="image.split('.')[0]" class="h-full w-full object-cover rounded-3xl shadow">
       </div>
     </div>
-    <div id="image-row-2" class="w-full flex lg:justify-center gap-8 lg:gap-12 mt-12 lg:mt-16 px-6 lg:px-20 overflow-scroll hide-scrollbar">
-      <div v-for="image in ugcImages.slice(4,8)" :key="image" class="h-80 lg:h-96 min-w-[60%] lg:min-w-[20%] lg:w-1/5 bg-slate-300 rounded-3xl">
+    <div id="image-row-2" class="w-full flex xl:justify-center gap-8 xl:gap-12 mt-12 xl:mt-16 px-6 xl:px-20 overflow-scroll hide-scrollbar">
+      <div v-for="image in ugcImages.slice(4,8)" :key="image" class="h-80 xl:h-96 min-w-[60%] xl:min-w-[20%] xl:w-1/5 bg-slate-300 rounded-3xl">
         <img :src="`/ugc/images/${image}`" :alt="image.split('.')[0]" class="h-full w-full object-cover rounded-3xl shadow">
       </div>
     </div>
-    <div id="image-row-3" class="w-full flex lg:justify-center gap-8 lg:gap-12 mt-12 lg:mt-16 px-6 lg:px-20 overflow-scroll hide-scrollbar">
-      <div v-for="image in ugcImages.slice(8,12)" :key="image" class="h-80 lg:h-96 min-w-[60%] lg:min-w-[20%] lg:w-1/5 bg-slate-300 rounded-3xl">
+    <div id="image-row-3" class="w-full flex xl:justify-center gap-8 xl:gap-12 mt-12 xl:mt-16 px-6 xl:px-20 overflow-scroll hide-scrollbar">
+      <div v-for="image in ugcImages.slice(8,12)" :key="image" class="h-80 xl:h-96 min-w-[60%] xl:min-w-[20%] xl:w-1/5 bg-slate-300 rounded-3xl">
         <img :src="`/ugc/images/${image}`" :alt="image.split('.')[0]" class="h-full w-full object-cover rounded-3xl shadow">
       </div>
     </div>
-    <div id="image-row-4" class="w-full flex lg:justify-center gap-8 lg:gap-12 mt-12 lg:mt-16 px-6 lg:px-20 overflow-scroll hide-scrollbar">
-      <div v-for="image in ugcImages.slice(12,16)" :key="image" class="h-80 lg:h-96 min-w-[60%] lg:min-w-[20%] lg:w-1/5 bg-slate-300 rounded-3xl">
+    <div id="image-row-4" class="w-full flex xl:justify-center gap-8 xl:gap-12 mt-12 xl:mt-16 px-6 xl:px-20 overflow-scroll hide-scrollbar">
+      <div v-for="image in ugcImages.slice(12,16)" :key="image" class="h-80 xl:h-96 min-w-[60%] xl:min-w-[20%] xl:w-1/5 bg-slate-300 rounded-3xl">
         <img :src="`/ugc/images/${image}`" :alt="image.split('.')[0]" class="h-full w-full object-cover rounded-3xl shadow">
       </div>
     </div>
   </div>
 
-  <div class="relative w-full lg:h-1/3 lg:flex lg:justify-center lg:items-center py-14 lg:py-10 px-2 bg-ugc-light-green-opaque bg-cover text-xl lg:text-7xl lg:leading-18 text-center text-slate-800 font-lora">
-    Content made with <div class="h-8 lg:h-20 px-3 lg:px-6 inline-flex background-paint-2 bg-cover font-corinthia text-4-5xl lg:text-10xl text-slate-800">passion.</div>
+  <div class="relative w-full xl:h-1/3 xl:flex xl:justify-center xl:items-center py-14 xl:py-10 px-2 bg-ugc-light-green-opaque bg-cover text-xl xl:text-7xl xl:leading-18 text-center text-slate-800 font-lora">
+    Content made with <div class="h-8 xl:h-20 px-3 xl:px-6 inline-flex background-paint-2 bg-cover font-corinthia text-4-5xl xl:text-10xl text-slate-800">passion.</div>
     
-    <img src="/icons/star.png" alt="Star" class="absolute -left-4 lg:left-24 bottom-20 lg:bottom-12 h-12 lg:h-32">
-    <img src="/icons/star.png" alt="Star" class="absolute right-4 lg:right-24 bottom-4 lg:top-16 h-8 lg:h-24">
+    <img src="/icons/star.png" alt="Star" class="absolute -left-4 xl:left-24 bottom-20 xl:bottom-12 h-12 xl:h-32">
+    <img src="/icons/star.png" alt="Star" class="absolute right-4 xl:right-24 bottom-4 xl:top-16 h-8 xl:h-24">
   </div>
 
   <div id="services" class="relative w-full pb-16 bg-cover">
-    <h1 class="pt-12 lg:pt-20 text-4-5xl lg:text-7xl text-center font-bonaNova tracking-wider">SERVICES</h1>
+    <h1 class="pt-12 xl:pt-20 text-4-5xl xl:text-7xl text-center font-bonaNova tracking-wider">SERVICES</h1>
 
-    <p class="pt-4 text-xs lg:text-lg text-center font-lora">Reach your target audience with me!</p>
+    <p class="pt-4 text-xs xl:text-lg text-center font-lora">Reach your target audience with me!</p>
 
-    <div class="lg:flex">
-      <div class="lg:w-1/2 lg:flex lg:justify-end lg:items-center lg:pr-20">
-        <div class="w-full lg:w-fit flex flex-col gap-2 lg:gap-6 mt-8 px-2 font-lora">
-          <p v-for="service in services" class="lg:text-2xl text-center lg:text-left uppercase">{{ service.name }}</p>
+    <div class="xl:flex">
+      <div class="xl:w-1/2 xl:flex xl:justify-end xl:items-center xl:pr-20">
+        <div class="w-full xl:w-fit flex flex-col gap-2 xl:gap-6 mt-8 px-2 font-lora">
+          <p v-for="service in services" class="xl:text-2xl text-center xl:text-left uppercase">{{ service.name }}</p>
         </div>
       </div>
       
-      <div class="w-2/3 lg:w-0.5 h-0.5 lg:h-auto mt-10 mx-auto lg:mx-0 bg-slate-800"></div>
+      <div class="w-2/3 xl:w-0.5 h-0.5 xl:h-auto mt-10 mx-auto xl:mx-0 bg-slate-800"></div>
       
-      <div class="lg:w-1/2 lg:py-3">
-        <h1 class="mt-10 ml-10 lg:py-2 px-3 lg:px-6 inline-flex background-paint-2 bg-cover font-lora font-semibold text-2xl lg:text-4xl text-slate-700">
+      <div class="xl:w-1/2 xl:py-3">
+        <h1 class="mt-10 ml-10 xl:py-2 px-3 xl:px-6 inline-flex background-paint-2 bg-cover font-lora font-semibold text-2xl xl:text-4xl text-slate-700">
           VIDEO</h1>
         
-        <div class="ml-1/6 lg:ml-28 flex flex-col mt-3 mx-auto px-2 font-lora">
-          <div v-for="videoService in videoServices" :key="videoService.name" class="flex leading-5 lg:leading-7">
-            • <p class="ml-2 text-sm lg:text-lg">{{ videoService.name }}</p>
+        <div class="ml-1/6 xl:ml-28 flex flex-col mt-3 mx-auto px-2 font-lora">
+          <div v-for="videoService in videoServices" :key="videoService.name" class="flex leading-5 xl:leading-7">
+            • <p class="ml-2 text-sm xl:text-lg">{{ videoService.name }}</p>
           </div>
         </div>
         
-        <h1 class="mt-10 ml-10 lg:py-2 px-3 lg:px-6 inline-flex background-paint-2 bg-cover font-lora font-semibold text-2xl lg:text-4xl text-slate-700">
+        <h1 class="mt-10 ml-10 xl:py-2 px-3 xl:px-6 inline-flex background-paint-2 bg-cover font-lora font-semibold text-2xl xl:text-4xl text-slate-700">
           PHOTOGRAPHY</h1>
         
-        <div class="ml-1/6 lg:ml-28 flex flex-col mt-3 mx-auto px-2 font-lora">
-          <div v-for="photoService in photoServices" :key="photoService.name" class="flex leading-5 lg:leading-7">
-            • <p class="ml-2 text-sm lg:text-lg">{{ photoService.name }}</p>
+        <div class="ml-1/6 xl:ml-28 flex flex-col mt-3 mx-auto px-2 font-lora">
+          <div v-for="photoService in photoServices" :key="photoService.name" class="flex leading-5 xl:leading-7">
+            • <p class="ml-2 text-sm xl:text-lg">{{ photoService.name }}</p>
           </div>
         </div>
         
-        <p class="mt-8 px-8 text-xs lg:text-base text-right lg:text-left text-slate-700">*Rates are available upon request</p>
+        <p class="mt-8 px-8 text-xs xl:text-base text-right xl:text-left text-slate-700">*Rates are available upon request</p>
       </div>
     </div>
       
-    <p class="mt-8 lg:mt-16 px-12 text-lg lg:text-2xl leading-6 text-center text-ugc-dark-green font-lora font-semibold">
+    <p class="mt-8 xl:mt-16 px-12 text-lg xl:text-2xl leading-6 text-center text-ugc-dark-green font-lora font-semibold">
       But that's not all! Not seeing what you're looking for? Let's chat!
     </p>
 
-    <img src="/icons/star.png" alt="Star" class="absolute -left-6 lg:left-24 top-40 lg:top-60 h-16 lg:h-24">
-    <img src="/icons/star.png" alt="Star" class="absolute right-6 lg:right-32 bottom-[32rem] lg:top-16 h-8 lg:h-28">
-    <img src="/icons/star.png" alt="Star" class="absolute right-20 lg:right-16 bottom-4 lg:bottom-40 h-8 lg:h-16">
+    <img src="/icons/star.png" alt="Star" class="absolute -left-6 xl:left-24 top-40 xl:top-60 h-16 xl:h-24">
+    <img src="/icons/star.png" alt="Star" class="absolute right-6 xl:right-32 bottom-[32rem] xl:top-16 h-8 xl:h-28">
+    <img src="/icons/star.png" alt="Star" class="absolute right-20 xl:right-16 bottom-4 xl:bottom-40 h-8 xl:h-16">
   </div>
 
   <div id="contact" class="relative w-full bg-ugc-light-green-opaque bg-cover">
-    <p class="pt-10 pl-6 lg:pl-20 text-tiny lg:text-xl font-lora">CONTACT ME</p>
+    <p class="pt-10 pl-6 xl:pl-20 text-tiny xl:text-xl font-lora">CONTACT ME</p>
 
-    <div class="lg:flex lg:h-[30rem]">
-      <div class="lg:w-3/5 lg:flex lg:flex-col lg:items-end lg:pr-10">
-        <p class="mt-10 lg:mr-40 pl-2 text-4xl lg:text-7-5xl font-lora">Let's work</p>
-        <p class="mt-6 lg:mt-16 ml-12 px-3 max-w-fit background-paint-3 bg-cover z-10 font-corinthia text-7-5xl lg:text-11xl leading-16 text-slate-800">
+    <div class="xl:flex xl:h-[30rem]">
+      <div class="xl:w-3/5 xl:flex xl:flex-col xl:items-end xl:pr-10">
+        <p class="mt-10 xl:mr-40 pl-2 text-4xl xl:text-7-5xl font-lora">Let's work</p>
+        <p class="mt-6 xl:mt-16 ml-12 px-3 max-w-fit background-paint-3 bg-cover z-10 font-corinthia text-7-5xl xl:text-11xl leading-16 text-slate-800">
           together!</p>
           
-        <div class="lg:w-2/3 font-lora">
-          <a href="https://www.instagram.com/ugc.withceline/" target="_blank" class="flex items-center gap-2 mt-12 lg:mt-24 pl-4">
-            <img src="/icons/instagram.png" alt="Instagram" class="w-5 lg:w-10">
-            <p class="lg:ml-3 text-xs lg:text-2xl">@ugc.withceline</p>
+        <div class="xl:w-2/3 font-lora">
+          <a href="https://www.instagram.com/ugc.withceline/" target="_blank" class="flex items-center gap-2 mt-12 xl:mt-24 pl-4">
+            <img src="/icons/instagram.png" alt="Instagram" class="w-5 xl:w-10">
+            <p class="xl:ml-3 text-xs xl:text-2xl">@ugc.withceline</p>
           </a>
 
-          <a href="https://www.tiktok.com/@ugc.withceline" target="_blank" class="flex items-center gap-2 mt-1 lg:mt-4 pl-4">
-            <img src="/icons/tiktok.png" alt="TikTok" class="w-5 lg:w-10">
-            <p class="lg:ml-3 text-xs lg:text-2xl">@ugc.withceline</p>
+          <a href="https://www.tiktok.com/@ugc.withceline" target="_blank" class="flex items-center gap-2 mt-1 xl:mt-4 pl-4">
+            <img src="/icons/tiktok.png" alt="TikTok" class="w-5 xl:w-10">
+            <p class="xl:ml-3 text-xs xl:text-2xl">@ugc.withceline</p>
           </a>
           
-          <div class="flex items-center gap-2 mt-1 lg:mt-4 pl-4">
-            <img src="/icons/mail.png" alt="Mail" class="h-4 w-5 lg:w-10 lg:h-8">
-            <p class="lg:ml-3 text-xs lg:text-2xl">ugcwithcelinee@gmail.com</p>
+          <div class="flex items-center gap-2 mt-1 xl:mt-4 pl-4">
+            <img src="/icons/mail.png" alt="Mail" class="h-4 w-5 xl:w-10 xl:h-8">
+            <p class="xl:ml-3 text-xs xl:text-2xl">ugcwithcelinee@gmail.com</p>
           </div>
         </div>
       </div>
 
-      <img src="/images/celine-1.webp" loading="lazy" alt="Celine Selfie" class="absolute lg:static -right-16 w-60 lg:w-auto lg:h-full top-20 rounded-full">
+      <img src="/images/celine-1.webp" loading="lazy" alt="Celine Selfie" class="absolute xl:static -right-16 w-60 xl:w-auto xl:h-full top-20 rounded-full">
     </div>
 
-    <div class="lg:w-1/2 lg:max-w-[48rem] mt-20 lg:mx-auto pl-4 pb-10 font-lora">
+    <div class="xl:w-1/2 xl:max-w-[48rem] mt-20 xl:mx-auto pl-4 pb-10 font-lora">
       <!-- Honeypot -->
       <input v-model="honeypot" type="email" class="hidden">
 
-      <div class="lg:flex">
-        <label for="name" class="inline-block w-20 lg:w-32 lg:text-2xl">NAME</label>
-        <input v-model="name" type="text" class="w-56 lg:grow h-8 lg:h-12 ml-4 px-6 lg:px-12 background-paint-2 bg-transparent text-sm lg:text-2xl rounded-lg outline-slate-700">
+      <div class="xl:flex">
+        <label for="name" class="inline-block w-20 xl:w-32 xl:text-2xl">NAME</label>
+        <input v-model="name" type="text" class="w-56 xl:grow h-8 xl:h-12 ml-4 px-6 xl:px-12 background-paint-2 bg-transparent text-sm xl:text-2xl rounded-lg outline-slate-700">
       </div>
-      <div class="mt-2 lg:flex">
-        <label for="email" class="inline-block w-20 lg:w-32 lg:text-2xl">EMAIL</label>
-        <input v-model="email" type="email" class="w-64 lg:grow h-8 lg:h-12 ml-4 px-6 lg:px-12 background-paint-2 bg-transparent text-sm lg:text-2xl rounded-lg outline-slate-700">
+      <div class="mt-2 xl:flex">
+        <label for="email" class="inline-block w-20 xl:w-32 xl:text-2xl">EMAIL</label>
+        <input v-model="email" type="email" class="w-64 xl:grow h-8 xl:h-12 ml-4 px-6 xl:px-12 background-paint-2 bg-transparent text-sm xl:text-2xl rounded-lg outline-slate-700">
       </div>
       <div class="flex mt-2">
-        <label for="message" class="flex w-20 lg:w-32 h-20 items-center my-auto lg:text-2xl">MESSAGE</label>
-        <textarea v-model="message" type="text" class="w-64 lg:grow h-20 lg:h-36 ml-4 px-6 lg:px-12 py-3 lg:py-6 background-paint-1 bg-transparent bg-cover text-xs lg:text-lg rounded-lg outline-slate-700 overflow-scroll"></textarea>
+        <label for="message" class="flex w-20 xl:w-32 h-20 items-center my-auto xl:text-2xl">MESSAGE</label>
+        <textarea v-model="message" type="text" class="w-64 xl:grow h-20 xl:h-36 ml-4 px-6 xl:px-12 py-3 xl:py-6 background-paint-1 bg-transparent bg-cover text-xs xl:text-lg rounded-lg outline-slate-700 overflow-scroll"></textarea>
       </div>
 
       <div class="w-full flex">
-        <button @click="submit()" :disabled="sendingEmail || !allInputsHaveValues" :class="{ 'animate-pulse': sendingEmail }" class="w-36 lg:w-40 mt-6 mx-auto py-1 lg:py-2 lg:text-xl text-center text-white font-lora bg-ugc-light-green rounded-lg outline-slate-700 duration-300 disabled:bg-slate-400/70">
+        <button @click="submit()" :disabled="sendingEmail || !allInputsHaveValues" :class="{ 'animate-pulse': sendingEmail }" class="w-36 xl:w-40 mt-6 mx-auto py-1 xl:py-2 xl:text-xl text-center text-white font-lora bg-ugc-light-green rounded-lg outline-slate-700 duration-300 disabled:bg-slate-400/70">
           {{ sendingEmail ? 'SUBMITTING...' : 'SUBMIT' }}
         </button>
       </div>
 
-      <p :class="[ showEmailResultMessage ? 'opacity-100' : 'opacity-0' ]" class="pt-6 text-sm lg:text-xl text-center text-ugc-dark-green">{{ emailResultMessage }}</p>
+      <p :class="[ showEmailResultMessage ? 'opacity-100' : 'opacity-0' ]" class="pt-6 text-sm xl:text-xl text-center text-ugc-dark-green">{{ emailResultMessage }}</p>
     </div>
 
-    <img src="/icons/star.png" alt="Star" class="absolute left-60 lg:left-16 top-4 lg:top-60 h-12 lg:h-24">
-    <img src="/icons/star.png" alt="Star" class="absolute left-6 lg:left-32 bottom-20 lg:bottom-48 h-16 lg:h-16">
-    <img src="/icons/star.png" alt="Star" class="hidden lg:block absolute right-32 lg:right-16 lg:bottom-96 h-12 lg:h-16">
+    <img src="/icons/star.png" alt="Star" class="absolute left-60 xl:left-16 top-4 xl:top-60 h-12 xl:h-24">
+    <img src="/icons/star.png" alt="Star" class="absolute left-6 xl:left-32 bottom-20 xl:bottom-48 h-16 xl:h-16">
+    <img src="/icons/star.png" alt="Star" class="hidden xl:block absolute right-32 xl:right-16 xl:bottom-96 h-12 xl:h-16">
   </div>
 </template>
 
@@ -388,6 +388,34 @@ const ugcImages = [
   // 'Furla.webp',
   // 'Lip balm.webp',
   // 'Zen.webp'
+]
+
+const brandLogos = [
+  'Booze & bareels.webp',
+  'Hey caddy.png',
+  'Kaiah_Beauty_Logo.webp',
+  'Rush+Escape+Game+Escape+Room+Melbourne.jpg',
+  'Tropeaka.png',
+  'alya skin.png',
+  'bodyblendz_cover.jpeg',
+  'botanycl .png',
+  'clearwipe-logo.webp',
+  'dear klairs.jpg',
+  'etude.png',
+  'good_clean_beauty_co_logo.jpeg',
+  'happy scrub in .png',
+  'heimish.png',
+  'james costemtics.png',
+  'kaine.jpeg',
+  'logo_w.png',
+  'lumimagnets.png',
+  'natural beauty.webp',
+  'quia.png',
+  'qure-logo-colored-tm.webp',
+  'skinfood.webp',
+  'skinsuppco.png',
+  'team nutrution .png',
+  'vt .png'
 ]
 
 const ugcVideos = [
