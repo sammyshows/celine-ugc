@@ -37,7 +37,7 @@
     <h1 class="text-3xl xl:text-6xl font-italiana text-center">TRUSTED BY..</h1>
 
     <div class="flex flex-wrap justify-center items-center gap-4 sm:gap-6 lg:gap-8 py-6 px-4 sm:px-8 lg:px-12">
-      <div v-for="logo in brandLogos" :key="logo" class="flex-shrink-0 w-16 sm:w-20 md:w-24 lg:w-28 xl:w-32 h-16 sm:h-20 md:h-24 lg:h-28 xl:h-32">
+      <div v-for="logo in brandLogos" :key="logo" class="flex-shrink-0 w-12 sm:w-20 md:w-24 lg:w-28 xl:w-32 h-12 sm:h-20 md:h-24 lg:h-28 xl:h-32">
         <img :src="`/brands/${logo}`" :alt="logo.split('.')[0]" class="w-full h-full object-contain rounded-full transition-all duration-300">
       </div>
     </div>
