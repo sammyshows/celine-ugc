@@ -65,7 +65,7 @@
       <div class="absolute bottom-0 left-0 w-full xl:w-[97%] h-2/5 xl:rounded-r-lg bg-white"></div>
 
       <div id="video-row-1" class="w-full flex justify-center gap-8 xl:gap-12 px-6 xl:px-10 overflow-scroll hide-scrollbar z-10">
-        <div v-for="video in ugcVideos.slice(0, 4)" class="relative xl:h-auto min-w-[60%] sm:min-w-[35%] lg:min-w-[20%] xl:min-w-[20rem] w-[19rem] lg:w-[12rem] p-0.5 rounded-[2rem]">
+        <div v-for="video in ugcVideos.slice(0, 4)" class="relative xl:h-auto min-w-[60%] sm:min-w-[35%] lg:min-w-[20%] xl:min-w-[16rem] 2xl:min-w-[20rem] w-[19rem] lg:w-[12rem] p-0.5 rounded-[2rem]">
           <div class="relative">
             <img src="/images/phone-frame.png" alt="Phone Frame" class="absolute top-0 left-0 w-full h-full">
             <video controls playsinline :poster="'/ugc/videos/' + video.poster" preload="metadata" class="p-[2%] rounded-[10%]">
@@ -92,7 +92,7 @@
       </div>
 
       <div id="video-row-2" class="w-full flex justify-center gap-8 xl:gap-12 px-6 xl:pr-20 overflow-scroll hide-scrollbar z-10">
-        <div v-for="video in ugcVideos.slice(4, 7)" class="relative xl:h-auto min-w-[60%] sm:min-w-[35%] lg:min-w-[20%] xl:min-w-[20rem] w-[19rem] lg:w-[12rem] p-0.5 rounded-[2rem]">
+        <div v-for="video in ugcVideos.slice(4, 7)" class="relative xl:h-auto min-w-[60%] sm:min-w-[35%] lg:min-w-[20%] xl:min-w-[16rem] 2xl:min-w-[20rem] w-[19rem] lg:w-[12rem] p-0.5 rounded-[2rem]">
           <div class="relative">
             <img src="/images/phone-frame.png" alt="Phone Frame" class="absolute top-0 left-0 w-full h-full">
             <video controls playsinline :poster="'/ugc/videos/' + video.poster" preload="metadata" class="p-[2%] rounded-[10%]">
@@ -111,7 +111,7 @@
       <div class="absolute bottom-0 xl:top-auto xl:bottom-0 right-0 w-full xl:w-[97%] h-2/5 xl:rounded-l-lg bg-white"></div>
 
       <div id="video-row-3" class="w-full flex justify-center gap-8 xl:gap-12 px-6 xl:pl-20 overflow-scroll hide-scrollbar z-10">
-        <div v-for="video in ugcVideos.slice(8, 11)" class="relative xl:h-auto min-w-[60%] sm:min-w-[35%] lg:min-w-[20%] xl:min-w-[20rem] w-[19rem] lg:w-[12rem] p-0.5 rounded-[2rem]">
+        <div v-for="video in ugcVideos.slice(8, 11)" class="relative xl:h-auto min-w-[60%] sm:min-w-[35%] lg:min-w-[20%] xl:min-w-[14rem] 2xl:min-w-[20rem] w-[19rem] lg:w-[12rem] p-0.5 rounded-[2rem]">
           <div class="relative">
             <img src="/images/phone-frame.png" alt="Phone Frame" class="absolute top-0 left-0 w-full h-full">
             <video controls playsinline :poster="'/ugc/videos/' + video.poster" preload="metadata" class="p-[2%] rounded-[10%]">
@@ -123,7 +123,7 @@
         </div>
       </div>
 
-      <div class="hidden xl:block mr-20 ml-10 text-8-5xl xl:text-7xl text-center font-bonaNova font-thin tracking-widest z-10">
+      <div class="hidden xl:block mr-20 ml-10 xl:text-5-5xl 2xl:text-7xl text-center font-bonaNova font-thin tracking-widest z-10">
         EXPERIENCES
       </div>
     </div>
