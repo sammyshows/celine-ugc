@@ -56,63 +56,74 @@
     <img src="/icons/star.png" alt="Star" class="absolute -left-6 xl:left-24 bottom-14 xl:bottom-12 h-16 xl:h-32">
   </div> -->
 
-  <div id="portfolio" class="w-full bg-cover">
+  <div id="portfolio" class="w-full bg-cover pb-4 xl:py-16">
     <!-- <h1 class="pt-4 xl:pt-20 pb-8 text-4xl xl:text-7xl text-center font-italiana tracking-wider">RECENT WORK</h1> -->
 
-    <div class="xl:hidden py-5 text-4xl xl:text-7xl text-center font-italiana tracking-wider">BEAUTY</div>
+    <div class="xl:hidden pt-8 sm:pt-9 pb-5 sm:pb-7 text-4xl sm:text-4-5xl md:text-5xl lg:text-6xl text-center font-italiana tracking-wider">BEAUTY</div>
 
-    <div class="flex xl:pr-20 pb-4 xl:pb-16">
-      <div id="video-row-1" class="w-full flex xl:justify-center gap-8 xl:gap-12 px-6 xl:px-10 overflow-scroll hide-scrollbar z-10">
-        <div v-for="video in ugcVideos.slice(0, 4)" class="relative xl:h-auto min-w-[60%] xl:min-w-[20%] w-[19rem] p-3 bg-slate-300 rounded-3xl">
-          <!-- <img src="/images/phone-frame.png" alt="Phone Frame" class="absolute top-0 left-0 w-full h-full"> -->
-          <!-- <div class="relative p-3 bg-cover w-full h-full" style="background-image: url('/images/phone-frame.png')"> -->
-          <video controls playsinline :poster="'/ugc/videos/' + video.poster" preload="metadata" class="rounded-3xl shadow-xl">
-            <source :src="'/ugc/videos/' + video.source" type="video/mp4">
-            Your browser does not support the video tag.
-          </video>
-          <!-- </div> -->
+    <div class="flex xl:pr-20 pb-1 relative">
+      <div class="absolute bottom-0 left-0 w-full xl:w-[97%] h-2/5 xl:rounded-r-lg bg-white"></div>
+
+      <div id="video-row-1" class="w-full flex justify-center gap-8 xl:gap-12 px-6 xl:px-10 overflow-scroll hide-scrollbar z-10">
+        <div v-for="video in ugcVideos.slice(0, 4)" class="relative xl:h-auto min-w-[60%] sm:min-w-[35%] lg:min-w-[20%] xl:min-w-[20rem] w-[19rem] lg:w-[12rem] p-0.5 rounded-[2rem]">
+          <div class="relative">
+            <img src="/images/phone-frame.png" alt="Phone Frame" class="absolute top-0 left-0 w-full h-full">
+            <video controls playsinline :poster="'/ugc/videos/' + video.poster" preload="metadata" class="p-[2%] rounded-[10%]">
+              <source :src="'/ugc/videos/' + video.source" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <h3 class="lg:text-xl xl:text-xl mt-2 font-bonaNova uppercase text-center">{{ video.name }}</h3>
         </div>
       </div>
 
-      <div class="hidden xl:block text-vertical text-8-5xl xl:text-9xl text-center font-montserrat font-thin tracking-widest text-[#3B3B58] mr-20">
+      <div class="hidden xl:block text-vertical text-8-5xl xl:text-7xl text-center font-bonaNova font-thin tracking-widest mr-20">
         BEAUTY
       </div>
     </div>
 
-    <div class="xl:hidden py-5 text-4xl xl:text-7xl text-center font-italiana tracking-wider">HEALTH</div>
+    <div class="xl:hidden pt-8 sm:pt-9 pb-5 sm:pb-7 text-4xl sm:text-4-5xl md:text-5xl lg:text-6xl text-center font-italiana tracking-wider">HEALTH</div>
 
-    <div class="flex items-center xl:pl-20 pb-4 xl:pb-16 relative">
-      <div class="absolute top-0 left-0 w-[97%] h-[37%] rounded-r-xl bg-[#FF6B6B]/70"></div>
+    <div class="flex items-center pb-1 xl:pt-16 relative">
+      <div class="absolute bottom-0 xl:top-auto xl:bottom-0 left-0 w-full xl:w-[97%] h-2/5 xl:rounded-r-lg bg-white"></div>
 
-      <div class="hidden xl:block text-vertical text-8-5xl xl:text-9xl text-center font-montserrat font-thin tracking-widest text-[#3B3B58] z-10">
+      <div class="hidden xl:block ml-20 text-8-5xl xl:text-6-5xl text-center font-bonaNova font-thin tracking-widest z-10">
         HEALTH
       </div>
 
-      <div id="video-row-2" class="w-full flex xl:justify-center gap-8 xl:gap-12 px-6 xl:py-16 xl:mr-20 overflow-scroll hide-scrollbar z-10">
-        <div v-for="video in ugcVideos.slice(4, 7)" class="xl:h-auto min-w-[60%] xl:min-w-[20%] w-[19rem] bg-slate-300 rounded-3xl">
-          <video controls playsinline :poster="'/ugc/videos/' + video.poster" preload="metadata" class="rounded-3xl shadow-xl">
-            <source :src="'/ugc/videos/' + video.source" type="video/mp4">
-            Your browser does not support the video tag.
-          </video>
+      <div id="video-row-2" class="w-full flex justify-center gap-8 xl:gap-12 px-6 xl:pr-20 overflow-scroll hide-scrollbar z-10">
+        <div v-for="video in ugcVideos.slice(4, 7)" class="relative xl:h-auto min-w-[60%] sm:min-w-[35%] lg:min-w-[20%] xl:min-w-[20rem] w-[19rem] lg:w-[12rem] p-0.5 rounded-[2rem]">
+          <div class="relative">
+            <img src="/images/phone-frame.png" alt="Phone Frame" class="absolute top-0 left-0 w-full h-full">
+            <video controls playsinline :poster="'/ugc/videos/' + video.poster" preload="metadata" class="p-[2%] rounded-[10%]">
+              <source :src="'/ugc/videos/' + video.source" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <h3 class="lg:text-xl xl:text-xl mt-2 font-bonaNova uppercase text-center">{{ video.name }}</h3>
         </div>
       </div>
     </div>
 
-    <div class="xl:hidden py-5 text-4xl xl:text-7xl text-center font-italiana tracking-wider">EXPERIENCES</div>
+    <div class="xl:hidden pt-8 sm:pt-9 pb-5 sm:pb-7 text-4xl sm:text-4-5xl md:text-5xl lg:text-6xl text-center font-italiana tracking-wider">EXPERIENCES</div>
 
-    <div class="flex items-center xl:pr-20 pb-12 xl:pb-16 relative">
-      <div class="absolute top-0 right-0 w-[97%] h-64 rounded-l-xl bg-[#FF6B6B]/70"></div>
+    <div class="flex items-center pb-1 xl:pt-16 relative">
+      <div class="absolute bottom-0 xl:top-auto xl:bottom-0 right-0 w-full xl:w-[97%] h-2/5 xl:rounded-l-lg bg-white"></div>
 
-      <div id="video-row-3" class="w-full flex xl:justify-center gap-8 xl:gap-12 px-6 xl:py-16 xl:pl-20 overflow-scroll hide-scrollbar z-10">
-        <div v-for="video in ugcVideos.slice(8, 11)" class="xl:h-auto min-w-[60%] xl:min-w-[20%] w-[19rem] bg-slate-300 rounded-3xl">
-          <video controls playsinline :poster="'/ugc/videos/' + video.poster" preload="metadata" class="rounded-3xl shadow-xl">
-            <source :src="'/ugc/videos/' + video.source" type="video/mp4">
-            Your browser does not support the video tag.
-          </video>
+      <div id="video-row-3" class="w-full flex justify-center gap-8 xl:gap-12 px-6 xl:pl-20 overflow-scroll hide-scrollbar z-10">
+        <div v-for="video in ugcVideos.slice(8, 11)" class="relative xl:h-auto min-w-[60%] sm:min-w-[35%] lg:min-w-[20%] xl:min-w-[20rem] w-[19rem] lg:w-[12rem] p-0.5 rounded-[2rem]">
+          <div class="relative">
+            <img src="/images/phone-frame.png" alt="Phone Frame" class="absolute top-0 left-0 w-full h-full">
+            <video controls playsinline :poster="'/ugc/videos/' + video.poster" preload="metadata" class="p-[2%] rounded-[10%]">
+              <source :src="'/ugc/videos/' + video.source" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <h3 class="lg:text-xl xl:text-xl mt-2 font-bonaNova uppercase text-center">{{ video.name }}</h3>
         </div>
       </div>
 
-      <div class="hidden xl:block ml-10 text-8-5xl xl:text-8xl text-center font-montserrat font-thin tracking-widest text-[#3B3B58] z-10">
+      <div class="hidden xl:block mr-20 ml-10 text-8-5xl xl:text-7xl text-center font-bonaNova font-thin tracking-widest z-10">
         EXPERIENCES
       </div>
     </div>
@@ -384,18 +395,18 @@ const brandLogos = [
 ]
 
 const ugcVideos = [
-  { source: 'video-1.mp4', poster: 'video-1-poster.webp' },
-  { source: 'video-2.mp4', poster: 'video-2-poster.webp' },
-  { source: 'video-3.mp4', poster: 'video-3-poster.webp' },
-  { source: 'video-4.mp4', poster: 'video-4-poster.webp' },
-  { source: 'video-5.mp4', poster: 'video-5-poster.webp' },
-  { source: 'video-6.mp4', poster: 'video-6-poster.webp' },
-  { source: 'video-7.mp4', poster: 'video-7-poster.webp' },
-  { source: 'video-8.mp4', poster: 'video-8-poster.webp' },
-  { source: 'video-9.mp4', poster: 'video-9-poster.webp' },
-  { source: 'video-10.mp4', poster: 'video-10-poster.webp' },
-  { source: 'video-11.mp4', poster: 'video-11-poster.webp' },
-  { source: 'video-12.mp4', poster: 'video-12-poster.webp' }
+  { source: 'video-1.mp4', poster: 'video-1-poster.webp', name: 'Nail Polish' },
+  { source: 'video-2.mp4', poster: 'video-2-poster.webp', name: 'Lipstick' },
+  { source: 'video-3.mp4', poster: 'video-3-poster.webp', name: 'Lip Gloss' },
+  { source: 'video-4.mp4', poster: 'video-4-poster.webp', name: 'Lip Balm' },
+  { source: 'video-5.mp4', poster: 'video-5-poster.webp', name: 'Lipstick' },
+  { source: 'video-6.mp4', poster: 'video-6-poster.webp', name: 'Lip Gloss' },
+  { source: 'video-7.mp4', poster: 'video-7-poster.webp', name: 'Lip Balm' },
+  { source: 'video-8.mp4', poster: 'video-8-poster.webp', name: 'Lipstick' },
+  { source: 'video-9.mp4', poster: 'video-9-poster.webp', name: 'Lip Gloss' },
+  { source: 'video-10.mp4', poster: 'video-10-poster.webp', name: 'Lip Balm' },
+  { source: 'video-11.mp4', poster: 'video-11-poster.webp', name: 'Lipstick' },
+  { source: 'video-12.mp4', poster: 'video-12-poster.webp', name: 'Lip Gloss' }
 ]
 
 onMounted(() => {
