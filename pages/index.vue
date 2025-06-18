@@ -56,7 +56,7 @@
     <img src="/icons/star.png" alt="Star" class="absolute -left-6 xl:left-24 bottom-14 xl:bottom-12 h-16 xl:h-32">
   </div> -->
 
-  <div id="portfolio" class="w-full bg-cover pb-4 xl:py-16">
+  <div id="portfolio" class="w-full bg-cover xl:pt-16">
     <!-- <h1 class="pt-4 xl:pt-20 pb-8 text-4xl xl:text-7xl text-center font-italiana tracking-wider">RECENT WORK</h1> -->
 
     <div class="xl:hidden pt-8 sm:pt-9 pb-5 sm:pb-7 text-4xl sm:text-4-5xl md:text-5xl lg:text-6xl text-center font-italiana tracking-wider">BEAUTY</div>
@@ -77,7 +77,7 @@
         </div>
       </div>
 
-      <div class="hidden xl:block text-vertical text-8-5xl xl:text-7xl text-center font-bonaNova font-thin tracking-widest mr-20">
+      <div class="hidden xl:block text-vertical text-8-5xl xl:text-7xl text-center font-italiana font-thin tracking-widest mr-20">
         BEAUTY
       </div>
     </div>
@@ -87,7 +87,7 @@
     <div class="flex items-center pb-1 xl:pt-16 relative">
       <div class="absolute bottom-0 xl:top-auto xl:bottom-0 left-0 w-full xl:w-[97%] h-2/5 xl:rounded-r-lg bg-white"></div>
 
-      <div class="hidden xl:block ml-20 text-8-5xl xl:text-6-5xl text-center font-bonaNova font-thin tracking-widest z-10">
+      <div class="hidden xl:block ml-20 text-8-5xl xl:text-6-5xl text-center font-italiana font-thin tracking-widest z-10">
         HEALTH
       </div>
 
@@ -123,26 +123,26 @@
         </div>
       </div>
 
-      <div class="hidden xl:block mr-20 ml-10 xl:text-5-5xl 2xl:text-7xl text-center font-bonaNova font-thin tracking-widest z-10">
+      <div class="hidden xl:block mr-20 ml-10 xl:text-5-5xl 2xl:text-7xl text-center font-italiana font-thin tracking-widest z-10">
         EXPERIENCES
       </div>
     </div>
   </div>
 
-  <div class="w-full bg-cover">
-    <h1 class="pt-4 xl:pt-10 text-4-5xl xl:text-7xl text-center font-italiana tracking-wider">PHOTOGRAPHY</h1>
+  <div class="w-full bg-cover pb-10">
+    <h1 class="pt-8 pb-5 sm:pt-9 sm:pb-7 xl:pt-12 xl:pb-10 text-4xl sm:text-4-5xl md:text-5xl lg:text-6xl xl:text-5-5xl 2xl:text-7xl text-center font-italiana tracking-widest">IMAGES</h1>
 
-    <div id="image-row-1" class="w-full flex xl:justify-center gap-8 xl:gap-12 mt-8 xl:mt-16 px-6 xl:px-20 overflow-scroll hide-scrollbar">
-      <div v-for="image in ugcImages.slice(0, 4)" :key="image" class="h-80 xl:h-96 min-w-[60%] xl:min-w-[20%] xl:w-1/5 bg-slate-300 rounded-3xl">
+    <div id="image-row-1" class="w-full flex flex-wrap xl:flex-nowrap justify-center gap-4 sm:gap-6 xl:gap-12 xl:px-20 overflow-scroll hide-scrollbar">
+      <div v-for="image in ugcImages.slice(0, 4)" :key="image" class="h-[43vw] sm:h-[20vw] w-[43%] sm:w-[20vw] xl:h-[16rem] xl:w-[16rem] 2xl:h-[18rem] 2xl:w-[18rem] bg-slate-300 rounded-3xl">
         <img :src="`/ugc/images/${image}`" :alt="image.split('.')[0]" class="h-full w-full object-cover rounded-3xl shadow">
       </div>
     </div>
-    <div id="image-row-2" class="w-full flex xl:justify-center gap-8 xl:gap-12 mt-12 xl:mt-16 px-6 xl:px-20 overflow-scroll hide-scrollbar">
-      <div v-for="image in ugcImages.slice(4,8)" :key="image" class="h-80 xl:h-96 min-w-[60%] xl:min-w-[20%] xl:w-1/5 bg-slate-300 rounded-3xl">
+    <div id="image-row-2" class="w-full flex flex-wrap xl:flex-nowrap justify-center gap-4 sm:gap-6 xl:gap-12 mt-4 xl:mt-12 xl:px-20 overflow-scroll hide-scrollbar">
+      <div v-for="image in ugcImages.slice(4,8)" :key="image" class="h-[43vw] sm:h-[20vw] w-[43%] sm:w-[20vw] xl:h-[16rem] xl:w-[16rem] 2xl:h-[18rem] 2xl:w-[18rem] bg-slate-300 rounded-3xl">
         <img :src="`/ugc/images/${image}`" :alt="image.split('.')[0]" class="h-full w-full object-cover rounded-3xl shadow">
       </div>
     </div>
-    <div id="image-row-3" class="w-full flex xl:justify-center gap-8 xl:gap-12 mt-12 xl:mt-16 px-6 xl:px-20 overflow-scroll hide-scrollbar">
+    <!-- <div id="image-row-3" class="w-full flex xl:justify-center gap-8 xl:gap-12 mt-12 xl:mt-16 px-6 xl:px-20 overflow-scroll hide-scrollbar">
       <div v-for="image in ugcImages.slice(8,12)" :key="image" class="h-80 xl:h-96 min-w-[60%] xl:min-w-[20%] xl:w-1/5 bg-slate-300 rounded-3xl">
         <img :src="`/ugc/images/${image}`" :alt="image.split('.')[0]" class="h-full w-full object-cover rounded-3xl shadow">
       </div>
@@ -151,20 +151,13 @@
       <div v-for="image in ugcImages.slice(12,16)" :key="image" class="h-80 xl:h-96 min-w-[60%] xl:min-w-[20%] xl:w-1/5 bg-slate-300 rounded-3xl">
         <img :src="`/ugc/images/${image}`" :alt="image.split('.')[0]" class="h-full w-full object-cover rounded-3xl shadow">
       </div>
-    </div>
+    </div> -->
   </div>
 
-  <div class="relative w-full xl:h-1/3 xl:flex xl:justify-center xl:items-center py-14 xl:py-10 px-2 bg-ugc-light-green-opaque bg-cover text-xl xl:text-7xl xl:leading-18 text-center text-slate-800 font-lora">
-    Content made with <div class="h-8 xl:h-20 px-3 xl:px-6 inline-flex background-paint-2 bg-cover font-corinthia text-4-5xl xl:text-10xl text-slate-800">passion.</div>
-    
-    <img src="/icons/star.png" alt="Star" class="absolute -left-4 xl:left-24 bottom-20 xl:bottom-12 h-12 xl:h-32">
-    <img src="/icons/star.png" alt="Star" class="absolute right-4 xl:right-24 bottom-4 xl:top-16 h-8 xl:h-24">
-  </div>
+  <div id="services" class="relative w-full pb-16 bg-cover bg-white">
+    <h1 class="pt-8 pb-5 sm:pt-9 sm:pb-7 xl:pt-12 xl:pb-10 text-4xl sm:text-4-5xl md:text-5xl lg:text-6xl xl:text-5-5xl 2xl:text-7xl text-center font-italiana tracking-widest">WHAT I DO</h1>
 
-  <div id="services" class="relative w-full pb-16 bg-cover">
-    <h1 class="pt-12 xl:pt-20 text-4-5xl xl:text-7xl text-center font-bonaNova tracking-wider">SERVICES</h1>
-
-    <p class="pt-4 text-xs xl:text-lg text-center font-lora">Reach your target audience with me!</p>
+    <p class="pt-4 text-xs xl:text-lg text-center font-montserrat"> Create authentic & premium content that converts and engages </p>
 
     <div class="xl:flex">
       <div class="xl:w-1/2 xl:flex xl:justify-end xl:items-center xl:pr-20">
