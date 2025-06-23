@@ -154,50 +154,48 @@
     </div> -->
   </div>
 
-  <div id="services" class="relative w-full pb-16 bg-cover bg-white">
-    <h1 class="pt-8 pb-5 sm:pt-9 sm:pb-7 xl:pt-12 xl:pb-10 text-4xl sm:text-4-5xl md:text-5xl lg:text-6xl xl:text-5-5xl 2xl:text-7xl text-center font-italiana tracking-widest">WHAT I DO</h1>
+  <div id="services" class="relative w-full pb-16 lg:pb-32 bg-cover bg-white">
+    <h1 class="pt-8 pb-5 sm:pt-9 sm:pb-7 lg:pb-6 xl:pt-16 text-4xl sm:text-4-5xl md:text-5xl lg:text-6xl xl:text-5-5xl 2xl:text-7xl text-center font-italiana tracking-widest">WHAT I DO</h1>
 
-    <p class="pt-4 text-xs xl:text-lg text-center font-montserrat"> Create authentic & premium content that converts and engages </p>
+    <p class="px-10 text-sm sm:text-lg lg:text-2xl xl:text-2xl text-center font-montserrat"> Create authentic & premium content that converts and engages </p>
 
-    <div class="xl:flex">
-      <div class="xl:w-1/2 xl:flex xl:justify-end xl:items-center xl:pr-20">
-        <div class="w-full xl:w-fit flex flex-col gap-2 xl:gap-6 mt-8 px-2 font-lora">
-          <p v-for="service in services" class="xl:text-2xl text-center xl:text-left uppercase">{{ service.name }}</p>
+    <div class="w-full xl:w-4/5 mx-auto flex flex-col sm:flex-row justify-center items-center mt-10 sm:mt-12 lg:mt-16 xl:mt-20 sm:px-4">
+      <div class="relative w-11/12 sm:w-1/2 flex justify-center">
+        <img src="/icons/tape.png" alt="Tape" class="absolute top-0 h-32 lg:h-40 xl:h-56 -translate-y-[55%]">
+        <div
+        class="w-4/5 py-6 px-6 lg:pt-8 xl:pt-12 bg-[#F2F0F0]"
+        style="
+          box-shadow:
+          0 12px 64px 0 rgba(0,0,0,0.30),   /* very big shadow bottom */
+          0 0px 48px 0 rgba(0,0,0,0.06),    /* big shadow sides */
+          0 12px 12px 0 rgba(0,0,0,0.08);   /* slight shadow top */
+          "
+          >
+          <div v-for="service in services.slice(0, 5)" :key="service.name" class="flex items-center gap-2 leading-5 xl:leading-7">
+            <img src="/icons/tick.png" alt="Check" class="size-8 lg:size-10 xl:size-12">
+            <p class="ml-1 sm:text-sm lg:text-lg xl:text-2xl">{{ service.name }}</p>
+          </div>
         </div>
       </div>
       
-      <div class="w-2/3 xl:w-0.5 h-0.5 xl:h-auto mt-10 mx-auto xl:mx-0 bg-slate-800"></div>
-      
-      <div class="xl:w-1/2 xl:py-3">
-        <h1 class="mt-10 ml-10 xl:py-2 px-3 xl:px-6 inline-flex background-paint-2 bg-cover font-lora font-semibold text-2xl xl:text-4xl text-slate-700">
-          VIDEO</h1>
-        
-        <div class="ml-1/6 xl:ml-28 flex flex-col mt-3 mx-auto px-2 font-lora">
-          <div v-for="videoService in videoServices" :key="videoService.name" class="flex leading-5 xl:leading-7">
-            • <p class="ml-2 text-sm xl:text-lg">{{ videoService.name }}</p>
+      <div class="relative mt-16 sm:mt-0 w-11/12 sm:w-1/2 flex justify-center">
+        <img src="/icons/tape.png" alt="Tape" class="absolute top-0 h-32 lg:h-40 xl:h-56 -translate-y-[55%]">
+        <div
+        class="w-4/5 py-6 px-6 lg:pt-8 xl:pt-12 bg-[#F2F0F0]"
+        style="
+              box-shadow:
+              0 12px 64px 0 rgba(0,0,0,0.30),   /* very big shadow bottom */
+              0 0px 48px 0 rgba(0,0,0,0.06),    /* big shadow sides */
+              0 12px 12px 0 rgba(0,0,0,0.08);   /* slight shadow top */
+              "
+          >
+          <div v-for="service in services.slice(5, 10)" :key="service.name" class="flex items-center gap-2 leading-5 xl:leading-7">
+            <img src="/icons/tick.png" alt="Check" class="size-8 lg:size-10 xl:size-12">
+            <p class="ml-1 sm:text-sm lg:text-lg xl:text-2xl">{{ service.name }}</p>
           </div>
         </div>
-        
-        <h1 class="mt-10 ml-10 xl:py-2 px-3 xl:px-6 inline-flex background-paint-2 bg-cover font-lora font-semibold text-2xl xl:text-4xl text-slate-700">
-          PHOTOGRAPHY</h1>
-        
-        <div class="ml-1/6 xl:ml-28 flex flex-col mt-3 mx-auto px-2 font-lora">
-          <div v-for="photoService in photoServices" :key="photoService.name" class="flex leading-5 xl:leading-7">
-            • <p class="ml-2 text-sm xl:text-lg">{{ photoService.name }}</p>
-          </div>
-        </div>
-        
-        <p class="mt-8 px-8 text-xs xl:text-base text-right xl:text-left text-slate-700">*Rates are available upon request</p>
       </div>
     </div>
-      
-    <p class="mt-8 xl:mt-16 px-12 text-lg xl:text-2xl leading-6 text-center text-ugc-dark-green font-lora font-semibold">
-      But that's not all! Not seeing what you're looking for? Let's chat!
-    </p>
-
-    <img src="/icons/star.png" alt="Star" class="absolute -left-6 xl:left-24 top-40 xl:top-60 h-16 xl:h-24">
-    <img src="/icons/star.png" alt="Star" class="absolute right-6 xl:right-32 bottom-[32rem] xl:top-16 h-8 xl:h-28">
-    <img src="/icons/star.png" alt="Star" class="absolute right-20 xl:right-16 bottom-4 xl:bottom-40 h-8 xl:h-16">
   </div>
 
   <div id="contact" class="relative w-full bg-ugc-light-green-opaque bg-cover">
@@ -308,32 +306,16 @@ const submit = async () => {
 }
 
 const services = [
-  { name: 'Unboxing' },
-  { name: 'Product Showcasing' },
-  { name: 'Lifestyle Photography' },
-  { name: 'Product Demo' },
+  { name: 'Product Demos' },
+  { name: 'Lifestyle Concepts' },
+  { name: 'Voiceover Content' },
+  { name: 'Try-On Hauls & Unboxings' },
+  { name: 'Tutorials & How-To Videos' },
   { name: 'Reviews & Testimonials' },
-  { name: 'Product Photography' },
-  { name: 'Voiceover' },
-  { name: 'How To Use Tutorials' }
-]
-
-const videoServices = [
-  { name: '15-60 Seconds' },
-  { name: 'Vertical 9:16 Format' },
-  { name: 'Brand & Concept Research' },
-  { name: 'Script Writing & Approval' },
-  { name: 'Video Editing, 1 revision' },
-  { name: 'Raw Footage (add-on)' },
-  { name: 'Usage Rights for Ads (add-on)' }
-]
-
-const photoServices = [
-  { name: '1:1 | 4:5 | 9:16 Format' },
-  { name: 'Product Modelling/Selfie with Product' },
-  { name: 'Brand & Concept Research' },
-  { name: 'Photo Editing' },
-  { name: 'Raw Photos (add-on)' }
+  { name: 'Trending/Reel Style Content' },
+  { name: 'In-person UGC' },
+  { name: 'A/B Testing Variations' },
+  { name: 'Instagram Promotional Posts' }
 ]
 
 const ugcImages = [
