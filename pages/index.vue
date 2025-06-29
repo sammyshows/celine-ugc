@@ -198,58 +198,50 @@
     </div>
   </div>
 
-  <div id="contact" class="relative w-full bg-ugc-light-green-opaque bg-cover">
-    <p class="pt-10 pl-6 xl:pl-20 text-tiny xl:text-xl font-lora">CONTACT ME</p>
+  <!-- testimonials -->
+  <div id="testimonials" class="relative w-full pb-12 lg:pb-16">
+    <img src="/images/polaroid-collage.webp" alt="Polaroid Collage" class="hidden lg:block absolute w-1/2 -top-20 -right-20">
 
-    <div class="xl:flex xl:h-[30rem]">
-      <div class="xl:w-3/5 xl:flex xl:flex-col xl:items-end xl:pr-10">
-        <p class="mt-10 xl:mr-40 pl-2 text-4xl xl:text-7-5xl font-lora">Let's work</p>
-        <p class="mt-6 xl:mt-16 ml-12 px-3 max-w-fit background-paint-3 bg-cover z-10 font-corinthia text-7-5xl xl:text-11xl leading-16 text-slate-800">
-          together!</p>
-          
-        <div class="xl:w-2/3 font-lora">
-          <a href="https://www.instagram.com/ugc.withceline/" target="_blank" class="flex items-center gap-2 mt-12 xl:mt-24 pl-4">
-            <img src="/icons/instagram.png" alt="Instagram" class="w-5 xl:w-10">
-            <p class="xl:ml-3 text-xs xl:text-2xl">@ugc.withceline</p>
-          </a>
+    <div class="w-full lg:w-1/2">
+      <h1 class="px-10 pt-8 pb-5 sm:pt-9 sm:pb-7 lg:pb-6 xl:pt-16 text-4xl sm:text-4-5xl md:text-5xl lg:text-5xl xl:text-5-5xl 2xl:text-7xl text-center font-italiana tracking-widest">WHAT MY CLIENTS SAY</h1>
 
-          <a href="https://www.tiktok.com/@ugc.withceline" target="_blank" class="flex items-center gap-2 mt-1 xl:mt-4 pl-4">
-            <img src="/icons/tiktok.png" alt="TikTok" class="w-5 xl:w-10">
-            <p class="xl:ml-3 text-xs xl:text-2xl">@ugc.withceline</p>
-          </a>
-          
-          <div class="flex items-center gap-2 mt-1 xl:mt-4 pl-4">
-            <img src="/icons/mail.png" alt="Mail" class="h-4 w-5 xl:w-10 xl:h-8">
-            <p class="xl:ml-3 text-xs xl:text-2xl">ugcwithcelinee@gmail.com</p>
+      <div class="w-full flex flex-col mt-5 lg:mt-8">
+        <div class="relative max-w-[80%] sm:max-w-[67%] lg:max-w-[90%] lg:w-full ml-4 sm:ml-16 pt-4 sm:pt-5 p-3 rounded bg-white text-xs sm:text-sm">
+          <img src="/icons/tape.png" alt="Tape" class="absolute h-20 sm:h-28 lg:h-32 -top-12 sm:-top-16 lg:-top-20 left-1/2 -translate-x-1/2">
+          Celine, you are absolutely amazing! Thank you for creating such standout content—30,000 views in just 48 hours is incredible ❤️ Your content is genuinely impactful, and we really appreciate the value you bring. We’d love to collaborate again! 
+        </div>
+
+        <div class="w-full flex flex-col lg:flex-row lg:relative lg:h-48">
+          <div class="relative lg:absolute lg:left-24 lg:top-6 max-w-[80%] sm:max-w-[67%] lg:max-w-[50%] lg:w-1/2 mt-8 mr-4 sm:mr-16 lg:mr-0 ml-auto pt-4 sm:pt-5 p-3 rounded bg-white text-xs sm:text-sm">
+            <img src="/icons/tape.png" alt="Tape" class="absolute h-20 sm:h-28 lg:h-32 -top-12 sm:-top-16 lg:-top-20 left-1/2 -translate-x-1/2">
+            You captured amazing details and delivered great content as always! Thank you, Celine ❤
+          </div>
+
+          <div class="relative lg:absolute lg:left-[80%] xl:left-[72%] lg:top-10 max-w-[80%] sm:max-w-[67%] lg:max-w-[50%] lg:w-1/2 mt-8 ml-4 sm:ml-16 lg:ml-0 pt-4 sm:pt-5 p-3 rounded bg-white text-xs sm:text-sm">
+            <img src="/icons/tape.png" alt="Tape" class="absolute h-20 sm:h-28 lg:h-32 -top-12 sm:-top-16 lg:-top-20 left-1/2 -translate-x-1/2">
+            Team is very happy with your content and you really smashed the creator briefff!!  Thank you so much for working with us on that project!
           </div>
         </div>
       </div>
-
-      <img src="/images/celine-1.webp" loading="lazy" alt="Celine Selfie" class="absolute xl:static -right-16 w-60 xl:w-auto xl:h-full top-20 rounded-full">
     </div>
-
-    <div class="xl:w-1/2 xl:max-w-[48rem] mt-20 xl:mx-auto pl-4 pb-10 font-lora">
-      <!-- Honeypot -->
-      <input v-model="honeypot" type="email" class="hidden">
-
-      <div class="xl:flex">
-        <label for="name" class="inline-block w-20 xl:w-32 xl:text-2xl">NAME</label>
-        <input v-model="name" type="text" class="w-56 xl:grow h-8 xl:h-12 ml-4 px-6 xl:px-12 background-paint-2 bg-transparent text-sm xl:text-2xl rounded-lg outline-slate-700">
-      </div>
-      <div class="mt-2 xl:flex">
-        <label for="email" class="inline-block w-20 xl:w-32 xl:text-2xl">EMAIL</label>
-        <input v-model="email" type="email" class="w-64 xl:grow h-8 xl:h-12 ml-4 px-6 xl:px-12 background-paint-2 bg-transparent text-sm xl:text-2xl rounded-lg outline-slate-700">
-      </div>
-      <div class="flex mt-2">
-        <label for="message" class="flex w-20 xl:w-32 h-20 items-center my-auto xl:text-2xl">MESSAGE</label>
-        <textarea v-model="message" type="text" class="w-64 xl:grow h-20 xl:h-36 ml-4 px-6 xl:px-12 py-3 xl:py-6 background-paint-1 bg-transparent bg-cover text-xs xl:text-lg rounded-lg outline-slate-700 overflow-scroll"></textarea>
+    
+    <div class="relative w-full flex flex-col lg:flex-row">
+      <div class="relative max-w-[80%] sm:max-w-[67%] lg:max-w-[18%] lg:max-h-min mt-8 mr-4 sm:mr-16 lg:mr-0 ml-auto lg:ml-8 pt-4 sm:pt-5 p-3 rounded bg-white text-xs sm:text-sm">
+        <img src="/icons/tape.png" alt="Tape" class="absolute h-20 sm:h-28 lg:h-24 -top-12 sm:-top-16 lg:-top-16 left-1/2 -translate-x-1/2">
+        Thank you so much ♥ These are amazing 😊
       </div>
 
-      <div class="w-full flex">
-        <button @click="submit()" :disabled="sendingEmail || !allInputsHaveValues" :class="{ 'animate-pulse': sendingEmail }" class="w-36 xl:w-40 mt-6 mx-auto py-1 xl:py-2 xl:text-xl text-center text-white font-lora bg-ugc-light-green rounded-lg outline-slate-700 duration-300 disabled:bg-slate-400/70">
-          {{ sendingEmail ? 'SUBMITTING...' : 'SUBMIT' }}
-        </button>
+      <div class="relative max-w-[80%] sm:max-w-[67%] lg:max-w-[40%] lg:w-1/2 mt-8 lg:mt-12 ml-4 sm:ml-16 lg:ml-8 pt-4 sm:pt-5 p-3 rounded bg-white text-xs sm:text-sm">
+        <img src="/icons/tape.png" alt="Tape" class="absolute h-20 sm:h-28 lg:h-32 -top-12 sm:-top-16 lg:-top-20 left-1/2 -translate-x-1/2">
+        Hey Celine,<br><br>I hope you are well! Apologies for the delays as have been very busy! Thank you so much for sending though this amazing content! We truly value the creativity and thought you bring to every piece of content. It’s clear you genuinely care about results, and that makes all the difference to us xx
       </div>
+
+      <div class="relative max-w-[80%] sm:max-w-[67%] lg:max-w-[30%] lg:max-h-min lg:w-1/2 mt-8 lg:mt-20 mr-4 sm:mr-16 lg:mr-auto ml-auto lg:ml-8 pt-4 sm:pt-5 p-3 rounded bg-white text-xs sm:text-sm">
+        <img src="/icons/tape.png" alt="Tape" class="absolute h-20 sm:h-28 lg:h-32 -top-12 sm:-top-16 lg:-top-20 left-1/2 -translate-x-1/2">
+        Just wanted to say—your video looks absolutely amazing! 😍 The quality, the storytelling, the aesthetic... it’s everything we hoped for and more!
+      </div>
+    </div>
+  </div>
 
       <p :class="[ showEmailResultMessage ? 'opacity-100' : 'opacity-0' ]" class="pt-6 text-sm xl:text-xl text-center text-ugc-dark-green">{{ emailResultMessage }}</p>
     </div>
