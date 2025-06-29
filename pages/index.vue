@@ -243,12 +243,28 @@
     </div>
   </div>
 
-      <p :class="[ showEmailResultMessage ? 'opacity-100' : 'opacity-0' ]" class="pt-6 text-sm xl:text-xl text-center text-ugc-dark-green">{{ emailResultMessage }}</p>
+  <div id="contact" class="relative w-full pb-16 bg-white bg-cover">
+    <div class="pt-10 sm:pt-12 text-center font-anton text-5-5xl leading-14 xl:leading-18 tracking-widest xl:text-6-5xl">
+      <h1 class="mr-10">GET IN</h1>
+      <h1 class="ml-10 text-violet-500">TOUCH!</h1>
     </div>
 
-    <img src="/icons/star.png" alt="Star" class="absolute left-60 xl:left-16 top-4 xl:top-60 h-12 xl:h-24">
-    <img src="/icons/star.png" alt="Star" class="absolute left-6 xl:left-32 bottom-20 xl:bottom-48 h-16 xl:h-16">
-    <img src="/icons/star.png" alt="Star" class="hidden xl:block absolute right-32 xl:right-16 xl:bottom-96 h-12 xl:h-16">
+    <div class="w-4/5 sm:w-2/5 flex flex-col gap-2 mx-auto text-xl sm:text-2xl font-lora">
+      <a href="https://www.instagram.com/ugc.withceline/" target="_blank" class="flex items-center gap-2 mt-12 xl:mt-8 pl-4">
+        <img src="/icons/instagram.png" alt="Instagram" class="w-5 xl:w-10">
+        <p>@ugc.withceline</p>
+      </a>
+
+      <a href="https://www.tiktok.com/@ugc.withceline" target="_blank" class="flex items-center gap-2 mt-1 xl:mt-4 pl-4">
+        <img src="/icons/tiktok.png" alt="TikTok" class="w-5 xl:w-10">
+        <p>Melbourne, Australia</p>
+      </a>
+      
+      <div class="flex items-center gap-2 mt-1 xl:mt-4 pl-4">
+        <img src="/icons/mail.png" alt="Mail" class="h-4 w-5 xl:w-10 xl:h-8">
+        <p>ugcwithcelinee@gmail.com</p>
+      </div>
+    </div>
   </div>
 </template>
 
