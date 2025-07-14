@@ -1,7 +1,7 @@
 
 
 # Loop through all the image files
-for file in unconverted-images/*.{jpeg,jpg,JPG,png,heic}; do
+for file in unconverted-images/*.{jpeg,jpg,JPG,png,heic,HEIC}; do
   # Check if the file exists (in case no matching files are found)
   [ -e "$file" ] || continue
   
@@ -12,4 +12,4 @@ for file in unconverted-images/*.{jpeg,jpg,JPG,png,heic}; do
   magick "$file" "converted-images/${filename}.webp"
 done
 
-echo "Conversion completed. All images are saved in the 'webp' directory."
+echo "Conversion completed. All images are saved in the 'converted-images' directory."
