@@ -67,7 +67,7 @@
       <div id="video-row-1" class="w-full flex sm:justify-center gap-8 xl:gap-12 px-6 xl:px-10 overflow-scroll hide-scrollbar z-10">
         <div v-for="video in beautyVideos" class="relative xl:h-auto min-w-[60%] sm:min-w-[26%] lg:min-w-[24%] xl:min-w-[16rem] 2xl:min-w-[20rem] w-[12rem] p-0.5 rounded-[2rem]">
           <div class="relative">
-            <img src="/images/phone-frame.png" alt="Phone Frame" class="absolute top-0 left-0 w-full h-full">
+            <img src="/images/phone-frame.png" alt="Phone Frame" class="pointer-events-none absolute top-0 left-0 w-full h-full">
             <video controls playsinline :poster="'/ugc/videos/' + video.poster" preload="metadata" class="p-[2%] rounded-[10%]">
               <source :src="'/ugc/videos/' + video.source" type="video/mp4">
               Your browser does not support the video tag.
@@ -94,7 +94,7 @@
       <div id="video-row-2" class="w-full flex sm:justify-center gap-8 xl:gap-12 px-6 xl:pr-20 overflow-scroll hide-scrollbar z-10">
         <div v-for="video in healthVideos" class="relative xl:h-auto min-w-[60%] sm:min-w-[26%] lg:min-w-[24%] xl:min-w-[16rem] 2xl:min-w-[20rem] w-[12rem] p-0.5 rounded-[2rem]">
           <div class="relative">
-            <img src="/images/phone-frame.png" alt="Phone Frame" class="absolute top-0 left-0 w-full h-full">
+            <img src="/images/phone-frame.png" alt="Phone Frame" class="pointer-events-none absolute top-0 left-0 w-full h-full">
             <video controls playsinline :poster="'/ugc/videos/' + video.poster" preload="metadata" class="p-[2%] rounded-[10%]">
               <source :src="'/ugc/videos/' + video.source" type="video/mp4">
               Your browser does not support the video tag.
@@ -113,7 +113,7 @@
       <div id="video-row-3" class="w-full flex sm:justify-center gap-8 xl:gap-12 px-6 xl:pl-20 overflow-scroll hide-scrollbar z-10">
         <div v-for="video in experienceVideos" class="relative xl:h-auto min-w-[60%] sm:min-w-[26%] lg:min-w-[24%] xl:min-w-[14rem] 2xl:min-w-[20rem] w-[12rem] p-0.5 rounded-[2rem]">
           <div class="relative">
-            <!-- <img src="/images/phone-frame.png" alt="Phone Frame" class="absolute top-0 left-0 w-full h-full"> -->
+            <img src="/images/phone-frame.png" alt="Phone Frame" class="pointer-events-none absolute top-0 left-0 w-full h-full">
             <video controls playsinline :poster="'/ugc/videos/' + video.poster" preload="metadata" class="p-[2%] rounded-[10%]">
               <source :src="'/ugc/videos/' + video.source" type="video/mp4">
               Your browser does not support the video tag.
@@ -140,7 +140,7 @@
       <div id="video-row-4" class="w-full flex sm:justify-center gap-8 xl:gap-12 px-6 xl:pr-20 overflow-scroll hide-scrollbar z-10">
         <div v-for="video in otherVideos" class="relative xl:h-auto min-w-[60%] sm:min-w-[26%] lg:min-w-[24%] xl:min-w-[16rem] 2xl:min-w-[20rem] w-[12rem] p-0.5 rounded-[2rem]">
           <div class="relative">
-            <img src="/images/phone-frame.png" alt="Phone Frame" class="absolute top-0 left-0 w-full h-full">
+            <img src="/images/phone-frame.png" alt="Phone Frame" class="pointer-events-none absolute top-0 left-0 w-full h-full">
             <video controls playsinline :poster="'/ugc/videos/' + video.poster" preload="metadata" class="p-[2%] rounded-[10%]">
               <source :src="'/ugc/videos/' + video.source" type="video/mp4">
               Your browser does not support the video tag.
