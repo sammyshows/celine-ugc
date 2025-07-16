@@ -112,13 +112,13 @@
 
       <div id="video-row-3" class="w-full flex sm:justify-center gap-8 xl:gap-12 px-6 xl:pl-20 overflow-scroll hide-scrollbar z-10">
         <div v-for="video in experienceVideos" class="relative xl:h-auto min-w-[60%] sm:min-w-[26%] lg:min-w-[24%] xl:min-w-[14rem] 2xl:min-w-[20rem] w-[12rem] p-0.5 rounded-[2rem]">
-          <!-- <div class="relative">
+          <!-- <!-- <div class="relative"> -->
             <img src="/images/phone-frame.png" alt="Phone Frame" class="absolute top-0 left-0 w-full h-full"> -->
             <video controls playsinline :poster="'/ugc/videos/' + video.poster" preload="metadata" class="p-[2%] rounded-[10%]">
               <source :src="'/ugc/videos/' + video.source" type="video/mp4">
               Your browser does not support the video tag.
             </video>
-          <!-- </div> -->
+          </div>
           <h3 class="lg:text-xl xl:text-xl mt-2 font-bonaNova uppercase text-center">{{ video.name }}</h3>
         </div>
       </div>
