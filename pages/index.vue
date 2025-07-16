@@ -64,8 +64,8 @@
     <div class="flex xl:pr-20 pb-1 relative">
       <div class="absolute bottom-0 left-0 w-full xl:w-[97%] h-2/5 xl:rounded-r-lg bg-white"></div>
 
-      <div id="video-row-1" class="w-full flex justify-center gap-8 xl:gap-12 px-6 xl:px-10 overflow-scroll hide-scrollbar z-10">
-        <div v-for="video in beautyVideos" class="relative xl:h-auto min-w-[60%] sm:min-w-[35%] lg:min-w-[20%] xl:min-w-[16rem] 2xl:min-w-[20rem] w-[19rem] lg:w-[12rem] p-0.5 rounded-[2rem]">
+      <div id="video-row-1" class="w-full flex sm:justify-center gap-8 xl:gap-12 px-6 xl:px-10 overflow-scroll hide-scrollbar z-10">
+        <div v-for="video in beautyVideos" class="relative xl:h-auto min-w-[60%] sm:min-w-[26%] lg:min-w-[24%] xl:min-w-[16rem] 2xl:min-w-[20rem] w-[12rem] p-0.5 rounded-[2rem]">
           <div class="relative">
             <img src="/images/phone-frame.png" alt="Phone Frame" class="absolute top-0 left-0 w-full h-full">
             <video controls playsinline :poster="'/ugc/videos/' + video.poster" preload="metadata" class="p-[2%] rounded-[10%]">
@@ -91,8 +91,8 @@
         HEALTH
       </div>
 
-      <div id="video-row-2" class="w-full flex justify-center gap-8 xl:gap-12 px-6 xl:pr-20 overflow-scroll hide-scrollbar z-10">
-        <div v-for="video in healthVideos" class="relative xl:h-auto min-w-[60%] sm:min-w-[35%] lg:min-w-[20%] xl:min-w-[16rem] 2xl:min-w-[20rem] w-[19rem] lg:w-[12rem] p-0.5 rounded-[2rem]">
+      <div id="video-row-2" class="w-full flex sm:justify-center gap-8 xl:gap-12 px-6 xl:pr-20 overflow-scroll hide-scrollbar z-10">
+        <div v-for="video in healthVideos" class="relative xl:h-auto min-w-[60%] sm:min-w-[26%] lg:min-w-[24%] xl:min-w-[16rem] 2xl:min-w-[20rem] w-[12rem] p-0.5 rounded-[2rem]">
           <div class="relative">
             <img src="/images/phone-frame.png" alt="Phone Frame" class="absolute top-0 left-0 w-full h-full">
             <video controls playsinline :poster="'/ugc/videos/' + video.poster" preload="metadata" class="p-[2%] rounded-[10%]">
@@ -110,8 +110,8 @@
     <div class="flex items-center pb-1 xl:pt-16 relative">
       <div class="absolute bottom-0 xl:top-auto xl:bottom-0 right-0 w-full xl:w-[97%] h-2/5 xl:rounded-l-lg bg-white"></div>
 
-      <div id="video-row-3" class="w-full flex justify-center gap-8 xl:gap-12 px-6 xl:pl-20 overflow-scroll hide-scrollbar z-10">
-        <div v-for="video in experienceVideos" class="relative xl:h-auto min-w-[60%] sm:min-w-[35%] lg:min-w-[20%] xl:min-w-[14rem] 2xl:min-w-[20rem] w-[19rem] lg:w-[12rem] p-0.5 rounded-[2rem]">
+      <div id="video-row-3" class="w-full flex sm:justify-center gap-8 xl:gap-12 px-6 xl:pl-20 overflow-scroll hide-scrollbar z-10">
+        <div v-for="video in experienceVideos" class="relative xl:h-auto min-w-[60%] sm:min-w-[26%] lg:min-w-[24%] xl:min-w-[14rem] 2xl:min-w-[20rem] w-[12rem] p-0.5 rounded-[2rem]">
           <div class="relative">
             <img src="/images/phone-frame.png" alt="Phone Frame" class="absolute top-0 left-0 w-full h-full">
             <video controls playsinline :poster="'/ugc/videos/' + video.poster" preload="metadata" class="p-[2%] rounded-[10%]">
@@ -137,8 +137,8 @@
         OTHER
       </div>
 
-      <div id="video-row-2" class="w-full flex justify-center gap-8 xl:gap-12 px-6 xl:pr-20 overflow-scroll hide-scrollbar z-10">
-        <div v-for="video in otherVideos" class="relative xl:h-auto min-w-[60%] sm:min-w-[35%] lg:min-w-[20%] xl:min-w-[16rem] 2xl:min-w-[20rem] w-[19rem] lg:w-[12rem] p-0.5 rounded-[2rem]">
+      <div id="video-row-4" class="w-full flex sm:justify-center gap-8 xl:gap-12 px-6 xl:pr-20 overflow-scroll hide-scrollbar z-10">
+        <div v-for="video in otherVideos" class="relative xl:h-auto min-w-[60%] sm:min-w-[26%] lg:min-w-[24%] xl:min-w-[16rem] 2xl:min-w-[20rem] w-[12rem] p-0.5 rounded-[2rem]">
           <div class="relative">
             <img src="/images/phone-frame.png" alt="Phone Frame" class="absolute top-0 left-0 w-full h-full">
             <video controls playsinline :poster="'/ugc/videos/' + video.poster" preload="metadata" class="p-[2%] rounded-[10%]">
@@ -470,7 +470,7 @@ const otherVideos = [
 ]
 
 onMounted(() => {
-  const elementIds = ['video-row-1', 'video-row-2', 'video-row-3', 'image-row-1', 'image-row-2', 'image-row-3', 'image-row-4']
+  const elementIds = ['video-row-1', 'video-row-2', 'video-row-3', 'video-row-4']
   document.addEventListener('DOMContentLoaded', setInitialScrollPosition(elementIds))
 })
 </script>
